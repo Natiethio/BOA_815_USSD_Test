@@ -1,0 +1,219 @@
+[2025-05-02 17:31:45] 
+Error running test: 'Select Module'
+
+[2025-05-02 17:32:03] 
+=================  New Test Started at 2025-05-02 17:32:03  =================
+
+[2025-05-02 17:32:09] Error running adb shell cmd package resolve-activity --brief -a android.intent.action.DIAL:
+[2025-05-02 17:32:09] adb.exe: no devices/emulators found
+[2025-05-02 17:32:09] 
+[2025-05-02 17:32:09] Error running adb shell pm resolve-activity -a android.intent.action.DIAL -c android.intent.category.DEFAULT:
+[2025-05-02 17:32:09] adb.exe: no devices/emulators found
+[2025-05-02 17:32:09] 
+[2025-05-02 17:32:09] 
+Test failed with exit code 1.
+
+[2025-05-02 17:36:00] 
+=================  New Test Started at 2025-05-02 17:36:00  =================
+
+[2025-05-02 17:36:16] Using Device ID: R9ZR601C18H
+[2025-05-02 17:36:16] Using Android Version: 12
+[2025-05-02 17:36:16] Using package: com.samsung.android.dialer
+[2025-05-02 17:36:16] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-02 17:36:16] Dialing USSD code (Attempt 1)...
+[2025-05-02 17:36:21] Expected USSD page matched.
+[2025-05-02 17:36:26] Input field detected
+[2025-05-02 17:36:30] Pin Enter Notification Detected
+[2025-05-02 17:36:36] Login successful.
+[2025-05-02 17:36:37] Found option: 1: My Accounts
+[2025-05-02 17:36:37] Found option: 2: Transfer
+[2025-05-02 17:36:37] Found option: 3: Transfer to Other Bank
+[2025-05-02 17:36:37] Found option: 4: Transfer to Own
+[2025-05-02 17:36:37] Found option: 5: Airtime
+[2025-05-02 17:36:37] Found option: 6: Utilities
+[2025-05-02 17:36:37] Found option: 7: Exchange Rates
+[2025-05-02 17:36:37] Found option: 8: More options
+[2025-05-02 17:36:37] Excel in the path is used
+[2025-05-02 17:36:38] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:36:38] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-02 17:36:44] Hello My accounts
+[2025-05-02 17:36:44] USSD Response: My Accounts
+[2025-05-02 17:36:44] 1: 174615624 - ETB - Apol.
+[2025-05-02 17:36:44] 2: 182975435 - ETB - STAF.
+[2025-05-02 17:36:44] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-02 17:36:44] list of accounts associated with the customer ID is displayed
+[2025-05-02 17:36:45] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:36:45] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-02 17:36:45] Excel status Updated
+[2025-05-02 17:36:45] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-02 17:36:45] 
+[2025-05-02 17:36:45] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-02 17:36:45] 1: 174615624
+[2025-05-02 17:36:45] 174615624
+[2025-05-02 17:36:54] The list of recent transactions is displayed
+[2025-05-02 17:36:56] Writing 'Pass' to row 4, col 5
+[2025-05-02 17:36:57] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:36:57] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-02 17:37:02] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-02 17:37:03] Writing 'Pass' to row 6, col 5
+[2025-05-02 17:37:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:37:04] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-02 17:37:09] 
+[2025-05-02 17:37:09] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-02 17:37:09] 2: 182975435
+[2025-05-02 17:37:09] 182975435
+[2025-05-02 17:37:19] The list of recent transactions is displayed
+[2025-05-02 17:37:20] Writing 'Pass' to row 4, col 5
+[2025-05-02 17:37:21] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:37:21] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-02 17:37:26] Transaction detail verified for account: 2: 182975435 - ETB - STAF.
+[2025-05-02 17:37:27] Writing 'Pass' to row 6, col 5
+[2025-05-02 17:37:28] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:37:28] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-02 17:37:33] All account checks completed successfully
+[2025-05-02 17:37:33] My Account test compleated!
+[2025-05-02 17:37:33] 
+[2025-05-02 17:37:33] [Slow Popups in My Accounts]
+[2025-05-02 17:37:33] Transaction Detail Page(Nav back): 2.57s
+[2025-05-02 17:37:33] Transaction Detail Page: 2.57s
+[2025-05-02 17:37:33] USSD session cancelled successfully.
+[2025-05-02 17:37:35] .
+[2025-05-02 17:37:35] ----------------------------------------------------------------------
+[2025-05-02 17:37:35] Ran 1 test in 93.814s
+[2025-05-02 17:37:35] 
+[2025-05-02 17:37:35] OK
+[2025-05-02 17:37:35] 
+[2025-05-02 17:37:35] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-02 17:37:35] Transaction Detail Page(Nav back): 2.57s
+[2025-05-02 17:37:35] Transaction Detail Page: 2.57s
+[2025-05-02 17:37:35] 
+Test completed.
+
+[2025-05-02 17:39:25] 
+=================  New Test Started at 2025-05-02 17:39:25  =================
+
+[2025-05-02 17:39:37] Using Device ID: R9ZR601C18H
+[2025-05-02 17:39:37] Using Android Version: 12
+[2025-05-02 17:39:37] Using package: com.samsung.android.dialer
+[2025-05-02 17:39:37] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-02 17:39:37] Dialing USSD code (Attempt 1)...
+[2025-05-02 17:39:41] Expected USSD page matched.
+[2025-05-02 17:39:46] Input field detected
+[2025-05-02 17:39:51] Pin Enter Notification Detected
+[2025-05-02 17:39:56] Login successful.
+[2025-05-02 17:39:56] Found option: 1: My Accounts
+[2025-05-02 17:39:56] Found option: 2: Transfer
+[2025-05-02 17:39:56] Found option: 3: Transfer to Other Bank
+[2025-05-02 17:39:56] Found option: 4: Transfer to Own
+[2025-05-02 17:39:56] Found option: 5: Airtime
+[2025-05-02 17:39:56] Found option: 6: Utilities
+[2025-05-02 17:39:56] Found option: 7: Exchange Rates
+[2025-05-02 17:39:56] Found option: 8: More options
+[2025-05-02 17:39:56] Excel in the path is used
+[2025-05-02 17:39:57] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:39:58] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:39:58] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-02 17:39:58] End to end test
+[2025-05-02 17:39:58] Dialing USSD code (Attempt 1)...
+[2025-05-02 17:40:00] USSD session cancelled successfully.
+[2025-05-02 17:40:01] Expected USSD response not found. Retrying...
+[2025-05-02 17:40:03] Dialing USSD code (Attempt 2)...
+[2025-05-02 17:40:07] Expected USSD page matched.
+[2025-05-02 17:40:07] Input field detected
+[2025-05-02 17:40:11] Pin Enter Notification Detected
+[2025-05-02 17:40:16] Login successful.
+[2025-05-02 17:40:17] Found option: 1: My Accounts
+[2025-05-02 17:40:17] Found option: 2: Transfer
+[2025-05-02 17:40:17] Found option: 3: Transfer to Other Bank
+[2025-05-02 17:40:17] Found option: 4: Transfer to Own
+[2025-05-02 17:40:17] Found option: 5: Airtime
+[2025-05-02 17:40:17] Found option: 6: Utilities
+[2025-05-02 17:40:17] Found option: 7: Exchange Rates
+[2025-05-02 17:40:17] Found option: 8: More options
+[2025-05-02 17:40:18] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:40:19] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:40:19] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-02 17:40:23] Test for Ethio telecom topup
+[2025-05-02 17:40:23] 2073
+[2025-05-02 17:40:23] 0970951608
+[2025-05-02 17:40:23] Test for Airtime EthioTelecom..
+[2025-05-02 17:40:28] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:40:29] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:40:29] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-02 17:40:30] Processing account: 182975435
+[2025-05-02 17:40:34] Test for invalid ethio telecom phone number: 0712911008
+[2025-05-02 17:40:51] Detecting invalid ethio telecom phone number is pass for: 182975435
+[2025-05-02 17:40:52] Writing 'Pass' to row 16, col 5
+[2025-05-02 17:40:53] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:40:53] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-02 17:40:53] Test for valid ethio telecom phone number: 0970951608
+[2025-05-02 17:41:05] airtime confirmation pass for 182975435
+[2025-05-02 17:41:07] Writing 'Pass' to row 5, col 5
+[2025-05-02 17:41:08] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:41:08] Updated 'Airtime topup' sheet - rows [5] set to 'Pass'.
+[2025-05-02 17:41:08] Ethio Telecom Airtime Top up Test completed!
+[2025-05-02 17:41:09] USSD session cancelled successfully.
+[2025-05-02 17:41:09] Test for safaricom topup
+[2025-05-02 17:41:09] 2073
+[2025-05-02 17:41:09] 0712911008
+[2025-05-02 17:41:09] Dialing USSD code (Attempt 1)...
+[2025-05-02 17:41:12] USSD session cancelled successfully.
+[2025-05-02 17:41:13] Expected USSD response not found. Retrying...
+[2025-05-02 17:41:15] Dialing USSD code (Attempt 2)...
+[2025-05-02 17:41:18] USSD session cancelled successfully.
+[2025-05-02 17:41:19] Expected USSD response not found. Retrying...
+[2025-05-02 17:41:21] Dialing USSD code (Attempt 3)...
+[2025-05-02 17:41:32] Error waiting for USSD response: Message:
+[2025-05-02 17:41:32] Stacktrace:
+[2025-05-02 17:41:32] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-02 17:41:32] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-02 17:41:32] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-02 17:41:32] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-02 17:41:32] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-02 17:41:34] Dialing USSD code (Attempt 4)...
+[2025-05-02 17:41:37] Expected USSD page matched.
+[2025-05-02 17:41:37] Input field detected
+[2025-05-02 17:41:41] Pin Enter Notification Detected
+[2025-05-02 17:41:46] Login successful.
+[2025-05-02 17:41:46] Found option: 1: My Accounts
+[2025-05-02 17:41:46] Found option: 2: Transfer
+[2025-05-02 17:41:46] Found option: 3: Transfer to Other Bank
+[2025-05-02 17:41:46] Found option: 4: Transfer to Own
+[2025-05-02 17:41:46] Found option: 5: Airtime
+[2025-05-02 17:41:46] Found option: 6: Utilities
+[2025-05-02 17:41:46] Found option: 7: Exchange Rates
+[2025-05-02 17:41:46] Found option: 8: More options
+[2025-05-02 17:41:47] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:41:48] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:41:48] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-02 17:41:57] Test for Airtime Safaricom ..
+[2025-05-02 17:42:03] Writing 'Pass' to row 2, col 5
+[2025-05-02 17:42:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:42:04] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-02 17:42:04] Processing account: 182975435
+[2025-05-02 17:42:08] Test for invalid safaricom phone number validation: 0970951608
+[2025-05-02 17:42:23] Detecting Invalid phone number safaricom is pass for 182975435
+[2025-05-02 17:42:25] Writing 'Pass' to row 16, col 5
+[2025-05-02 17:42:26] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:42:26] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-02 17:42:26] Tesf for valid safaricom phone number: 0712911008
+[2025-05-02 17:42:37] airtime confirmation pass for 182975435
+[2025-05-02 17:42:39] Writing 'Pass' to row 12, col 5
+[2025-05-02 17:42:40] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-02 17:42:40] Updated 'Airtime topup' sheet - rows [12] set to 'Pass'.
+[2025-05-02 17:42:40] Safaricom Airtime Top Up Test transaction completed!
+[2025-05-02 17:42:41] USSD session cancelled successfully.
+[2025-05-02 17:42:42] .
+[2025-05-02 17:42:42] ----------------------------------------------------------------------
+[2025-05-02 17:42:42] Ran 1 test in 195.378s
+[2025-05-02 17:42:42] 
+[2025-05-02 17:42:42] OK
+[2025-05-02 17:42:42] 
+[2025-05-02 17:42:42] [Slow Popups in Air Time TopUp]
+[2025-05-02 17:42:42] Invalid Ethio Telecom Phone No page: 2.55s
+[2025-05-02 17:42:42] 
+[2025-05-02 17:42:42] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-02 17:42:42] Invalid Ethio Telecom Phone No page: 2.55s
+[2025-05-02 17:42:42] 
+Test completed.
+

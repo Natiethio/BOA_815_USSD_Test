@@ -38,13 +38,14 @@ class TestAppium(unittest.TestCase):
     # device_id      = sys.argv[1] if len(sys.argv) > 1 else "R9ZR601C18H"
     # android_ver    = sys.argv[2] if len(sys.argv) > 2 else "12"
     pin            = sys.argv[1] if len(sys.argv) > 1 else ""
-    account_number = sys.argv[2] if len(sys.argv) > 2 else "174615624"
-    amount         = sys.argv[3] if len(sys.argv) > 3 else "12"
-    etl_number   = sys.argv[4] if len(sys.argv) > 4 else "0970951608"
-    safaricom_number   = sys.argv[5] if len(sys.argv) > 5 else "0712911008"
-    bank_account = sys.argv[6] if len(sys.argv) > 6 else " "
-    bank_name = sys.argv[7] if len(sys.argv) > 7 else "1"
-
+    name           = sys.argv[2] if len(sys.argv) > 2 else "Sender Name"
+    account_number = sys.argv[3] if len(sys.argv) > 3 else "174615624"
+    amount         = sys.argv[4] if len(sys.argv) > 4 else "5"
+    etl_number   = sys.argv[5] if len(sys.argv) > 5 else "0970951608"
+    safaricom_number   = sys.argv[6] if len(sys.argv) > 6 else "0712911008"
+    bank_account = sys.argv[7] if len(sys.argv) > 7 else " "
+    bank_name = sys.argv[8] if len(sys.argv) > 8 else "CBE"
+    module_name = sys.argv[9] if len(sys.argv) > 9 else "All"
 
     def get_connected_device(self):
         try:
@@ -566,12 +567,27 @@ class TestAppium(unittest.TestCase):
         # Any other initialization can go here
     def test_app(self):
         try:
-            self.enter_pin_to_login()
-            my_account_opt = my_account(self)
-            # transfer_one = transfer(self)
-            # transfer_otherbank = otherbank(self)
-            # transfer_toown = transfer_to_own_account(self)
-            # airtimeres = airtime(self)
+            # self.enter_pin_to_login()
+            if self.module_name == "1":
+                my_account_opt = my_account(self)  
+            elif self.module_name == "2":  
+                transfer_one = transfer(self)  
+            elif self.module_name == "3":  
+                transfer_otherbank = otherbank(self)  
+            elif self.module_name == "4":  
+                transfer_toown = transfer_to_own_account(self)  
+            elif self.module_name == "5":  
+                airtimeres = airtime(self)  
+            # elif self.module_name == "6":  
+            #     utilities = utilities(self)  
+            else:
+                print("End to end test")  
+                self.enter_pin_to_login()
+                # my_account_opt = my_account(self)
+                # # transfer_one = transfer(self)
+                # # transfer_otherbank = otherbank(self)
+                # # transfer_toown = transfer_to_own_account(self)
+                airtimeres = airtime(self)
 
             if self.all_slow_popups:
                 print("\n========= Cumulative Delayed USSD Pages ( > 2.5s ) =========")

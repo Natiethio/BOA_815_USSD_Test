@@ -23,7 +23,7 @@ def airtime_topup_for_ethio_telecom(self):
     print(self.pin)
     print(self.etl_number)
 
-    self.enter_pin_to_login()
+    # self.enter_pin_to_login()
 
     if not airtime_helper(self):
         print("No home page found")

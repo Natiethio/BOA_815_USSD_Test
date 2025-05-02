@@ -1,0 +1,12 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.57 seconds
+Home Page page appeared in => 1.89 seconds
+My BOA Accounts Lists Page page appeared in => 1.76 seconds
+Transactions List Page page appeared in => 2.26 seconds
+Transaction Detail Page page appeared in => 2.06 seconds
+Transaction Detail Page(Nav back) page appeared in => 2.57 seconds
+Transactions List Page page appeared in => 2.36 seconds
+Transaction Detail Page page appeared in => 2.57 seconds
+Transaction Detail Page(Nav back) page appeared in => 1.63 seconds

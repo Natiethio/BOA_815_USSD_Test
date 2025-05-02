@@ -23,22 +23,24 @@ root.title("815 USSD Test Runner")
 
 
 def center_window(root, width, height):
+    root.update_idletasks()
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
 
-    x = int((screen_width / 2) - (width / 2))
-    y = int((screen_height / 2) - (height / 2))
+    x = int((screen_width // 2) - (width // 2))
+    y = int((screen_height // 2) - (height // 2))
 
     root.geometry(f"{width}x{height}+{x}+{y}")
+    root.update()
 
-center_window(root, 1300, 600)
+center_window(root, 1300, 650)
 
-logo_color = "#FFA500"  # Example color (orange-yellow)
+logo_color = "#FFA500" 
 
 appium_process = None
 
-# Left and Right Frames with grid layout for better control
-left_frame = ctk.CTkFrame(root, fg_color="#f5f5f5")  # Set background color to avoid gray
+
+left_frame = ctk.CTkFrame(root, fg_color="#f5f5f5") 
 left_frame.grid(row=0, column=0, padx=10, pady=20, sticky="nswe")
 
 right_frame = ctk.CTkFrame(root, fg_color="#f5f5f5")  
@@ -128,7 +130,7 @@ start_appium_server()
 
 try:
     logo_img = Image.open(resource_path('logo.png'))
-    logo_img = logo_img.resize((300, 130), Image.LANCZOS)
+    logo_img = logo_img.resize((300, 110), Image.LANCZOS)
     tk_logo = ImageTk.PhotoImage(logo_img)
     logo_label = tk.Label(left_frame, image=tk_logo, bg="#f5f5f5", borderwidth=0, highlightthickness=0)
     logo_label.pack(pady=(0, 20))
@@ -155,36 +157,100 @@ bank_options = {
     "Dashen": "3",
 }
 
+test_options = {
+    "My Accounts" : "1",
+    "Transfer" : "2",
+    "Transfer to Other Bank" : "3",
+    "Transfer to Own" : "4",
+    "Airtime" : "5",
+    "Utilities" : "6",
+    # "Settings" : 7,
+}
 
 fields = {}
 
 
-def create_row(parent, label1, label2):
+def create_row(parent, label1, label2=None, addon_widgets=None):
     row = ctk.CTkFrame(parent, fg_color="transparent")
-    row.pack(fill="x", pady=15)
+    row.pack(fill="x", pady=11)
 
-    # ctk.CTkLabel(row, text=f"{label1}:", width=120, anchor="w").grid(row=0, column=0, padx=(5,2))
-    ctk.CTkLabel(row, text=f"{label1}:", width=120, anchor="w", font=("Arial", 15, "bold")).grid(row=0, column=0, padx=(5,2))
-    entry1 = ctk.CTkEntry(row, font=("Arial", 15), width=200, height=38, show="*" if label1 == "PIN" else None)
-    entry1.grid(row=0, column=1, padx=(2,5))
+    ctk.CTkLabel(row, text=f"{label1}:", width=120, anchor="w", font=("Arial", 15, "bold")).pack(side="left", padx=(5,2))
+    entry1 = ctk.CTkEntry(row, font=("Arial", 15), width=200, height=35, show="*" if label1 == "PIN" else None)
+    entry1.pack(side="left", padx=(2,5))
     fields[label1] = entry1
 
-    # ctk.CTkLabel(row, text=f"{label2}:", width=120, anchor="w").grid(row=0, column=2, padx=(20,2))
-    ctk.CTkLabel(row, text=f"{label2}:", width=120, anchor="w", font=("Arial", 15, "bold")).grid(row=0, column=2, padx=(20,2))
-    entry2 = ctk.CTkEntry(row, font=("Arial", 15), width=200, height=38)
-    entry2.grid(row=0, column=3, padx=(2,5))
-    fields[label2] = entry2
+    if label2:
+        ctk.CTkLabel(row, text=f"{label2}:", width=120, anchor="w", font=("Arial", 15, "bold")).pack(side="left", padx=(20,2))
+        entry2 = ctk.CTkEntry(row, font=("Arial", 15), width=200, height=35)
+        entry2.pack(side="left", padx=(2,5))
+        fields[label2] = entry2
+
+    if addon_widgets:
+        for widget in addon_widgets:
+            widget.pack(in_=row, side="left", padx=(10, 0))
+            # col += 1
+
+create_row(form_frame, "PIN", "Name")
+create_row(form_frame, "BOA Rec Act", "Amount")
+create_row(form_frame, "ETL Phone", "Safaricom Phone")
+
+
+modular_checkbox_var = tk.BooleanVar()
+modular_var = tk.StringVar(value="Select Module")
+
+
+bank_row = ctk.CTkFrame(form_frame, fg_color="transparent")
+bank_row.pack(fill="x", pady=11)
+
+ctk.CTkLabel(bank_row, text="Bank Account:", width=120, anchor="w", font=("Arial", 15, "bold")).pack(side="left", padx=(5, 2))
+bank_entry = ctk.CTkEntry(bank_row, font=("Arial", 15), width=200, height=35)
+bank_entry.pack(side="left", padx=(2, 5))
+fields["Bank Account"] = bank_entry
+
+modular_checkbox = ctk.CTkCheckBox(
+    bank_row,
+    # master=None,
+    text="Modular Test",
+    variable=modular_checkbox_var,
+    font=("Arial", 15, "bold"),
+    onvalue=True,
+    offvalue=False,
+    fg_color=logo_color,
+    hover_color=logo_color
+)
+
+modular_checkbox.pack(side="left", padx=(10, 0))
+
+modular_dropdown = ctk.CTkOptionMenu(
+    # form_frame,
+    bank_row,
+    variable=modular_var,
+    # values=["My Accounts", "Transfer", "Transfer Within BOA", "Transfer To Other Bank", "Air Time", "Utilities"],
+    values=list(test_options.keys()),
+    width=200,
+    font=("Arial", 15),
+    fg_color=logo_color,
+    button_color=logo_color,
+    button_hover_color=logo_color,
+    text_color="white"
+)
+
+modular_dropdown.pack_forget() 
+
+def toggle_modular_dropdown():
+    if modular_checkbox_var.get():
+        modular_dropdown.pack(side="left", pady=3, ipady=4, padx=(10, 0))
+        # modular_dropdown.pack(in_=modular_checkbox.master, side="left", padx=(10, 0))
+    else:
+        modular_dropdown.pack_forget()
+
+modular_checkbox.configure(command=toggle_modular_dropdown)
+# create_row(form_frame, "Bank Account")
 
 
 
-create_row(form_frame, "PIN", "BOA Rec Act")
-create_row(form_frame, "Amount", "ETL Phone")
-create_row(form_frame, "Safaricom Phone", "Bank Account")
+# create_row(form_frame, "Bank Account", addon_widgets=[modular_checkbox, modular_dropdown])
 
-
-
- 
-# ctk.CTkLabel(form_frame, text="Select Bank:").pack(anchor="w", pady=(10, 0))
 
 ctk.CTkLabel(form_frame, text="Select Bank:", font=("Arial", 15, "bold")).pack(anchor="w", pady=(10, 0))
 
@@ -194,23 +260,22 @@ bank_dropdown = ctk.CTkOptionMenu(
     form_frame,  
     variable=bank_var,
     values=list(bank_options.keys()),
-    width=300,  # match other input widths
-    font=("Arial", 15),
+    width=300,  
+    font=("Arial", 15, "bold"),
     fg_color=logo_color,
     button_color=logo_color,
     button_hover_color=logo_color,
     text_color="white",
 )
 
-    # bank_dropdown.configure(width=450, font=("Arial", 12), bg_color=logo_color, button_color=logo_color)
-    # bank_dropdown.pack(side="left", padx=5)
-# bank_dropdown.pack(pady=4, ipady=6)
 bank_dropdown.pack(anchor="w", pady=4, ipady=6) 
-
 
 
 def is_valid_numeric(value):
     return value.isdigit()
+
+def is_valid_alphabet(value):
+    return value.isalpha()
 
 def stop_test_process():
     global test_process
@@ -230,13 +295,33 @@ def run_test_in_thread():
     try:
        log_output.delete("1.0", tk.END)
        values = {label: entry.get().strip() for label, entry in fields.items()}
-
-       if not bank_options[bank_var.get()]:
-         messagebox.showerror("All values are required")
-         return
        
        values["Bank"] = bank_options[bank_var.get()]
-    #    print(values)
+
+       if not all(values.get(field) for field in ["PIN", "BOA Rec Act", "ETL Phone", "Safaricom Phone", "Amount", "Bank Account"]):
+            messagebox.showerror("Input Error", "All required fields must be filled.")
+            return
+
+    #    if not all(values.values()):
+    #         messagebox.showerror("Input Error", "All fields are required.")
+    #         return
+
+       if not bank_options[bank_var.get()]:
+          messagebox.showerror("All fields are required")
+          return
+       
+    #    print(test_options[modular_var.get()])
+
+       if modular_checkbox_var.get() and not test_options[modular_var.get()]:
+           messagebox.showerror("Input Error", "Module Name is required when Modular Test is selected.")
+           return
+       
+       if modular_checkbox_var.get():
+           values["Module Name"] = test_options[modular_var.get()]
+
+
+       
+       print(values)
        script_path = resource_path("test_app.py")
     #    script_path = resource_path("test_runner.exe")
 
@@ -281,7 +366,6 @@ def run_test_in_thread():
             write_to_logfile("\nTest completed.\n")
 
     except Exception as e:
-        # messagebox.showerror("Input Error", "All fields are required.")
         log_output.insert(tk.END, f"\nError running test: {e}\n")
         write_to_logfile(f"\nError running test: {e}\n")
         
@@ -303,6 +387,8 @@ def write_to_logfile(message):
     with open(log_file_path, "a", encoding="utf-8") as f:
         f.write(f"{timestamp} {message}\n")
 
+def validate_BOA_Account(account):
+    return len(account) >= 8
 
 def validate_cbe(account):
     return len(account) == 13 and account.startswith("1000")
@@ -313,16 +399,23 @@ def validate_awash(account):
 def validate_dashen(account):
     return account.startswith("234")
 
+def validate_ETL(phone):
+    return len(phone) == 10 and phone.startswith("09")
 
+def validate_Saf(phone):
+    return len(phone) == 10 and phone.startswith("07")
+
+def validate_Pin(pin):
+    return len(pin) == 4
+
+# def validate_Modulename(module):
+    
 
 run_row_frame = ctk.CTkFrame(left_frame, fg_color="transparent")
 run_row_frame.pack(pady=20)
 
-# Spinner image (use CTkImage for CustomTkinter compatibility)
 spinner_path = resource_path("spinner2.gif")
 
-
-# Load spinner GIF and extract all frames
 spinner_image_raw = Image.open(spinner_path)
 spinner_frames = []
 
@@ -341,12 +434,8 @@ spinner_ctk = CTkImage(light_image=spinner_image_raw, size=(30, 30))  # adjust s
 
 spinner_label = ctk.CTkLabel(run_row_frame, text="", image=spinner_ctk)
 spinner_label.pack(side="left", padx=(10, 0))
-spinner_label.pack_forget()  # Hide initially
-
-# Frame that holds both the Run Test button and the spinner
-# run_row_frame = ctk.CTkFrame(left_frame)
-# run_row_frame.pack(pady=10)  
-
+spinner_label.pack_forget() 
+ 
 
 def run_test():
     global test_process
@@ -364,19 +453,52 @@ def run_test():
         messagebox.showerror("Input Error", "All fields are required.")
         return
 
-    for label in ["PIN", "BOA Rec Act", "ETL Phone", "Bank Account"]:
+    for label in ["PIN", "BOA Rec Act", "ETL Phone", "Safaricom Phone", "Amount", "Bank Account"]:
         if not is_valid_numeric(values[label]):
-            messagebox.showerror("Validation Error", f"{label} must contain only numbers.")
+            messagebox.showerror("Validation Error", f"{label} must contain only numbers")
             return
+    
+    
+    for label in ["PIN"]:
+        if not validate_Pin(values[label]):
+            messagebox.showerror("Validation Error", f"{label} must contain only only four characters")
+            return
+        
+    for label in ["Name"]:
+        if not is_valid_alphabet(values[label]):
+            messagebox.showerror("Validation Error", f"{label} must contain only alphabetic characters")
+            return
+        
+    for label in ["BOA Rec Act"]:
+        if not validate_BOA_Account(values[label]):
+            messagebox.showerror("Validation Error", "Invalid BOA Receiver Account")
+            return
+        
+    for label in ["ETL Phone"]:
+        if not validate_ETL(values[label]):
+            messagebox.showerror("Validation Error", "Invalid ethio telecom number")
+            return
+        
+    for label in ["Safaricom Phone"]:
+        if not validate_Saf(values[label]):
+            messagebox.showerror("Validation Error",  "Invalid safaricom number")
+            return
+        
+    # for label in ["Module Name"]:
+    #     if not validate_Modulename(values[label]):
+    #         messagebox.showerror("Validation Error",  "Invalid Module Name")
+    #         return
+
+    # if modular_checkbox_var.get() and not test_options[modular_var.get()]:
+    #        messagebox.showerror("Input Error", "Module Name is required when Modular Test is selected.")
+    #        return
 
     selected_bank = bank_var.get()
     bank_account = values["Bank Account"]
 
-
     if selected_bank == "Select Bank":
         messagebox.showerror("Validation Error", "Please select a Bank.")
         return
-    
     elif selected_bank == "CBE" and not validate_cbe(bank_account):
         messagebox.showerror("Validation Error", "Invalid CBE Account.")
         return
@@ -395,8 +517,8 @@ def run_test():
 
     run_button.configure(
     state="disabled", 
-    fg_color="#ffe066",     # soft yellow
-    text_color="#ffffff"     # dark text while disabled (optional)
+    fg_color="#ffe066",   
+    text_color="#ffffff"     
     )
     spinner_label.pack(side="left", padx=(10, 0))
 
@@ -405,8 +527,6 @@ def run_test():
     spinner_frame_index = 0
     animate_spinner()
 
-
-    # threading.Thread(target=run_test_in_thread).start()
 
     threading.Thread(target=run_test_in_thread, daemon=True).start()
 
@@ -423,10 +543,7 @@ run_button = ctk.CTkButton(
     height=40,
     corner_radius=8,
     command=run_test
-    # command=lambda: threading.Thread(target=run_test, daemon=True).start()
 )
-# run_button.pack(pady=15)
-# run_button.pack(pady=15)
 run_button.pack(side="left")
 
 # btn = tb.Button(left_frame, text="Run Test", bootstyle=SUCCESS, command=run_test)
@@ -458,7 +575,7 @@ root.mainloop()
 
 
 
-#pyinstaller --onefile --noconsole --add-data "test_app2.py;." --add-data "logo.png;." --add-data "USSD_Test_Script.xlsx;." --icon=logo_icon.ico --name="ussd_tester" boa_ussd_test_gui.py
+# pyinstaller --onefile --noconsole --add-data "test_app2.py;." --add-data "logo.png;." --add-data "USSD_Test_Script.xlsx;." --icon=logo_icon.ico --name="ussd_tester" boa_ussd_test_gui.py
 
 # pyinstaller --onefile --noconsole --add-data "ATM_Withdrawal;ATM_Withdrawal" --add-data "Helpers;Helpers" --add-data "USSD_Test_Script.xlsx;." --name "test_runner"  test_app2.py
 

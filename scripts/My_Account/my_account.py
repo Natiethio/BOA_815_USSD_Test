@@ -14,7 +14,8 @@ from openpyxl import load_workbook
 
 def my_account(self):
             try:
-
+                self.enter_pin_to_login()
+                
                 input_field = WebDriverWait(self.driver,20).until(
                     EC.presence_of_element_located((AppiumBy.XPATH, "//android.widget.EditText[@resource-id='com.android.phone:id/input_field']"))
                 )
