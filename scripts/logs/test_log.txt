@@ -1,0 +1,1065 @@
+[2025-04-25 11:49:46] BOA USSD Login Notification Detected
+[2025-04-25 11:49:47] Input field detected
+[2025-04-25 11:49:50] Pin Enter Notification Detected
+[2025-04-25 11:49:56] Login successful.
+[2025-04-25 11:49:56] Found option: 1: My Accounts
+[2025-04-25 11:49:56] Found option: 2: Transfer
+[2025-04-25 11:49:56] Found option: 3: Transfer to Other Bank
+[2025-04-25 11:49:56] Found option: 4: Transfer to Own
+[2025-04-25 11:49:56] Found option: 5: Airtime
+[2025-04-25 11:49:56] Found option: 6: Utilities
+[2025-04-25 11:49:56] Found option: 7: Exchange Rates
+[2025-04-25 11:49:56] Found option: 8: More options
+[2025-04-25 11:49:58] Writing 'Pass' to row 2, col 7
+[2025-04-25 11:49:59] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 11:49:59] Test for Transfer..
+[2025-04-25 11:50:07] Test for Atm With drawal ..
+[2025-04-25 11:50:12] USSD Message: ATM withdrawal
+[2025-04-25 11:50:12] 1: 174615624 - ETB - Apollo
+[2025-04-25 11:50:12] 2: 182975435 - ETB - STAFF
+[2025-04-25 11:50:12] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 11:50:12] 
+[2025-04-25 11:50:12] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 11:50:16] USSD Message: 174615624
+[2025-04-25 11:50:16] Info moneysend from 174615624 for +251970951608
+[2025-04-25 11:50:16] Enter Amount(multiple of 100)
+[2025-04-25 11:50:21] USSD Message: Please Confirm
+[2025-04-25 11:50:21] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 11:50:21] Amount(multiple of 100): 100
+[2025-04-25 11:50:21] 1: Yes
+[2025-04-25 11:50:21] 2: No
+[2025-04-25 11:50:24] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 11:50:25] Writing 'Pass' to row 12, col 7
+[2025-04-25 11:50:26] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 11:50:31] USSD Message: ATM withdrawal
+[2025-04-25 11:50:31] 1: 174615624 - ETB - Apollo
+[2025-04-25 11:50:31] 2: 182975435 - ETB - STAFF
+[2025-04-25 11:50:31] ATM withdrawal
+[2025-04-25 11:50:31] 1: 174615624 - ETB - Apollo
+[2025-04-25 11:50:31] 2: 182975435 - ETB - STAFF
+[2025-04-25 11:50:31] Failed to return to ATM withdrawal menu for next account
+[2025-04-25 11:50:31] Error: print() got an unexpected keyword argument 'flash'. Did you mean 'flush'?
+[2025-04-25 11:50:32] F
+[2025-04-25 11:50:32] ======================================================================
+[2025-04-25 11:50:32] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 11:50:32] ----------------------------------------------------------------------
+[2025-04-25 11:50:32] Traceback (most recent call last):
+[2025-04-25 11:50:32] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 996, in test_app
+[2025-04-25 11:50:32] transfer = self.transfer()
+[2025-04-25 11:50:32] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 454, in transfer
+[2025-04-25 11:50:32] atm_withdrawal(self)
+[2025-04-25 11:50:32] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 11:50:32] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 126, in atm_withdrawal
+[2025-04-25 11:50:32] print("ATM transfer for all account Compleated", flash=True)
+[2025-04-25 11:50:32] ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 11:50:32] TypeError: print() got an unexpected keyword argument 'flash'. Did you mean 'flush'?
+[2025-04-25 11:50:32] 
+[2025-04-25 11:50:32] During handling of the above exception, another exception occurred:
+[2025-04-25 11:50:32] 
+[2025-04-25 11:50:32] Traceback (most recent call last):
+[2025-04-25 11:50:32] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 999, in test_app
+[2025-04-25 11:50:32] self.fail("USSD process failed.")
+[2025-04-25 11:50:32] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 11:50:32] AssertionError: USSD process failed.
+[2025-04-25 11:50:32] 
+[2025-04-25 11:50:32] ----------------------------------------------------------------------
+[2025-04-25 11:50:32] Ran 1 test in 67.870s
+[2025-04-25 11:50:32] 
+[2025-04-25 11:50:32] FAILED (failures=1)
+[2025-04-25 11:50:32] 
+Test completed.
+
+[2025-04-25 12:05:10] 
+================================  New Test Started at 2025-04-25 12:05:10  ================================
+
+[2025-04-25 12:05:24] Hello this is atm_withdrawal ext
+[2025-04-25 12:05:24] Dialing USSD code (Attempt 1)...
+[2025-04-25 12:05:29] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 12:05:29] 1: Login
+[2025-04-25 12:05:29] 2: Exit
+[2025-04-25 12:05:29] Expected USSD page matched.
+[2025-04-25 12:05:34] BOA USSD Login Notification Detected
+[2025-04-25 12:05:34] Input field detected
+[2025-04-25 12:05:38] Pin Enter Notification Detected
+[2025-04-25 12:05:45] Login successful.
+[2025-04-25 12:05:45] Found option: 1: My Accounts
+[2025-04-25 12:05:45] Found option: 2: Transfer
+[2025-04-25 12:05:45] Found option: 3: Transfer to Other Bank
+[2025-04-25 12:05:45] Found option: 4: Transfer to Own
+[2025-04-25 12:05:45] Found option: 5: Airtime
+[2025-04-25 12:05:45] Found option: 6: Utilities
+[2025-04-25 12:05:45] Found option: 7: Exchange Rates
+[2025-04-25 12:05:45] Found option: 8: More options
+[2025-04-25 12:05:46] Writing 'Pass' to row 2, col 7
+[2025-04-25 12:05:47] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 12:05:47] Test for Transfer..
+[2025-04-25 12:05:55] Test for Atm With drawal ..
+[2025-04-25 12:06:00] USSD Message: ATM withdrawal
+[2025-04-25 12:06:00] 1: 174615624 - ETB - Apollo
+[2025-04-25 12:06:00] 2: 182975435 - ETB - STAFF
+[2025-04-25 12:06:00] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 12:06:00] 
+[2025-04-25 12:06:00] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 12:06:04] USSD Message: 174615624
+[2025-04-25 12:06:04] Info moneysend from 174615624 for +251970951608
+[2025-04-25 12:06:04] Enter Amount(multiple of 100)
+[2025-04-25 12:06:08] USSD Message: Please Confirm
+[2025-04-25 12:06:08] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 12:06:08] Amount(multiple of 100): 100
+[2025-04-25 12:06:08] 1: Yes
+[2025-04-25 12:06:08] 2: No
+[2025-04-25 12:06:12] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 12:06:13] Writing 'Pass' to row 12, col 7
+[2025-04-25 12:06:14] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 12:06:19] USSD Message: ATM withdrawal
+[2025-04-25 12:06:19] 1: 174615624 - ETB - Apollo
+[2025-04-25 12:06:19] 2: 182975435 - ETB - STAFF
+[2025-04-25 12:06:19] ATM withdrawal
+[2025-04-25 12:06:19] 1: 174615624 - ETB - Apollo
+[2025-04-25 12:06:19] 2: 182975435 - ETB - STAFF
+[2025-04-25 12:06:19] 
+[2025-04-25 12:06:19] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 12:06:24] USSD Message: 182975435
+[2025-04-25 12:06:24] Info moneysend from 182975435 for +251970951608
+[2025-04-25 12:06:24] Enter Amount(multiple of 100)
+[2025-04-25 12:06:28] USSD Message: Please Confirm
+[2025-04-25 12:06:28] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 12:06:28] Amount(multiple of 100): 100
+[2025-04-25 12:06:28] 1: Yes
+[2025-04-25 12:06:28] 2: No
+[2025-04-25 12:06:30] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 12:06:32] Writing 'Pass' to row 12, col 7
+[2025-04-25 12:06:33] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 12:06:36] ATM transfer for all account Compleated
+[2025-04-25 12:06:39] .
+[2025-04-25 12:06:39] ----------------------------------------------------------------------
+[2025-04-25 12:06:39] Ran 1 test in 86.059s
+[2025-04-25 12:06:39] 
+[2025-04-25 12:06:39] OK
+[2025-04-25 12:06:39] 
+Test completed.
+
+[2025-04-25 14:13:27] 
+================================  New Test Started at 2025-04-25 14:13:27  ================================
+
+[2025-04-25 14:13:40] Hello this is atm_withdrawal ext
+[2025-04-25 14:13:40] Dialing USSD code (Attempt 1)...
+[2025-04-25 14:13:44] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 14:13:44] 1: Login
+[2025-04-25 14:13:44] 2: Exit
+[2025-04-25 14:13:44] Expected USSD page matched.
+[2025-04-25 14:13:49] BOA USSD Login Notification Detected
+[2025-04-25 14:13:50] Input field detected
+[2025-04-25 14:13:53] Pin Enter Notification Detected
+[2025-04-25 14:13:59] Login successful.
+[2025-04-25 14:13:59] Found option: 1: My Accounts
+[2025-04-25 14:13:59] Found option: 2: Transfer
+[2025-04-25 14:13:59] Found option: 3: Transfer to Other Bank
+[2025-04-25 14:13:59] Found option: 4: Transfer to Own
+[2025-04-25 14:13:59] Found option: 5: Airtime
+[2025-04-25 14:13:59] Found option: 6: Utilities
+[2025-04-25 14:13:59] Found option: 7: Exchange Rates
+[2025-04-25 14:13:59] Found option: 8: More options
+[2025-04-25 14:14:00] Writing 'Pass' to row 2, col 7
+[2025-04-25 14:14:02] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 14:14:02] Test for Transfer..
+[2025-04-25 14:14:09] Test for Atm With drawal ..
+[2025-04-25 14:14:14] USSD Message: ATM withdrawal
+[2025-04-25 14:14:14] 1: 174615624 - ETB - Apollo
+[2025-04-25 14:14:14] 2: 182975435 - ETB - STAFF
+[2025-04-25 14:14:14] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 14:14:14] 
+[2025-04-25 14:14:14] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 14:14:18] USSD Message: 174615624
+[2025-04-25 14:14:18] Info moneysend from 174615624 for +251970951608
+[2025-04-25 14:14:18] Enter Amount(multiple of 100)
+[2025-04-25 14:14:23] USSD Message: Please Confirm
+[2025-04-25 14:14:23] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 14:14:23] Amount(multiple of 100): 100
+[2025-04-25 14:14:23] 1: Yes
+[2025-04-25 14:14:23] 2: No
+[2025-04-25 14:14:25] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 14:14:27] Writing 'Pass' to row 12, col 7
+[2025-04-25 14:14:28] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 14:14:33] USSD Message: ATM withdrawal
+[2025-04-25 14:14:33] 1: 174615624 - ETB - Apollo
+[2025-04-25 14:14:33] 2: 182975435 - ETB - STAFF
+[2025-04-25 14:14:33] ATM withdrawal
+[2025-04-25 14:14:33] 1: 174615624 - ETB - Apollo
+[2025-04-25 14:14:33] 2: 182975435 - ETB - STAFF
+[2025-04-25 14:14:33] 
+[2025-04-25 14:14:33] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 14:14:37] USSD Message: 182975435
+[2025-04-25 14:14:37] Info moneysend from 182975435 for +251970951608
+[2025-04-25 14:14:37] Enter Amount(multiple of 100)
+[2025-04-25 14:14:41] USSD Message: Please Confirm
+[2025-04-25 14:14:42] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 14:14:42] Amount(multiple of 100): 100
+[2025-04-25 14:14:42] 1: Yes
+[2025-04-25 14:14:42] 2: No
+[2025-04-25 14:14:44] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 14:14:46] Writing 'Pass' to row 12, col 7
+[2025-04-25 14:14:47] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 14:14:50] ATM transfer for all account Compleated
+[2025-04-25 14:14:53] .
+[2025-04-25 14:14:53] ----------------------------------------------------------------------
+[2025-04-25 14:14:53] Ran 1 test in 85.156s
+[2025-04-25 14:14:53] 
+[2025-04-25 14:14:53] OK
+[2025-04-25 14:14:54] 
+Test completed.
+
+[2025-04-25 15:54:19] 
+================================  New Test Started at 2025-04-25 15:54:19  ================================
+
+[2025-04-25 15:54:39] Dialing USSD code (Attempt 1)...
+[2025-04-25 15:54:44] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 15:54:44] 1: Login
+[2025-04-25 15:54:44] 2: Exit
+[2025-04-25 15:54:45] Expected USSD page matched.
+[2025-04-25 15:54:47] BOA USSD Login Notification Detected
+[2025-04-25 15:54:48] Input field detected
+[2025-04-25 15:54:50] Pin Enter Notification Detected
+[2025-04-25 15:54:56] Received response: Please enter your PIN to login:
+[2025-04-25 15:54:56] Have you changed your PIN?
+[2025-04-25 15:54:56] Test for Transfer..
+[2025-04-25 15:54:57] Expected text not found: '1: My Accounts'
+[2025-04-25 15:54:57] Mismatch in expected output.
+[2025-04-25 15:55:02] Test for Atm With drawal ..
+[2025-04-25 15:55:02] No home page found retrying
+[2025-04-25 15:55:02] Test for Transfer..
+[2025-04-25 15:55:02] Expected text not found: '1: My Accounts'
+[2025-04-25 15:55:02] Mismatch in expected output.
+[2025-04-25 15:55:02] No home page found retrying
+[2025-04-25 15:55:02] Test for Transfer..
+[2025-04-25 17:29:13] 
+================================  New Test Started at 2025-04-25 17:29:13  ================================
+
+[2025-04-25 17:29:29] Dialing USSD code (Attempt 1)...
+[2025-04-25 17:29:34] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 17:29:34] 1: Login
+[2025-04-25 17:29:34] 2: Exit
+[2025-04-25 17:29:34] Expected USSD page matched.
+[2025-04-25 17:29:39] BOA USSD Login Notification Detected
+[2025-04-25 17:29:39] Input field detected
+[2025-04-25 17:29:42] Pin Enter Notification Detected
+[2025-04-25 17:29:48] Login successful.
+[2025-04-25 17:29:48] Found option: 1: My Accounts
+[2025-04-25 17:29:48] Found option: 2: Transfer
+[2025-04-25 17:29:48] Found option: 3: Transfer to Other Bank
+[2025-04-25 17:29:48] Found option: 4: Transfer to Own
+[2025-04-25 17:29:48] Found option: 5: Airtime
+[2025-04-25 17:29:48] Found option: 6: Utilities
+[2025-04-25 17:29:48] Found option: 7: Exchange Rates
+[2025-04-25 17:29:48] Found option: 8: More options
+[2025-04-25 17:29:49] Writing 'Pass' to row 2, col 7
+[2025-04-25 17:29:51] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 17:29:51] Test for Transfer..
+[2025-04-25 17:29:58] Test for Atm With drawal ..
+[2025-04-25 17:30:03] USSD Message: ATM withdrawal
+[2025-04-25 17:30:03] 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:03] 2: 182975435 - ETB - STAFF
+[2025-04-25 17:30:03] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 17:30:03] 
+[2025-04-25 17:30:03] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:07] USSD Message: 174615624
+[2025-04-25 17:30:07] Info moneysend from 174615624 for +251970951608
+[2025-04-25 17:30:07] Enter Amount(multiple of 100)
+[2025-04-25 17:30:12] USSD Message: Please Confirm
+[2025-04-25 17:30:12] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 17:30:12] Amount(multiple of 100): 100
+[2025-04-25 17:30:12] 1: Yes
+[2025-04-25 17:30:12] 2: No
+[2025-04-25 17:30:15] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:16] Writing 'Pass' to row 12, col 7
+[2025-04-25 17:30:17] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 17:30:22] USSD Message: ATM withdrawal
+[2025-04-25 17:30:22] 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:22] 2: 182975435 - ETB - STAFF
+[2025-04-25 17:30:22] ATM withdrawal
+[2025-04-25 17:30:22] 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:22] 2: 182975435 - ETB - STAFF
+[2025-04-25 17:30:22] 
+[2025-04-25 17:30:22] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 17:30:26] USSD Message: 182975435
+[2025-04-25 17:30:26] Info moneysend from 182975435 for +251970951608
+[2025-04-25 17:30:26] Enter Amount(multiple of 100)
+[2025-04-25 17:30:30] USSD Message: Please Confirm
+[2025-04-25 17:30:30] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 17:30:30] Amount(multiple of 100): 100
+[2025-04-25 17:30:30] 1: Yes
+[2025-04-25 17:30:30] 2: No
+[2025-04-25 17:30:33] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 17:30:34] Writing 'Pass' to row 12, col 7
+[2025-04-25 17:30:35] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 17:30:38] ATM negative scenario test started...
+[2025-04-25 17:30:38] 
+[2025-04-25 17:30:38] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 17:30:44] USSD Message: 174615624
+[2025-04-25 17:30:44] Info moneysend from 174615624 for +251970951608
+[2025-04-25 17:30:44] Enter Amount(multiple of 100)
+[2025-04-25 17:30:44] Starting negative test with 9000 birr
+[2025-04-25 17:30:52] USSD Message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 17:30:52] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 17:30:52] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 17:30:53] F
+[2025-04-25 17:30:53] ======================================================================
+[2025-04-25 17:30:53] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 17:30:53] ----------------------------------------------------------------------
+[2025-04-25 17:30:53] Traceback (most recent call last):
+[2025-04-25 17:30:53] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 17:30:53] transfer = self.transfer()
+[2025-04-25 17:30:53] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 17:30:53] atm_withdrawal(self)
+[2025-04-25 17:30:53] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 17:30:53] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 152, in atm_withdrawal
+[2025-04-25 17:30:53] if "Amount should not be greater than birr 8000".lower in message_text.lower:
+[2025-04-25 17:30:53] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 17:30:53] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 17:30:53] 
+[2025-04-25 17:30:53] During handling of the above exception, another exception occurred:
+[2025-04-25 17:30:53] 
+[2025-04-25 17:30:53] Traceback (most recent call last):
+[2025-04-25 17:30:53] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 892, in test_app
+[2025-04-25 17:30:53] self.fail("USSD process failed.")
+[2025-04-25 17:30:53] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 17:30:53] AssertionError: USSD process failed.
+[2025-04-25 17:30:53] 
+[2025-04-25 17:30:53] ----------------------------------------------------------------------
+[2025-04-25 17:30:53] Ran 1 test in 97.744s
+[2025-04-25 17:30:53] 
+[2025-04-25 17:30:53] FAILED (failures=1)
+[2025-04-25 17:30:53] 
+Test completed.
+
+[2025-04-25 18:05:34] 
+================================  New Test Started at 2025-04-25 18:05:34  ================================
+
+[2025-04-25 18:05:48] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:05:53] USSD Response: An error has occurred.
+[2025-04-25 18:05:54] Expected USSD response not found. Retrying...
+[2025-04-25 18:05:56] Dialing USSD code (Attempt 2)...
+[2025-04-25 18:06:00] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:06:00] 1: Login
+[2025-04-25 18:06:00] 2: Exit
+[2025-04-25 18:06:00] Expected USSD page matched.
+[2025-04-25 18:06:04] BOA USSD Login Notification Detected
+[2025-04-25 18:06:05] Input field detected
+[2025-04-25 18:06:08] Pin Enter Notification Detected
+[2025-04-25 18:06:14] Login successful.
+[2025-04-25 18:06:14] Found option: 1: My Accounts
+[2025-04-25 18:06:14] Found option: 2: Transfer
+[2025-04-25 18:06:14] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:06:14] Found option: 4: Transfer to Own
+[2025-04-25 18:06:14] Found option: 5: Airtime
+[2025-04-25 18:06:14] Found option: 6: Utilities
+[2025-04-25 18:06:14] Found option: 7: Exchange Rates
+[2025-04-25 18:06:14] Found option: 8: More options
+[2025-04-25 18:06:15] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:06:15] Error: [Errno 13] Permission denied: '../reports/USSD_Test_Script.xlsx'
+[2025-04-25 18:06:16] F
+[2025-04-25 18:06:16] ======================================================================
+[2025-04-25 18:06:16] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:06:16] ----------------------------------------------------------------------
+[2025-04-25 18:06:16] Traceback (most recent call last):
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:06:16] transfer = self.transfer()
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:06:16] atm_withdrawal(self)
+[2025-04-25 18:06:16] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 16, in atm_withdrawal
+[2025-04-25 18:06:16] self.enter_pin_to_login()
+[2025-04-25 18:06:16] ~~~~~~~~~~~~~~~~~~~~~~~^^
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 305, in enter_pin_to_login
+[2025-04-25 18:06:16] self.update_status("login", [2], "Pass", 7)
+[2025-04-25 18:06:16] ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 880, in update_status
+[2025-04-25 18:06:16] wb.save(file_path)
+[2025-04-25 18:06:16] ~~~~~~~^^^^^^^^^^^
+[2025-04-25 18:06:16] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+[2025-04-25 18:06:16] save_workbook(self, filename)
+[2025-04-25 18:06:16] ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+[2025-04-25 18:06:16] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+[2025-04-25 18:06:16] archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+[2025-04-25 18:06:16] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1367, in __init__
+[2025-04-25 18:06:16] self.fp = io.open(file, filemode)
+[2025-04-25 18:06:16] ~~~~~~~^^^^^^^^^^^^^^^^
+[2025-04-25 18:06:16] PermissionError: [Errno 13] Permission denied: '../reports/USSD_Test_Script.xlsx'
+[2025-04-25 18:06:16] 
+[2025-04-25 18:06:16] During handling of the above exception, another exception occurred:
+[2025-04-25 18:06:16] 
+[2025-04-25 18:06:16] Traceback (most recent call last):
+[2025-04-25 18:06:16] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:06:16] self.fail("USSD process failed.")
+[2025-04-25 18:06:16] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:06:16] AssertionError: USSD process failed.
+[2025-04-25 18:06:16] 
+[2025-04-25 18:06:16] ----------------------------------------------------------------------
+[2025-04-25 18:06:16] Ran 1 test in 40.073s
+[2025-04-25 18:06:16] 
+[2025-04-25 18:06:16] FAILED (failures=1)
+[2025-04-25 18:06:16] 
+Test completed.
+
+[2025-04-25 18:06:41] 
+================================  New Test Started at 2025-04-25 18:06:41  ================================
+
+[2025-04-25 18:06:51] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:06:54] USSD Response: An error has occurred.
+[2025-04-25 18:06:55] Expected USSD response not found. Retrying...
+[2025-04-25 18:06:57] Dialing USSD code (Attempt 2)...
+[2025-04-25 18:07:00] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:07:00] 1: Login
+[2025-04-25 18:07:00] 2: Exit
+[2025-04-25 18:07:00] Expected USSD page matched.
+[2025-04-25 18:07:05] BOA USSD Login Notification Detected
+[2025-04-25 18:07:06] Input field detected
+[2025-04-25 18:07:10] Pin Enter Notification Detected
+[2025-04-25 18:07:16] Login successful.
+[2025-04-25 18:07:16] Found option: 1: My Accounts
+[2025-04-25 18:07:16] Found option: 2: Transfer
+[2025-04-25 18:07:16] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:07:16] Found option: 4: Transfer to Own
+[2025-04-25 18:07:16] Found option: 5: Airtime
+[2025-04-25 18:07:16] Found option: 6: Utilities
+[2025-04-25 18:07:16] Found option: 7: Exchange Rates
+[2025-04-25 18:07:16] Found option: 8: More options
+[2025-04-25 18:07:17] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:07:18] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:07:18] Test for Transfer..
+[2025-04-25 18:07:26] Test for Atm With drawal ..
+[2025-04-25 18:07:30] USSD Message: ATM withdrawal
+[2025-04-25 18:07:30] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:07:30] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:07:30] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:07:30] 
+[2025-04-25 18:07:30] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:07:35] USSD Message: 174615624
+[2025-04-25 18:07:35] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:07:35] Enter Amount(multiple of 100)
+[2025-04-25 18:07:39] USSD Message: Please Confirm
+[2025-04-25 18:07:39] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 18:07:39] Amount(multiple of 100): 100
+[2025-04-25 18:07:39] 1: Yes
+[2025-04-25 18:07:39] 2: No
+[2025-04-25 18:07:42] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 18:07:43] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:07:44] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:07:49] USSD Message: ATM withdrawal
+[2025-04-25 18:07:49] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:07:49] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:07:49] ATM withdrawal
+[2025-04-25 18:07:49] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:07:49] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:07:49] 
+[2025-04-25 18:07:49] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 18:07:53] USSD Message: 182975435
+[2025-04-25 18:07:53] Info moneysend from 182975435 for +251970951608
+[2025-04-25 18:07:53] Enter Amount(multiple of 100)
+[2025-04-25 18:07:57] USSD Message: Please Confirm
+[2025-04-25 18:07:57] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 18:07:57] Amount(multiple of 100): 100
+[2025-04-25 18:07:57] 1: Yes
+[2025-04-25 18:07:57] 2: No
+[2025-04-25 18:08:00] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 18:08:01] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:08:02] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:08:05] ATM negative scenario test started...
+[2025-04-25 18:08:05] 
+[2025-04-25 18:08:05] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:08:11] USSD Message: 174615624
+[2025-04-25 18:08:11] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:08:11] Enter Amount(multiple of 100)
+[2025-04-25 18:08:11] Negative test with 9000 birr
+[2025-04-25 18:08:20] USSD Message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:08:20] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:08:20] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:08:21] F
+[2025-04-25 18:08:21] ======================================================================
+[2025-04-25 18:08:21] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:08:21] ----------------------------------------------------------------------
+[2025-04-25 18:08:21] Traceback (most recent call last):
+[2025-04-25 18:08:21] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:08:21] transfer = self.transfer()
+[2025-04-25 18:08:21] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:08:21] atm_withdrawal(self)
+[2025-04-25 18:08:21] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:08:21] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 153, in atm_withdrawal
+[2025-04-25 18:08:21] if "Amount should not be greater than birr 8000".lower in message_text.lower:
+[2025-04-25 18:08:21] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:08:21] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:08:21] 
+[2025-04-25 18:08:21] During handling of the above exception, another exception occurred:
+[2025-04-25 18:08:21] 
+[2025-04-25 18:08:21] Traceback (most recent call last):
+[2025-04-25 18:08:21] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:08:21] self.fail("USSD process failed.")
+[2025-04-25 18:08:21] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:08:21] AssertionError: USSD process failed.
+[2025-04-25 18:08:21] 
+[2025-04-25 18:08:21] ----------------------------------------------------------------------
+[2025-04-25 18:08:21] Ran 1 test in 98.740s
+[2025-04-25 18:08:21] 
+[2025-04-25 18:08:21] FAILED (failures=1)
+[2025-04-25 18:08:21] 
+Test completed.
+
+[2025-04-25 18:10:10] 
+================================  New Test Started at 2025-04-25 18:10:10  ================================
+
+[2025-04-25 18:10:22] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:10:33] Error waiting for USSD response: Message:
+[2025-04-25 18:10:33] Stacktrace:
+[2025-04-25 18:10:33] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-25 18:10:33] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-25 18:10:33] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-25 18:10:33] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-25 18:10:33] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-25 18:10:35] Dialing USSD code (Attempt 2)...
+[2025-04-25 18:10:39] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:10:39] 1: Login
+[2025-04-25 18:10:39] 2: Exit
+[2025-04-25 18:10:39] Expected USSD page matched.
+[2025-04-25 18:10:44] BOA USSD Login Notification Detected
+[2025-04-25 18:10:45] Input field detected
+[2025-04-25 18:10:48] Pin Enter Notification Detected
+[2025-04-25 18:10:54] Login successful.
+[2025-04-25 18:10:54] Found option: 1: My Accounts
+[2025-04-25 18:10:54] Found option: 2: Transfer
+[2025-04-25 18:10:54] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:10:54] Found option: 4: Transfer to Own
+[2025-04-25 18:10:54] Found option: 5: Airtime
+[2025-04-25 18:10:54] Found option: 6: Utilities
+[2025-04-25 18:10:54] Found option: 7: Exchange Rates
+[2025-04-25 18:10:54] Found option: 8: More options
+[2025-04-25 18:10:55] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:10:56] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:10:56] Test for Transfer..
+[2025-04-25 18:11:04] Test for Atm With drawal ..
+[2025-04-25 18:11:08] USSD Message: ATM withdrawal
+[2025-04-25 18:11:08] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:08] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:11:08] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:11:08] 
+[2025-04-25 18:11:08] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:13] USSD Message: 174615624
+[2025-04-25 18:11:13] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:11:13] Enter Amount(multiple of 100)
+[2025-04-25 18:11:18] USSD Message: Please Confirm
+[2025-04-25 18:11:18] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 18:11:18] Amount(multiple of 100): 100
+[2025-04-25 18:11:18] 1: Yes
+[2025-04-25 18:11:18] 2: No
+[2025-04-25 18:11:20] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:21] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:11:23] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:11:27] USSD Message: ATM withdrawal
+[2025-04-25 18:11:27] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:27] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:11:27] ATM withdrawal
+[2025-04-25 18:11:27] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:27] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:11:27] 
+[2025-04-25 18:11:27] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 18:11:32] USSD Message: 182975435
+[2025-04-25 18:11:32] Info moneysend from 182975435 for +251970951608
+[2025-04-25 18:11:32] Enter Amount(multiple of 100)
+[2025-04-25 18:11:36] USSD Message: Please Confirm
+[2025-04-25 18:11:36] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 18:11:36] Amount(multiple of 100): 100
+[2025-04-25 18:11:36] 1: Yes
+[2025-04-25 18:11:36] 2: No
+[2025-04-25 18:11:39] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 18:11:40] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:11:41] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:11:44] ATM negative scenario test started...
+[2025-04-25 18:11:44] 
+[2025-04-25 18:11:44] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:11:50] USSD Message: 174615624
+[2025-04-25 18:11:50] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:11:50] Enter Amount(multiple of 100)
+[2025-04-25 18:11:50] Negative test with 9000 birr
+[2025-04-25 18:11:58] USSD Message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:11:58] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:11:58] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:11:59] F
+[2025-04-25 18:11:59] ======================================================================
+[2025-04-25 18:11:59] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:11:59] ----------------------------------------------------------------------
+[2025-04-25 18:11:59] Traceback (most recent call last):
+[2025-04-25 18:11:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:11:59] transfer = self.transfer()
+[2025-04-25 18:11:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:11:59] atm_withdrawal(self)
+[2025-04-25 18:11:59] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:11:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 153, in atm_withdrawal
+[2025-04-25 18:11:59] if "Amount should not be greater than birr 8000".lower in message_text.lower:
+[2025-04-25 18:11:59] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:11:59] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:11:59] 
+[2025-04-25 18:11:59] During handling of the above exception, another exception occurred:
+[2025-04-25 18:11:59] 
+[2025-04-25 18:11:59] Traceback (most recent call last):
+[2025-04-25 18:11:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:11:59] self.fail("USSD process failed.")
+[2025-04-25 18:11:59] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:11:59] AssertionError: USSD process failed.
+[2025-04-25 18:11:59] 
+[2025-04-25 18:11:59] ----------------------------------------------------------------------
+[2025-04-25 18:11:59] Ran 1 test in 105.299s
+[2025-04-25 18:11:59] 
+[2025-04-25 18:11:59] FAILED (failures=1)
+[2025-04-25 18:11:59] 
+Test completed.
+
+[2025-04-25 18:25:32] 
+================================  New Test Started at 2025-04-25 18:25:32  ================================
+
+[2025-04-25 18:25:43] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:25:47] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:25:47] 1: Login
+[2025-04-25 18:25:47] 2: Exit
+[2025-04-25 18:25:47] Expected USSD page matched.
+[2025-04-25 18:25:52] BOA USSD Login Notification Detected
+[2025-04-25 18:25:53] Input field detected
+[2025-04-25 18:25:56] Pin Enter Notification Detected
+[2025-04-25 18:26:02] Login successful.
+[2025-04-25 18:26:02] Found option: 1: My Accounts
+[2025-04-25 18:26:02] Found option: 2: Transfer
+[2025-04-25 18:26:02] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:26:02] Found option: 4: Transfer to Own
+[2025-04-25 18:26:02] Found option: 5: Airtime
+[2025-04-25 18:26:02] Found option: 6: Utilities
+[2025-04-25 18:26:02] Found option: 7: Exchange Rates
+[2025-04-25 18:26:02] Found option: 8: More options
+[2025-04-25 18:26:03] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:26:04] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:26:04] Test for Transfer..
+[2025-04-25 18:26:12] Test for Atm With drawal ..
+[2025-04-25 18:26:16] USSD Message: ATM withdrawal
+[2025-04-25 18:26:16] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:16] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:26:16] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:26:16] 
+[2025-04-25 18:26:16] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:21] USSD Message: 174615624
+[2025-04-25 18:26:21] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:26:21] Enter Amount(multiple of 100)
+[2025-04-25 18:26:25] USSD Message: Please Confirm
+[2025-04-25 18:26:25] Get Info for moneysend from 174615624 for +251970951608.
+[2025-04-25 18:26:25] Amount(multiple of 100): 100
+[2025-04-25 18:26:25] 1: Yes
+[2025-04-25 18:26:25] 2: No
+[2025-04-25 18:26:27] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:29] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:26:30] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:26:35] USSD Message: ATM withdrawal
+[2025-04-25 18:26:35] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:35] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:26:35] ATM withdrawal
+[2025-04-25 18:26:35] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:35] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:26:35] 
+[2025-04-25 18:26:35] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 18:26:39] USSD Message: 182975435
+[2025-04-25 18:26:39] Info moneysend from 182975435 for +251970951608
+[2025-04-25 18:26:39] Enter Amount(multiple of 100)
+[2025-04-25 18:26:44] USSD Message: Please Confirm
+[2025-04-25 18:26:44] Get Info for moneysend from 182975435 for +251970951608.
+[2025-04-25 18:26:44] Amount(multiple of 100): 100
+[2025-04-25 18:26:44] 1: Yes
+[2025-04-25 18:26:44] 2: No
+[2025-04-25 18:26:46] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 18:26:47] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:26:48] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:26:52] ATM negative scenario test started...
+[2025-04-25 18:26:52] 
+[2025-04-25 18:26:52] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:26:57] USSD Message: 174615624
+[2025-04-25 18:26:57] Info moneysend from 174615624 for +251970951608
+[2025-04-25 18:26:57] Enter Amount(multiple of 100)
+[2025-04-25 18:26:57] Negative test with 9000 birr
+[2025-04-25 18:27:06] USSD Message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:27:06] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:27:06] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:27:07] F
+[2025-04-25 18:27:07] ======================================================================
+[2025-04-25 18:27:07] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:27:07] ----------------------------------------------------------------------
+[2025-04-25 18:27:07] Traceback (most recent call last):
+[2025-04-25 18:27:07] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:27:07] transfer = self.transfer()
+[2025-04-25 18:27:07] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:27:07] atm_withdrawal(self)
+[2025-04-25 18:27:07] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:27:07] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 153, in atm_withdrawal
+[2025-04-25 18:27:07] if "amount should not be greater than birr 8000" in message_text.lower:
+[2025-04-25 18:27:07] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:27:07] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:27:07] 
+[2025-04-25 18:27:07] During handling of the above exception, another exception occurred:
+[2025-04-25 18:27:07] 
+[2025-04-25 18:27:07] Traceback (most recent call last):
+[2025-04-25 18:27:07] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:27:07] self.fail("USSD process failed.")
+[2025-04-25 18:27:07] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:27:07] AssertionError: USSD process failed.
+[2025-04-25 18:27:07] 
+[2025-04-25 18:27:07] ----------------------------------------------------------------------
+[2025-04-25 18:27:07] Ran 1 test in 93.110s
+[2025-04-25 18:27:07] 
+[2025-04-25 18:27:07] FAILED (failures=1)
+[2025-04-25 18:27:07] 
+Test completed.
+
+[2025-04-25 18:31:25] 
+================================  New Test Started at 2025-04-25 18:31:25  ================================
+
+[2025-04-25 18:31:37] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:31:41] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:31:41] 1: Login
+[2025-04-25 18:31:41] 2: Exit
+[2025-04-25 18:31:41] Expected USSD page matched.
+[2025-04-25 18:31:46] BOA USSD Login Notification Detected
+[2025-04-25 18:31:47] Input field detected
+[2025-04-25 18:31:50] Pin Enter Notification Detected
+[2025-04-25 18:31:56] Login successful.
+[2025-04-25 18:31:56] Found option: 1: My Accounts
+[2025-04-25 18:31:56] Found option: 2: Transfer
+[2025-04-25 18:31:56] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:31:56] Found option: 4: Transfer to Own
+[2025-04-25 18:31:56] Found option: 5: Airtime
+[2025-04-25 18:31:56] Found option: 6: Utilities
+[2025-04-25 18:31:56] Found option: 7: Exchange Rates
+[2025-04-25 18:31:56] Found option: 8: More options
+[2025-04-25 18:31:57] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:31:58] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:31:58] Test for Transfer..
+[2025-04-25 18:32:06] Test for Atm With drawal ..
+[2025-04-25 18:32:10] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:32:10] 
+[2025-04-25 18:32:10] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:32:21] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-04-25 18:32:22] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:32:23] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:32:28] ATM withdrawal
+[2025-04-25 18:32:28] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:32:28] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:32:28] 
+[2025-04-25 18:32:28] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 18:32:39] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-04-25 18:32:40] Writing 'Pass' to row 12, col 7
+[2025-04-25 18:32:41] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-04-25 18:32:44] ATM negative scenario test started...
+[2025-04-25 18:32:44] 
+[2025-04-25 18:32:44] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:32:50] Negative test with 9000 birr
+[2025-04-25 18:32:58] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-04-25 18:32:58] Transaction already exists, retrying same account...
+[2025-04-25 18:32:59] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:32:59] F
+[2025-04-25 18:32:59] ======================================================================
+[2025-04-25 18:32:59] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:32:59] ----------------------------------------------------------------------
+[2025-04-25 18:32:59] Traceback (most recent call last):
+[2025-04-25 18:32:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:32:59] transfer = self.transfer()
+[2025-04-25 18:32:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:32:59] atm_withdrawal(self)
+[2025-04-25 18:32:59] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:32:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 175, in atm_withdrawal
+[2025-04-25 18:32:59] if "value too large for column" in message_text.lower:
+[2025-04-25 18:32:59] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:32:59] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:32:59] 
+[2025-04-25 18:32:59] During handling of the above exception, another exception occurred:
+[2025-04-25 18:32:59] 
+[2025-04-25 18:32:59] Traceback (most recent call last):
+[2025-04-25 18:32:59] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:32:59] self.fail("USSD process failed.")
+[2025-04-25 18:32:59] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:32:59] AssertionError: USSD process failed.
+[2025-04-25 18:32:59] 
+[2025-04-25 18:32:59] ----------------------------------------------------------------------
+[2025-04-25 18:32:59] Ran 1 test in 92.877s
+[2025-04-25 18:32:59] 
+[2025-04-25 18:32:59] FAILED (failures=1)
+[2025-04-25 18:33:00] 
+Test completed.
+
+[2025-04-25 18:38:12] 
+================================  New Test Started at 2025-04-25 18:38:12  ================================
+
+[2025-04-25 18:38:22] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:38:27] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:38:27] 1: Login
+[2025-04-25 18:38:27] 2: Exit
+[2025-04-25 18:38:27] Expected USSD page matched.
+[2025-04-25 18:39:03] USSD response not detected.
+[2025-04-25 18:39:03] Error: USSD screen did not appear.
+[2025-04-25 18:39:03] F
+[2025-04-25 18:39:03] ======================================================================
+[2025-04-25 18:39:03] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:39:03] ----------------------------------------------------------------------
+[2025-04-25 18:39:03] Traceback (most recent call last):
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 161, in enter_pin_to_login
+[2025-04-25 18:39:03] ussd_screen = WebDriverWait(self.driver, 30).until(
+[2025-04-25 18:39:03] EC.element_to_be_clickable((AppiumBy.XPATH, "//android.widget.LinearLayout[@resource-id='android:id/parentPanel']"))
+[2025-04-25 18:39:03] )
+[2025-04-25 18:39:03] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+[2025-04-25 18:39:03] raise TimeoutException(message, screen, stacktrace)
+[2025-04-25 18:39:03] selenium.common.exceptions.TimeoutException: Message:
+[2025-04-25 18:39:03] Stacktrace:
+[2025-04-25 18:39:03] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-25 18:39:03] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-25 18:39:03] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-25 18:39:03] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-25 18:39:03] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] During handling of the above exception, another exception occurred:
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] Traceback (most recent call last):
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:39:03] transfer = self.transfer()
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:39:03] atm_withdrawal(self)
+[2025-04-25 18:39:03] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 16, in atm_withdrawal
+[2025-04-25 18:39:03] self.enter_pin_to_login()
+[2025-04-25 18:39:03] ~~~~~~~~~~~~~~~~~~~~~~~^^
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 175, in enter_pin_to_login
+[2025-04-25 18:39:03] self.fail("USSD screen did not appear.")
+[2025-04-25 18:39:03] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:39:03] AssertionError: USSD screen did not appear.
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] During handling of the above exception, another exception occurred:
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] Traceback (most recent call last):
+[2025-04-25 18:39:03] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:39:03] self.fail("USSD process failed.")
+[2025-04-25 18:39:03] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:39:03] AssertionError: USSD process failed.
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] ----------------------------------------------------------------------
+[2025-04-25 18:39:03] Ran 1 test in 50.502s
+[2025-04-25 18:39:03] 
+[2025-04-25 18:39:03] FAILED (failures=1)
+[2025-04-25 18:39:04] 
+Test completed.
+
+[2025-04-25 18:43:14] 
+================================  New Test Started at 2025-04-25 18:43:14  ================================
+
+[2025-04-25 18:43:27] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:43:31] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:43:31] 1: Login
+[2025-04-25 18:43:31] 2: Exit
+[2025-04-25 18:43:31] Expected USSD page matched.
+[2025-04-25 18:43:36] BOA USSD Login Notification Detected
+[2025-04-25 18:43:36] Input field detected
+[2025-04-25 18:43:40] Pin Enter Notification Detected
+[2025-04-25 18:43:46] Login successful.
+[2025-04-25 18:43:46] Found option: 1: My Accounts
+[2025-04-25 18:43:46] Found option: 2: Transfer
+[2025-04-25 18:43:46] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:43:46] Found option: 4: Transfer to Own
+[2025-04-25 18:43:46] Found option: 5: Airtime
+[2025-04-25 18:43:46] Found option: 6: Utilities
+[2025-04-25 18:43:46] Found option: 7: Exchange Rates
+[2025-04-25 18:43:46] Found option: 8: More options
+[2025-04-25 18:43:47] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:43:49] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:43:49] Test for Transfer..
+[2025-04-25 18:43:57] Test for Atm With drawal ..
+[2025-04-25 18:44:02] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:44:02] ATM negative scenario test started...
+[2025-04-25 18:44:02] 
+[2025-04-25 18:44:02] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:44:06] Negative test with 9000 birr
+[2025-04-25 18:44:15] Negative test message: repository.productTransactionAlreadyExists
+[2025-04-25 18:44:15] Transaction already exists, retrying same account...
+[2025-04-25 18:44:18] Negative error repo retry test attempt 1 with 9000 birr
+[2025-04-25 18:44:22] Error: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:44:23] F
+[2025-04-25 18:44:23] ======================================================================
+[2025-04-25 18:44:23] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-25 18:44:23] ----------------------------------------------------------------------
+[2025-04-25 18:44:23] Traceback (most recent call last):
+[2025-04-25 18:44:23] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 888, in test_app
+[2025-04-25 18:44:23] transfer = self.transfer()
+[2025-04-25 18:44:23] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 455, in transfer
+[2025-04-25 18:44:23] atm_withdrawal(self)
+[2025-04-25 18:44:23] ~~~~~~~~~~~~~~^^^^^^
+[2025-04-25 18:44:23] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\ATM_Withdrawal\atm_withdrawal.py", line 189, in atm_withdrawal
+[2025-04-25 18:44:23] if "amount should not be greater than birr 8000" in message_text.lower:
+[2025-04-25 18:44:23] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:44:23] TypeError: argument of type 'builtin_function_or_method' is not iterable
+[2025-04-25 18:44:23] 
+[2025-04-25 18:44:23] During handling of the above exception, another exception occurred:
+[2025-04-25 18:44:23] 
+[2025-04-25 18:44:23] Traceback (most recent call last):
+[2025-04-25 18:44:23] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 891, in test_app
+[2025-04-25 18:44:23] self.fail("USSD process failed.")
+[2025-04-25 18:44:23] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-25 18:44:23] AssertionError: USSD process failed.
+[2025-04-25 18:44:23] 
+[2025-04-25 18:44:23] ----------------------------------------------------------------------
+[2025-04-25 18:44:23] Ran 1 test in 67.594s
+[2025-04-25 18:44:23] 
+[2025-04-25 18:44:23] FAILED (failures=1)
+[2025-04-25 18:44:23] 
+Test completed.
+
+[2025-04-25 18:46:27] 
+================================  New Test Started at 2025-04-25 18:46:27  ================================
+
+[2025-04-25 18:46:37] Dialing USSD code (Attempt 1)...
+[2025-04-25 18:46:41] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 18:46:41] 1: Login
+[2025-04-25 18:46:41] 2: Exit
+[2025-04-25 18:46:41] Expected USSD page matched.
+[2025-04-25 18:46:46] BOA USSD Login Notification Detected
+[2025-04-25 18:46:46] Input field detected
+[2025-04-25 18:46:50] Pin Enter Notification Detected
+[2025-04-25 18:46:56] Login successful.
+[2025-04-25 18:46:56] Found option: 1: My Accounts
+[2025-04-25 18:46:56] Found option: 2: Transfer
+[2025-04-25 18:46:56] Found option: 3: Transfer to Other Bank
+[2025-04-25 18:46:56] Found option: 4: Transfer to Own
+[2025-04-25 18:46:56] Found option: 5: Airtime
+[2025-04-25 18:46:56] Found option: 6: Utilities
+[2025-04-25 18:46:56] Found option: 7: Exchange Rates
+[2025-04-25 18:46:56] Found option: 8: More options
+[2025-04-25 18:46:57] Writing 'Pass' to row 2, col 7
+[2025-04-25 18:46:59] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 18:46:59] Test for Transfer..
+[2025-04-25 18:47:07] Test for Atm With drawal ..
+[2025-04-25 18:47:12] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 18:47:12] ATM negative scenario test started...
+[2025-04-25 18:47:12] 
+[2025-04-25 18:47:12] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 18:47:17] Negative test with 9000 birr
+[2025-04-25 18:47:28] Negative test message: Amount should not be greater than birr 8000
+[2025-04-25 18:47:28] Negative test passed: amount over limit rejected.
+[2025-04-25 18:47:32] Writing 'Pass' to row 15, col 7
+[2025-04-25 18:47:33] Updated 'Transfer' sheet - rows [15] set to 'Pass'.
+[2025-04-25 18:47:39] ATM withdrawal
+[2025-04-25 18:47:39] 1: 174615624 - ETB - Apollo
+[2025-04-25 18:47:39] 2: 182975435 - ETB - STAFF
+[2025-04-25 18:47:39] 
+[2025-04-25 18:47:39] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 18:47:44] Negative test with 9000 birr
+[2025-04-25 18:47:55] Negative test message: Amount should not be greater than birr 8000
+[2025-04-25 18:47:55] Negative test passed: amount over limit rejected.
+[2025-04-25 18:47:59] Writing 'Pass' to row 15, col 7
+[2025-04-25 18:48:00] Updated 'Transfer' sheet - rows [15] set to 'Pass'.
+[2025-04-25 18:48:03] All ATM tests Compleated
+[2025-04-25 18:48:07] .
+[2025-04-25 18:48:07] ----------------------------------------------------------------------
+[2025-04-25 18:48:07] Ran 1 test in 99.250s
+[2025-04-25 18:48:07] 
+[2025-04-25 18:48:07] OK
+[2025-04-25 18:48:07] ATM Transfer Ends
+[2025-04-25 18:48:07] 
+Test completed.
+
+[2025-04-25 23:37:11] 
+================================  New Test Started at 2025-04-25 23:37:11  ================================
+
+[2025-04-25 23:37:29] Dialing USSD code (Attempt 1)...
+[2025-04-25 23:37:34] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 23:37:34] 1: Login
+[2025-04-25 23:37:34] 2: Exit
+[2025-04-25 23:37:34] Expected USSD page matched.
+[2025-04-25 23:37:40] BOA USSD Login Notification Detected
+[2025-04-25 23:37:40] Input field detected
+[2025-04-25 23:37:44] Pin Enter Notification Detected
+[2025-04-25 23:37:50] Login successful.
+[2025-04-25 23:37:50] Found option: 1: My Accounts
+[2025-04-25 23:37:50] Found option: 2: Transfer
+[2025-04-25 23:37:50] Found option: 3: Transfer to Other Bank
+[2025-04-25 23:37:50] Found option: 4: Transfer to Own
+[2025-04-25 23:37:50] Found option: 5: Airtime
+[2025-04-25 23:37:50] Found option: 6: Utilities
+[2025-04-25 23:37:50] Found option: 7: Exchange Rates
+[2025-04-25 23:37:50] Found option: 8: More options
+[2025-04-25 23:37:51] Writing 'Pass' to row 2, col 7
+[2025-04-25 23:37:53] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 23:37:53] Test for Transfer..
+[2025-04-25 23:37:55] Test for Transfer within BoA
+[2025-04-25 23:38:01] Writing 'Pass' to row 2, col 7
+[2025-04-25 23:38:02] Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+[2025-04-25 23:38:02] Attempt 1: Entering account number 174615624
+[2025-04-25 23:38:07] USSD message after entering account:
+[2025-04-25 23:38:07] Transfer within BoA
+[2025-04-25 23:38:07] 1: 174615624 - ETB - Apollo
+[2025-04-25 23:38:07] 2: 182975435 - ETB - STAFF
+[2025-04-25 23:38:09] Executing first round with user-input amount...
+[2025-04-25 23:38:11] Entering amount: 10
+[2025-04-25 23:38:15] Entering remark: testremark
+[2025-04-25 23:38:20] Confirmation screen:
+[2025-04-25 23:38:20] Please Confirm
+[2025-04-25 23:38:20] Request Debit From 182975435 For 174615624.
+[2025-04-25 23:38:20] Amount: 10
+[2025-04-25 23:38:20] Remark: testremark
+[2025-04-25 23:38:20] 1: Yes
+[2025-04-25 23:38:20] 2: No
+[2025-04-25 23:38:26] Final response:
+[2025-04-25 23:38:26] Complete
+[2025-04-25 23:38:26] ETB 10.00 debited from 182975435 for 174615624 (testremark done via Mobile) on 25/04/2025 with transaction ID: FT25116NLL8N.
+[2025-04-25 23:38:26] Transfer successfully
+[2025-04-25 23:38:27] Writing 'Pass' to row 5, col 7
+[2025-04-25 23:38:29] Updated 'Transfer' sheet - rows [5] set to 'Pass'.
+[2025-04-25 23:40:10] 
+================================  New Test Started at 2025-04-25 23:40:10  ================================
+
+[2025-04-25 23:40:26] Dialing USSD code (Attempt 1)...
+[2025-04-25 23:40:31] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-25 23:40:31] 1: Login
+[2025-04-25 23:40:31] 2: Exit
+[2025-04-25 23:40:31] Expected USSD page matched.
+[2025-04-25 23:40:36] BOA USSD Login Notification Detected
+[2025-04-25 23:40:36] Input field detected
+[2025-04-25 23:40:39] Pin Enter Notification Detected
+[2025-04-25 23:40:46] Login successful.
+[2025-04-25 23:40:46] Found option: 1: My Accounts
+[2025-04-25 23:40:46] Found option: 2: Transfer
+[2025-04-25 23:40:46] Found option: 3: Transfer to Other Bank
+[2025-04-25 23:40:46] Found option: 4: Transfer to Own
+[2025-04-25 23:40:46] Found option: 5: Airtime
+[2025-04-25 23:40:46] Found option: 6: Utilities
+[2025-04-25 23:40:46] Found option: 7: Exchange Rates
+[2025-04-25 23:40:46] Found option: 8: More options
+[2025-04-25 23:40:47] Writing 'Pass' to row 2, col 7
+[2025-04-25 23:40:48] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-25 23:40:48] Test for Transfer..
+[2025-04-25 23:40:56] Test for Atm With drawal ..
+[2025-04-25 23:41:00] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-04-25 23:41:00] ATM negative scenario test started...
+[2025-04-25 23:41:00] 
+[2025-04-25 23:41:00] Checking account: 1: 174615624 - ETB - Apollo
+[2025-04-25 23:41:05] Negative test with 9000 birr
+[2025-04-25 23:41:14] Negative test message: Amount should not be greater than birr 8000
+[2025-04-25 23:41:14] Negative test passed: amount over limit rejected.
+[2025-04-25 23:41:18] Writing 'Pass' to row 15, col 7
+[2025-04-25 23:41:20] Updated 'Transfer' sheet - rows [15] set to 'Pass'.
+[2025-04-25 23:41:24] ATM withdrawal
+[2025-04-25 23:41:24] 1: 174615624 - ETB - Apollo
+[2025-04-25 23:41:24] 2: 182975435 - ETB - STAFF
+[2025-04-25 23:41:24] 
+[2025-04-25 23:41:24] Checking account: 2: 182975435 - ETB - STAFF
+[2025-04-25 23:41:28] Negative test with 9000 birr
+[2025-04-25 23:41:37] Negative test message: Amount should not be greater than birr 8000
+[2025-04-25 23:41:37] Negative test passed: amount over limit rejected.
+[2025-04-25 23:41:41] Writing 'Pass' to row 15, col 7
+[2025-04-25 23:41:43] Updated 'Transfer' sheet - rows [15] set to 'Pass'.
+[2025-04-25 23:41:46] All ATM tests Compleated
+[2025-04-25 23:41:49] .
+[2025-04-25 23:41:49] ----------------------------------------------------------------------
+[2025-04-25 23:41:49] Ran 1 test in 97.369s
+[2025-04-25 23:41:49] 
+[2025-04-25 23:41:49] OK
+[2025-04-25 23:41:49] ATM Transfer Ends
+[2025-04-25 23:41:49] 
+Test completed.
+

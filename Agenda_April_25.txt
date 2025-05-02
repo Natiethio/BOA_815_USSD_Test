@@ -1,0 +1,16 @@
+Expected Enhancements:
+
+Performance testing
+UI Regression Testing platform
+Security Test
+
+Challenges:
+
+RAM 
+Admin Right on PC
+Error Matching on ussd
+System instability 
+
+Task prioritization
+End to End test and Modular test Expected
+Objective setting and monitoring

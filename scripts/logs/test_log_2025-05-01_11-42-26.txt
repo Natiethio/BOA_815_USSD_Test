@@ -1,0 +1,1239 @@
+[2025-05-01 11:43:35] 
+================  New Test Started at 2025-05-01 11:43:35  ================
+
+[2025-05-01 11:43:42] 
+[2025-05-01 11:43:42] ----------------------------------------------------------------------
+[2025-05-01 11:43:42] Ran 0 tests in 0.000s
+[2025-05-01 11:43:42] 
+[2025-05-01 11:43:42] NO TESTS RAN
+[2025-05-01 11:43:42] Using Device ID: R9ZR601C18H
+[2025-05-01 11:43:42] Using Android Version: 12
+[2025-05-01 11:43:42] Using package: com.samsung.android.dialer
+[2025-05-01 11:43:42] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 11:43:42] 
+Test completed.
+
+[2025-05-01 11:44:43] 
+================  New Test Started at 2025-05-01 11:44:43  ================
+
+[2025-05-01 11:44:45] 
+[2025-05-01 11:44:45] ----------------------------------------------------------------------
+[2025-05-01 11:44:45] Ran 0 tests in 0.000s
+[2025-05-01 11:44:45] 
+[2025-05-01 11:44:45] NO TESTS RAN
+[2025-05-01 11:44:45] Using Device ID: R9ZR601C18H
+[2025-05-01 11:44:45] Using Android Version: 12
+[2025-05-01 11:44:45] Using package: com.samsung.android.dialer
+[2025-05-01 11:44:45] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 11:44:45] 
+Test completed.
+
+[2025-05-01 11:46:35] 
+================  New Test Started at 2025-05-01 11:46:35  ================
+
+[2025-05-01 11:46:52] Using Device ID: R9ZR601C18H
+[2025-05-01 11:46:52] Using Android Version: 12
+[2025-05-01 11:46:52] Using package: com.samsung.android.dialer
+[2025-05-01 11:46:52] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 11:46:52] Dialing USSD code (Attempt 1)...
+[2025-05-01 11:46:58] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-05-01 11:46:58] 1: Login
+[2025-05-01 11:46:58] 2: Exit
+[2025-05-01 11:46:58] Expected USSD page matched.
+[2025-05-01 11:47:03] BOA USSD Login Notification Detected
+[2025-05-01 11:47:03] Input field detected
+[2025-05-01 11:47:08] Error during USSD input: 'TestAppium' object has no attribute 'ussd_log_path'
+[2025-05-01 11:47:09] Error: Pin enter notification not detected
+[2025-05-01 11:47:09] FE
+[2025-05-01 11:47:09] ======================================================================
+[2025-05-01 11:47:09] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-05-01 11:47:09] ----------------------------------------------------------------------
+[2025-05-01 11:47:09] Traceback (most recent call last):
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 94, in tearDown
+[2025-05-01 11:47:09] self.driver.quit()
+[2025-05-01 11:47:09] ~~~~~~~~~~~~~~~~^^
+[2025-05-01 11:47:09] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 589, in quit
+[2025-05-01 11:47:09] self.execute(Command.QUIT)
+[2025-05-01 11:47:09] ~~~~~~~~~~~~^^^^^^^^^^^^^^
+[2025-05-01 11:47:09] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-05-01 11:47:09] self.error_handler.check_response(response)
+[2025-05-01 11:47:09] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-05-01 11:47:09] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-05-01 11:47:09] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-05-01 11:47:09] selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+[2025-05-01 11:47:09] Stacktrace:
+[2025-05-01 11:47:09] NoSuchDriverError: A session is either terminated or not started
+[2025-05-01 11:47:09] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:311:15)
+[2025-05-01 11:47:09] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:514:15
+[2025-05-01 11:47:09] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:47:09] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+[2025-05-01 11:47:09] at Route.dispatch (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+[2025-05-01 11:47:09] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:47:09] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+[2025-05-01 11:47:09] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+[2025-05-01 11:47:09] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+[2025-05-01 11:47:09] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+[2025-05-01 11:47:09] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-01 11:47:09] at logger (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+[2025-05-01 11:47:09] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:47:09] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-01 11:47:09] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-01 11:47:09] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-01 11:47:09] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-01 11:47:09] at jsonParser (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+[2025-05-01 11:47:09] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:47:09] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-01 11:47:09] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-01 11:47:09] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] ======================================================================
+[2025-05-01 11:47:09] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-05-01 11:47:09] ----------------------------------------------------------------------
+[2025-05-01 11:47:09] Traceback (most recent call last):
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 353, in send_ussd
+[2025-05-01 11:47:09] with open(self.ussd_log_path, "a", encoding="utf-8") as f:
+[2025-05-01 11:47:09] ^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:47:09] AttributeError: 'TestAppium' object has no attribute 'ussd_log_path'
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] During handling of the above exception, another exception occurred:
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] Traceback (most recent call last):
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 211, in enter_pin_to_login
+[2025-05-01 11:47:09] status = self.send_ussd(expected_Result ,'1', 'enter_pin_to_login', "Enter Pin Page")
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 374, in send_ussd
+[2025-05-01 11:47:09] exit()
+[2025-05-01 11:47:09] ~~~~^^
+[2025-05-01 11:47:09] File "<frozen _sitebuiltins>", line 26, in __call__
+[2025-05-01 11:47:09] SystemExit: None
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] During handling of the above exception, another exception occurred:
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] Traceback (most recent call last):
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 560, in test_app
+[2025-05-01 11:47:09] self.enter_pin_to_login()
+[2025-05-01 11:47:09] ~~~~~~~~~~~~~~~~~~~~~~~^^
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 276, in enter_pin_to_login
+[2025-05-01 11:47:09] self.fail("Pin enter notification not detected")
+[2025-05-01 11:47:09] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:47:09] AssertionError: Pin enter notification not detected
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] During handling of the above exception, another exception occurred:
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] Traceback (most recent call last):
+[2025-05-01 11:47:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 568, in test_app
+[2025-05-01 11:47:09] self.fail("USSD process failed.")
+[2025-05-01 11:47:09] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:47:09] AssertionError: USSD process failed.
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] ----------------------------------------------------------------------
+[2025-05-01 11:47:09] Ran 1 test in 32.560s
+[2025-05-01 11:47:09] 
+[2025-05-01 11:47:09] FAILED (failures=1, errors=1)
+[2025-05-01 11:47:09] 
+Test completed.
+
+[2025-05-01 11:49:34] 
+================  New Test Started at 2025-05-01 11:49:34  ================
+
+[2025-05-01 11:49:46] Using Device ID: R9ZR601C18H
+[2025-05-01 11:49:46] Using Android Version: 12
+[2025-05-01 11:49:46] Using package: com.samsung.android.dialer
+[2025-05-01 11:49:46] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 11:49:46] Dialing USSD code (Attempt 1)...
+[2025-05-01 11:49:50] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-05-01 11:49:50] 1: Login
+[2025-05-01 11:49:50] 2: Exit
+[2025-05-01 11:49:50] Expected USSD page matched.
+[2025-05-01 11:49:55] BOA USSD Login Notification Detected
+[2025-05-01 11:49:55] Input field detected
+[2025-05-01 11:50:00] Error during USSD input: expected str, bytes or os.PathLike object, not NoneType
+[2025-05-01 11:50:01] Error: Pin enter notification not detected
+[2025-05-01 11:50:01] FE
+[2025-05-01 11:50:01] ======================================================================
+[2025-05-01 11:50:01] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-05-01 11:50:01] ----------------------------------------------------------------------
+[2025-05-01 11:50:01] Traceback (most recent call last):
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 96, in tearDown
+[2025-05-01 11:50:01] self.driver.quit()
+[2025-05-01 11:50:01] ~~~~~~~~~~~~~~~~^^
+[2025-05-01 11:50:01] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 589, in quit
+[2025-05-01 11:50:01] self.execute(Command.QUIT)
+[2025-05-01 11:50:01] ~~~~~~~~~~~~^^^^^^^^^^^^^^
+[2025-05-01 11:50:01] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-05-01 11:50:01] self.error_handler.check_response(response)
+[2025-05-01 11:50:01] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-05-01 11:50:01] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-05-01 11:50:01] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-05-01 11:50:01] selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+[2025-05-01 11:50:01] Stacktrace:
+[2025-05-01 11:50:01] NoSuchDriverError: A session is either terminated or not started
+[2025-05-01 11:50:01] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:311:15)
+[2025-05-01 11:50:01] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:514:15
+[2025-05-01 11:50:01] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:50:01] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+[2025-05-01 11:50:01] at Route.dispatch (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+[2025-05-01 11:50:01] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:50:01] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+[2025-05-01 11:50:01] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+[2025-05-01 11:50:01] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+[2025-05-01 11:50:01] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+[2025-05-01 11:50:01] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-01 11:50:01] at logger (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+[2025-05-01 11:50:01] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:50:01] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-01 11:50:01] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-01 11:50:01] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-01 11:50:01] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-01 11:50:01] at jsonParser (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+[2025-05-01 11:50:01] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-01 11:50:01] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-01 11:50:01] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-01 11:50:01] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] ======================================================================
+[2025-05-01 11:50:01] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-05-01 11:50:01] ----------------------------------------------------------------------
+[2025-05-01 11:50:01] Traceback (most recent call last):
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 358, in send_ussd
+[2025-05-01 11:50:01] with open(self.ussd_log_path, "a", encoding="utf-8") as f:
+[2025-05-01 11:50:01] ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:50:01] TypeError: expected str, bytes or os.PathLike object, not NoneType
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] During handling of the above exception, another exception occurred:
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] Traceback (most recent call last):
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 216, in enter_pin_to_login
+[2025-05-01 11:50:01] status = self.send_ussd(expected_Result ,'1', 'enter_pin_to_login', "Enter Pin Page")
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 379, in send_ussd
+[2025-05-01 11:50:01] exit()
+[2025-05-01 11:50:01] ~~~~^^
+[2025-05-01 11:50:01] File "<frozen _sitebuiltins>", line 26, in __call__
+[2025-05-01 11:50:01] SystemExit: None
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] During handling of the above exception, another exception occurred:
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] Traceback (most recent call last):
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 565, in test_app
+[2025-05-01 11:50:01] self.enter_pin_to_login()
+[2025-05-01 11:50:01] ~~~~~~~~~~~~~~~~~~~~~~~^^
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 281, in enter_pin_to_login
+[2025-05-01 11:50:01] self.fail("Pin enter notification not detected")
+[2025-05-01 11:50:01] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:50:01] AssertionError: Pin enter notification not detected
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] During handling of the above exception, another exception occurred:
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] Traceback (most recent call last):
+[2025-05-01 11:50:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 573, in test_app
+[2025-05-01 11:50:01] self.fail("USSD process failed.")
+[2025-05-01 11:50:01] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 11:50:01] AssertionError: USSD process failed.
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] ----------------------------------------------------------------------
+[2025-05-01 11:50:01] Ran 1 test in 24.980s
+[2025-05-01 11:50:01] 
+[2025-05-01 11:50:01] FAILED (failures=1, errors=1)
+[2025-05-01 11:50:01] 
+Test completed.
+
+
+
+[2025-05-01 12:12:49] 
+================  New Test Started at 2025-05-01 12:12:49  ================
+
+[2025-05-01 12:13:00] Using Device ID: R9ZR601C18H
+[2025-05-01 12:13:00] Using Android Version: 12
+[2025-05-01 12:13:00] Using package: com.samsung.android.dialer
+[2025-05-01 12:13:00] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 12:13:00] Dialing USSD code (Attempt 1)...
+[2025-05-01 12:13:04] USSD Response: An error has occurred.
+[2025-05-01 12:13:04] USSD session cancelled successfully.
+[2025-05-01 12:13:05] Expected USSD response not found. Retrying...
+[2025-05-01 12:13:07] Dialing USSD code (Attempt 2)...
+[2025-05-01 12:13:11] USSD Response: An error has occurred.
+[2025-05-01 12:13:12] USSD session cancelled successfully.
+[2025-05-01 12:13:13] Expected USSD response not found. Retrying...
+[2025-05-01 12:13:15] Dialing USSD code (Attempt 3)...
+[2025-05-01 12:13:18] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-05-01 12:13:18] 1: Login
+[2025-05-01 12:13:18] 2: Exit
+[2025-05-01 12:13:18] Expected USSD page matched.
+[2025-05-01 12:13:24] BOA USSD Login Notification Detected
+[2025-05-01 12:13:24] Input field detected
+[2025-05-01 12:13:29] Pin Enter Notification Detected
+[2025-05-01 12:13:34] Login successful.
+[2025-05-01 12:13:34] Found option: 1: My Accounts
+[2025-05-01 12:13:34] Found option: 2: Transfer
+[2025-05-01 12:13:34] Found option: 3: Transfer to Other Bank
+[2025-05-01 12:13:34] Found option: 4: Transfer to Own
+[2025-05-01 12:13:34] Found option: 5: Airtime
+[2025-05-01 12:13:34] Found option: 6: Utilities
+[2025-05-01 12:13:34] Found option: 7: Exchange Rates
+[2025-05-01 12:13:34] Found option: 8: More options
+[2025-05-01 12:13:34] Excel in the path is used
+[2025-05-01 12:13:35] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:13:36] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:13:36] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:13:43] USSD Response: My Accounts
+[2025-05-01 12:13:43] 1: 174615624 - ETB - Apol.
+[2025-05-01 12:13:43] 2: 182975435 - ETB - STAF.
+[2025-05-01 12:13:43] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:13:43] list of accounts associated with the customer ID is displayed
+[2025-05-01 12:13:44] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:13:46] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:13:46] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:13:46] Excel status Updated
+[2025-05-01 12:13:46] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:13:46] 
+[2025-05-01 12:13:46] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:13:46] 1: 174615624
+[2025-05-01 12:13:46] 174615624
+[2025-05-01 12:13:55] The list of recent transactions is displayed
+[2025-05-01 12:13:57] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:13:58] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:13:58] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:14:02] Transaction detail verified
+[2025-05-01 12:14:04] Writing 'Pass' to row 6, col 5
+[2025-05-01 12:14:05] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:14:05] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 12:14:10] My accounts Test failed with error: Did not navigate back to transaction page2
+[2025-05-01 12:14:10] My Account test compleated!
+[2025-05-01 12:14:10] USSD session cancelled successfully.
+[2025-05-01 12:14:12] .
+[2025-05-01 12:14:12] ----------------------------------------------------------------------
+[2025-05-01 12:14:12] Ran 1 test in 82.205s
+[2025-05-01 12:14:12] 
+[2025-05-01 12:14:12] OK
+[2025-05-01 12:14:12] 
+Test completed.
+
+[2025-05-01 12:28:34] 
+================  New Test Started at 2025-05-01 12:28:34  ================
+
+[2025-05-01 12:28:52] Using Device ID: R9ZR601C18H
+[2025-05-01 12:28:52] Using Android Version: 12
+[2025-05-01 12:28:52] Using package: com.samsung.android.dialer
+[2025-05-01 12:28:52] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 12:28:52] Dialing USSD code (Attempt 1)...
+[2025-05-01 12:28:57] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-05-01 12:28:57] 1: Login
+[2025-05-01 12:28:57] 2: Exit
+[2025-05-01 12:28:57] Expected USSD page matched.
+[2025-05-01 12:29:02] BOA USSD Login Notification Detected
+[2025-05-01 12:29:03] Input field detected
+[2025-05-01 12:29:07] Pin Enter Notification Detected
+[2025-05-01 12:29:12] Login successful.
+[2025-05-01 12:29:12] Found option: 1: My Accounts
+[2025-05-01 12:29:12] Found option: 2: Transfer
+[2025-05-01 12:29:12] Found option: 3: Transfer to Other Bank
+[2025-05-01 12:29:12] Found option: 4: Transfer to Own
+[2025-05-01 12:29:12] Found option: 5: Airtime
+[2025-05-01 12:29:12] Found option: 6: Utilities
+[2025-05-01 12:29:12] Found option: 7: Exchange Rates
+[2025-05-01 12:29:12] Found option: 8: More options
+[2025-05-01 12:29:12] Excel in the path is used
+[2025-05-01 12:29:14] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:29:15] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:29:15] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:29:21] USSD Response: My Accounts
+[2025-05-01 12:29:21] 1: 174615624 - ETB - Apol.
+[2025-05-01 12:29:21] 2: 182975435 - ETB - STAF.
+[2025-05-01 12:29:21] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:29:21] list of accounts associated with the customer ID is displayed
+[2025-05-01 12:29:22] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:29:23] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:29:23] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:29:23] Excel status Updated
+[2025-05-01 12:29:23] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:29:23] 
+[2025-05-01 12:29:23] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:29:23] 1: 174615624
+[2025-05-01 12:29:23] 174615624
+[2025-05-01 12:29:32] The list of recent transactions is displayed
+[2025-05-01 12:29:34] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:29:35] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:29:35] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:29:39] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:29:41] Writing 'Pass' to row 6, col 5
+[2025-05-01 12:29:42] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:29:42] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 12:29:52] 174615624 - ETB - Apol.
+[2025-05-01 12:29:52] Cleared Balance is ETB 178.46 and Ledger Balance is ETB 178.46
+[2025-05-01 12:29:52] Transactions
+[2025-05-01 12:29:52] 1: - 28/04 100.69
+[2025-05-01 12:29:52] 2: + 28/04 10.00
+[2025-05-01 12:29:52] 3: More options
+[2025-05-01 12:29:52] My Accounts
+[2025-05-01 12:29:52] 1: 174615624 - ETB - Apol.
+[2025-05-01 12:29:52] 2: 182975435 - ETB - STAF.
+[2025-05-01 12:29:52] 
+[2025-05-01 12:29:52] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-01 12:29:52] 2: 182975435
+[2025-05-01 12:29:52] 182975435
+[2025-05-01 12:29:53] Expected text not found: 'My Accounts'
+[2025-05-01 12:29:53] Mismatch in expected output.
+[2025-05-01 12:29:53] No Account list found terminating my account operation
+[2025-05-01 12:29:53] .
+[2025-05-01 12:29:53] ----------------------------------------------------------------------
+[2025-05-01 12:29:53] Ran 1 test in 77.502s
+[2025-05-01 12:29:53] 
+[2025-05-01 12:29:53] OK
+[2025-05-01 12:29:54] 
+Test completed.
+
+[2025-05-01 12:40:13] 
+================  New Test Started at 2025-05-01 12:40:13  ================
+
+[2025-05-01 12:40:29] Using Device ID: R9ZR601C18H
+[2025-05-01 12:40:29] Using Android Version: 12
+[2025-05-01 12:40:29] Using package: com.samsung.android.dialer
+[2025-05-01 12:40:29] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 12:40:29] Dialing USSD code (Attempt 1)...
+[2025-05-01 12:40:34] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-05-01 12:40:34] 1: Login
+[2025-05-01 12:40:34] 2: Exit
+[2025-05-01 12:40:34] Expected USSD page matched.
+[2025-05-01 12:40:39] BOA USSD Login Notification Detected
+[2025-05-01 12:40:40] Input field detected
+[2025-05-01 12:40:45] Pin Enter Notification Detected
+[2025-05-01 12:40:50] Login successful.
+[2025-05-01 12:40:50] Found option: 1: My Accounts
+[2025-05-01 12:40:50] Found option: 2: Transfer
+[2025-05-01 12:40:50] Found option: 3: Transfer to Other Bank
+[2025-05-01 12:40:50] Found option: 4: Transfer to Own
+[2025-05-01 12:40:50] Found option: 5: Airtime
+[2025-05-01 12:40:50] Found option: 6: Utilities
+[2025-05-01 12:40:50] Found option: 7: Exchange Rates
+[2025-05-01 12:40:50] Found option: 8: More options
+[2025-05-01 12:40:50] Excel in the path is used
+[2025-05-01 12:40:51] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:40:52] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:40:52] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:40:58] USSD Response: My Accounts
+[2025-05-01 12:40:58] 1: 174615624 - ETB - Apol.
+[2025-05-01 12:40:58] 2: 182975435 - ETB - STAF.
+[2025-05-01 12:40:58] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:40:58] list of accounts associated with the customer ID is displayed
+[2025-05-01 12:41:00] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:41:01] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:41:01] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:41:01] Excel status Updated
+[2025-05-01 12:41:01] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:41:01] 
+[2025-05-01 12:41:01] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:41:01] 1: 174615624
+[2025-05-01 12:41:01] 174615624
+[2025-05-01 12:41:13] The list of recent transactions is displayed
+[2025-05-01 12:41:14] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:41:15] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:41:15] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:41:20] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:41:21] Writing 'Pass' to row 6, col 5
+[2025-05-01 12:41:22] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:41:22] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 12:41:28] 
+[2025-05-01 12:41:28] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-01 12:41:28] 2: 182975435
+[2025-05-01 12:41:28] 182975435
+[2025-05-01 12:41:37] The list of recent transactions is displayed
+[2025-05-01 12:41:38] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:41:39] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:41:39] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:41:40] Expected text not found: 'debited from'
+[2025-05-01 12:41:40] Mismatch in expected output.
+[2025-05-01 12:41:40] No List of transaction displayed
+[2025-05-01 12:41:40] Transaction detail page can't be verified
+[2025-05-01 12:41:41] Writing 'Fail' to row 6, col 5
+[2025-05-01 12:41:41] C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+[2025-05-01 12:41:41] return self.get_screenshot_as_file(filename)
+[2025-05-01 12:41:44] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\my_accounts_notransactiondetailpage_20250501-124141.jpg
+[2025-05-01 12:41:45] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:41:45] Updated 'Accounts' sheet - rows [6] set to 'Fail'.
+[2025-05-01 12:41:46] Expected text not found: 'Cleared Balance'
+[2025-05-01 12:41:46] Mismatch in expected output.
+[2025-05-01 12:41:46] No List of transaction displayed when navigating back
+[2025-05-01 12:41:47] .
+[2025-05-01 12:41:47] ----------------------------------------------------------------------
+[2025-05-01 12:41:47] Ran 1 test in 92.100s
+[2025-05-01 12:41:47] 
+[2025-05-01 12:41:47] OK
+[2025-05-01 12:41:47] 
+Test completed.
+
+[2025-05-01 12:48:40] 
+================  New Test Started at 2025-05-01 12:48:40  ================
+
+[2025-05-01 12:48:55] Using Device ID: R9ZR601C18H
+[2025-05-01 12:48:55] Using Android Version: 12
+[2025-05-01 12:48:55] Using package: com.samsung.android.dialer
+[2025-05-01 12:48:55] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 12:48:55] Dialing USSD code (Attempt 1)...
+[2025-05-01 12:49:00] Expected USSD page matched.
+[2025-05-01 12:49:04] Input field detected
+[2025-05-01 12:49:09] Pin Enter Notification Detected
+[2025-05-01 12:49:14] Login successful.
+[2025-05-01 12:49:14] Found option: 1: My Accounts
+[2025-05-01 12:49:14] Found option: 2: Transfer
+[2025-05-01 12:49:14] Found option: 3: Transfer to Other Bank
+[2025-05-01 12:49:14] Found option: 4: Transfer to Own
+[2025-05-01 12:49:14] Found option: 5: Airtime
+[2025-05-01 12:49:14] Found option: 6: Utilities
+[2025-05-01 12:49:14] Found option: 7: Exchange Rates
+[2025-05-01 12:49:14] Found option: 8: More options
+[2025-05-01 12:49:14] Excel in the path is used
+[2025-05-01 12:49:15] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:49:17] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:49:17] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:49:23] USSD Response: My Accounts
+[2025-05-01 12:49:23] 1: 174615624 - ETB - Apol.
+[2025-05-01 12:49:23] 2: 182975435 - ETB - STAF.
+[2025-05-01 12:49:23] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:49:23] list of accounts associated with the customer ID is displayed
+[2025-05-01 12:49:24] Writing 'Pass' to row 2, col 5
+[2025-05-01 12:49:25] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:49:25] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 12:49:25] Excel status Updated
+[2025-05-01 12:49:25] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 12:49:25] 
+[2025-05-01 12:49:25] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:49:25] 1: 174615624
+[2025-05-01 12:49:25] 174615624
+[2025-05-01 12:49:34] The list of recent transactions is displayed
+[2025-05-01 12:49:35] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:49:36] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:49:36] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:49:41] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-01 12:49:42] Writing 'Pass' to row 6, col 5
+[2025-05-01 12:49:44] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:49:44] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 12:49:48] 
+[2025-05-01 12:49:48] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-01 12:49:48] 2: 182975435
+[2025-05-01 12:49:48] 182975435
+[2025-05-01 12:49:57] The list of recent transactions is displayed
+[2025-05-01 12:49:59] Writing 'Pass' to row 4, col 5
+[2025-05-01 12:50:00] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:50:00] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 12:50:04] Transaction detail verified for account: 2: 182975435 - ETB - STAF.
+[2025-05-01 12:50:06] Writing 'Pass' to row 6, col 5
+[2025-05-01 12:50:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 12:50:07] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 12:50:12] All account checks completed successfully
+[2025-05-01 12:50:12] My Account test compleated!
+[2025-05-01 12:50:13] USSD session cancelled successfully.
+[2025-05-01 12:50:15] .
+[2025-05-01 12:50:15] ----------------------------------------------------------------------
+[2025-05-01 12:50:15] Ran 1 test in 93.171s
+[2025-05-01 12:50:15] 
+[2025-05-01 12:50:15] OK
+[2025-05-01 12:50:15] 
+Test completed.
+
+[2025-05-01 13:15:25] 
+================  New Test Started at 2025-05-01 13:15:25  ================
+
+[2025-05-01 13:15:41] Using Device ID: R9ZR601C18H
+[2025-05-01 13:15:41] Using Android Version: 12
+[2025-05-01 13:15:41] Using package: com.samsung.android.dialer
+[2025-05-01 13:15:41] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 13:15:41] Dialing USSD code (Attempt 1)...
+[2025-05-01 13:15:46] Expected USSD page matched.
+[2025-05-01 13:15:51] Input field detected
+[2025-05-01 13:15:55] Pin Enter Notification Detected
+[2025-05-01 13:16:00] Login successful.
+[2025-05-01 13:16:00] Found option: 1: My Accounts
+[2025-05-01 13:16:00] Found option: 2: Transfer
+[2025-05-01 13:16:00] Found option: 3: Transfer to Other Bank
+[2025-05-01 13:16:00] Found option: 4: Transfer to Own
+[2025-05-01 13:16:00] Found option: 5: Airtime
+[2025-05-01 13:16:00] Found option: 6: Utilities
+[2025-05-01 13:16:00] Found option: 7: Exchange Rates
+[2025-05-01 13:16:00] Found option: 8: More options
+[2025-05-01 13:16:00] Excel in the path is used
+[2025-05-01 13:16:01] Writing 'Pass' to row 2, col 5
+[2025-05-01 13:16:01] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-01 13:16:01] Test for Transfer..
+[2025-05-01 13:16:10] Test for Transfer withen BOA ..
+[2025-05-01 13:16:16] Writing 'Pass' to row 2, col 5
+[2025-05-01 13:16:17] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 13:16:17] Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+[2025-05-01 13:16:18] Attempt 1: Entering account number 174615624
+[2025-05-01 13:16:23] USSD message after entering account:
+[2025-05-01 13:16:23] Transfer within BoA
+[2025-05-01 13:16:23] 1: 174615624 - ETB - Apollo
+[2025-05-01 13:16:23] 2: 182975435 - ETB - STAFF
+[2025-05-01 13:16:28] Executing first round with user-input amount...
+[2025-05-01 13:16:28] Entering amount: 1
+[2025-05-01 13:16:32] Entering remark: testremark
+[2025-05-01 13:16:37] Confirmation screen:
+[2025-05-01 13:16:37] Please Confirm
+[2025-05-01 13:16:37] Request Debit From 182975435 For 174615624.
+[2025-05-01 13:16:37] Amount: 1
+[2025-05-01 13:16:37] Remark: testremark
+[2025-05-01 13:16:37] 1: Yes
+[2025-05-01 13:16:37] 2: No
+[2025-05-01 13:16:43] Final response:
+[2025-05-01 13:16:43] Complete
+[2025-05-01 13:16:43] ETB 1.00 debited from 182975435 for 174615624 (testremark done via Mobile) on 01/05/2025 with transaction ID: FT25122DC87D.
+[2025-05-01 13:16:43] Transfer successfully
+[2025-05-01 13:16:45] Writing 'Pass' to row 5, col 5
+[2025-05-01 13:16:46] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 13:16:46] Updated 'Transfer' sheet - rows [5] set to 'Pass'.
+[2025-05-01 13:16:49] Testing Negative Scenario Round 2 with amount: 500000
+[2025-05-01 13:16:49] Test for Transfer..
+[2025-05-01 13:16:59] Attempt 1: Entering account number 174615624
+[2025-05-01 13:17:04] USSD message after entering account:
+[2025-05-01 13:17:04] Transfer within BoA
+[2025-05-01 13:17:04] 1: 174615624 - ETB - Apollo
+[2025-05-01 13:17:04] 2: 182975435 - ETB - STAFF
+[2025-05-01 13:17:08] Entering amount: 500000
+[2025-05-01 13:17:12] Entering remark: testremark
+[2025-05-01 13:17:17] Confirmation screen:
+[2025-05-01 13:17:17] Please Confirm
+[2025-05-01 13:17:17] Request Debit From 182975435 For 174615624.
+[2025-05-01 13:17:17] Amount: 500000
+[2025-05-01 13:17:17] Remark: testremark
+[2025-05-01 13:17:17] 1: Yes
+[2025-05-01 13:17:17] 2: No
+[2025-05-01 13:17:22] Final response:
+[2025-05-01 13:17:22] You have exceeded the daily transaction limit.
+[2025-05-01 13:17:22] Transfer failed due to daily limit  error.
+[2025-05-01 13:17:23] Writing 'Pass' to row 8, col 5
+[2025-05-01 13:17:25] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 13:17:25] Updated 'Transfer' sheet - rows [8] set to 'Pass'.
+[2025-05-01 13:17:27] Testing Negative Scenario Round 3 with amount: 502000
+[2025-05-01 13:17:29] Entering amount: 502000
+[2025-05-01 13:17:33] Entering remark: testremark
+[2025-05-01 13:17:39] Confirmation screen:
+[2025-05-01 13:17:39] Please Confirm
+[2025-05-01 13:17:39] Request Debit From 182975435 For 174615624.
+[2025-05-01 13:17:39] Amount: 502000
+[2025-05-01 13:17:39] Remark: testremark
+[2025-05-01 13:17:39] 1: Yes
+[2025-05-01 13:17:39] 2: No
+[2025-05-01 13:17:45] Final response:
+[2025-05-01 13:17:45] You have exceeded the single transaction limit.
+[2025-05-01 13:17:45] Transfer failed due to single limit.
+[2025-05-01 13:17:46] Writing 'Pass' to row 9, col 5
+[2025-05-01 13:17:48] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 13:17:48] Updated 'Transfer' sheet - rows [9] set to 'Pass'.
+[2025-05-01 13:17:50] Transfer with BOA complated Successfully
+[2025-05-01 13:17:53] USSD session cancelled successfully.
+[2025-05-01 13:17:53] Transfer with boa complated
+[2025-05-01 13:17:53] Dialing USSD code (Attempt 1)...
+[2025-05-01 13:17:57] Expected USSD page matched.
+[2025-05-01 13:17:57] Input field detected
+[2025-05-01 13:18:02] Pin Enter Notification Detected
+[2025-05-01 13:18:06] Login successful.
+[2025-05-01 13:18:06] Found option: 1: My Accounts
+[2025-05-01 13:18:06] Found option: 2: Transfer
+[2025-05-01 13:18:06] Found option: 3: Transfer to Other Bank
+[2025-05-01 13:18:06] Found option: 4: Transfer to Own
+[2025-05-01 13:18:06] Found option: 5: Airtime
+[2025-05-01 13:18:06] Found option: 6: Utilities
+[2025-05-01 13:18:06] Found option: 7: Exchange Rates
+[2025-05-01 13:18:06] Found option: 8: More options
+[2025-05-01 13:18:08] Writing 'Pass' to row 2, col 5
+[2025-05-01 13:18:09] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 13:18:09] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 13:18:09] Test for Transfer..
+[2025-05-01 13:18:18] Test for Atm With drawal ..
+[2025-05-01 13:18:23] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-05-01 13:18:23] 
+[2025-05-01 13:18:23] Checking account: 1: 174615624 - ETB - Apollo
+[2025-05-01 13:19:01] Error: Message:
+[2025-05-01 13:19:01] Stacktrace:
+[2025-05-01 13:19:01] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-01 13:19:01] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-01 13:19:01] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-01 13:19:01] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-01 13:19:01] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-01 13:19:01] F
+[2025-05-01 13:19:01] ======================================================================
+[2025-05-01 13:19:01] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-05-01 13:19:01] ----------------------------------------------------------------------
+[2025-05-01 13:19:01] Traceback (most recent call last):
+[2025-05-01 13:19:01] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 565, in test_app
+[2025-05-01 13:19:02] transfer_one = transfer(self)
+[2025-05-01 13:19:02] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer\transfer.py", line 11, in transfer
+[2025-05-01 13:19:02] atm_withdrawal_one = atm_withdrawal(self)
+[2025-05-01 13:19:02] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer\ATM_Withdrawal\atm_withdrawal.py", line 101, in atm_withdrawal
+[2025-05-01 13:19:02] message_text = self.get_ussd_message()
+[2025-05-01 13:19:02] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 439, in get_ussd_message
+[2025-05-01 13:19:02] message_element = WebDriverWait(self.driver, 25).until(
+[2025-05-01 13:19:02] EC.presence_of_element_located((AppiumBy.XPATH, "//android.widget.TextView[@resource-id='com.android.phone:id/message']"))
+[2025-05-01 13:19:02] )
+[2025-05-01 13:19:02] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+[2025-05-01 13:19:02] raise TimeoutException(message, screen, stacktrace)
+[2025-05-01 13:19:02] selenium.common.exceptions.TimeoutException: Message:
+[2025-05-01 13:19:02] Stacktrace:
+[2025-05-01 13:19:02] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-01 13:19:02] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-01 13:19:02] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-01 13:19:02] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-01 13:19:02] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-01 13:19:02] 
+[2025-05-01 13:19:02] During handling of the above exception, another exception occurred:
+[2025-05-01 13:19:02] 
+[2025-05-01 13:19:02] Traceback (most recent call last):
+[2025-05-01 13:19:02] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 571, in test_app
+[2025-05-01 13:19:02] self.fail("USSD process failed.")
+[2025-05-01 13:19:02] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 13:19:02] AssertionError: USSD process failed.
+[2025-05-01 13:19:02] 
+[2025-05-01 13:19:02] ----------------------------------------------------------------------
+[2025-05-01 13:19:02] Ran 1 test in 213.920s
+[2025-05-01 13:19:02] 
+[2025-05-01 13:19:02] FAILED (failures=1)
+[2025-05-01 13:19:02] 
+Test completed.
+
+[2025-05-01 14:30:56] 
+================  New Test Started at 2025-05-01 14:30:56  ================
+
+[2025-05-01 14:31:15] Using Device ID: R9ZR601C18H
+[2025-05-01 14:31:15] Using Android Version: 12
+[2025-05-01 14:31:15] Using package: com.samsung.android.dialer
+[2025-05-01 14:31:15] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 14:31:15] Dialing USSD code (Attempt 1)...
+[2025-05-01 14:31:20] Expected USSD page matched.
+[2025-05-01 14:31:25] Input field detected
+[2025-05-01 14:31:29] Pin Enter Notification Detected
+[2025-05-01 14:31:34] Login successful.
+[2025-05-01 14:31:34] Found option: 1: My Accounts
+[2025-05-01 14:31:34] Found option: 2: Transfer
+[2025-05-01 14:31:34] Found option: 3: Transfer to Other Bank
+[2025-05-01 14:31:34] Found option: 4: Transfer to Own
+[2025-05-01 14:31:34] Found option: 5: Airtime
+[2025-05-01 14:31:34] Found option: 6: Utilities
+[2025-05-01 14:31:34] Found option: 7: Exchange Rates
+[2025-05-01 14:31:34] Found option: 8: More options
+[2025-05-01 14:31:34] Excel in the path is used
+[2025-05-01 14:31:37] Writing 'Pass' to row 2, col 5
+[2025-05-01 14:31:37] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-01 14:31:37] Test for Transfer..
+[2025-05-01 14:31:46] Test for Atm With drawal ..
+[2025-05-01 14:31:50] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-05-01 14:31:50] 
+[2025-05-01 14:31:50] Checking account: 1: 174615624 - ETB - Apollo
+[2025-05-01 14:32:04] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-05-01 14:32:06] Writing 'Pass' to row 12, col 5
+[2025-05-01 14:32:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:32:07] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-05-01 14:32:12] ATM withdrawal
+[2025-05-01 14:32:12] 1: 174615624 - ETB - Apollo
+[2025-05-01 14:32:12] 2: 182975435 - ETB - STAFF
+[2025-05-01 14:32:12] 
+[2025-05-01 14:32:12] Checking account: 2: 182975435 - ETB - STAFF
+[2025-05-01 14:32:25] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-05-01 14:32:27] Writing 'Pass' to row 12, col 5
+[2025-05-01 14:32:28] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:32:28] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-05-01 14:32:33] ATM negative scenario test started...
+[2025-05-01 14:32:33] 
+[2025-05-01 14:32:33] Checking account: 1: 174615624 - ETB - Apollo
+[2025-05-01 14:32:37] Negative test with 9000 birr
+[2025-05-01 14:32:45] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-05-01 14:32:45] Transaction already exists, retrying same account...
+[2025-05-01 14:32:50] Un usual error
+[2025-05-01 14:32:50] Expected text not found: 'C'
+[2025-05-01 14:32:50] Mismatch in expected output.
+[2025-05-01 14:32:50] Failed to confirm
+[2025-05-01 14:32:50] 
+[2025-05-01 14:32:50] Checking account: 2: 182975435 - ETB - STAFF
+[2025-05-01 14:32:50] Expected text not found: 'w'
+[2025-05-01 14:32:50] Mismatch in expected output.
+[2025-05-01 14:32:50] Failed to select account at index 2
+[2025-05-01 14:32:51] ATM Transfer Ends
+[2025-05-01 14:32:51] USSD session cancelled successfully.
+[2025-05-01 14:32:51] Dialing USSD code (Attempt 1)...
+[2025-05-01 14:32:55] Expected USSD page matched.
+[2025-05-01 14:32:55] Input field detected
+[2025-05-01 14:33:00] Pin Enter Notification Detected
+[2025-05-01 14:33:04] Login successful.
+[2025-05-01 14:33:05] Found option: 1: My Accounts
+[2025-05-01 14:33:05] Found option: 2: Transfer
+[2025-05-01 14:33:05] Found option: 3: Transfer to Other Bank
+[2025-05-01 14:33:05] Found option: 4: Transfer to Own
+[2025-05-01 14:33:05] Found option: 5: Airtime
+[2025-05-01 14:33:05] Found option: 6: Utilities
+[2025-05-01 14:33:05] Found option: 7: Exchange Rates
+[2025-05-01 14:33:05] Found option: 8: More options
+[2025-05-01 14:33:06] Writing 'Pass' to row 2, col 5
+[2025-05-01 14:33:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:33:07] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 14:33:11] Home page matched
+[2025-05-01 14:33:11] Test for Positive Scenario for Other Bank Transfer Started
+[2025-05-01 14:33:19] Attempt 1 to enter account number...
+[2025-05-01 14:33:23] Account accepted successfully
+[2025-05-01 14:33:24] Error: 'TestAppium' object has no attribute 'extract_staff_or_saving_option'
+[2025-05-01 14:33:25] F
+[2025-05-01 14:33:25] ======================================================================
+[2025-05-01 14:33:25] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-05-01 14:33:25] ----------------------------------------------------------------------
+[2025-05-01 14:33:25] Traceback (most recent call last):
+[2025-05-01 14:33:25] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 566, in test_app
+[2025-05-01 14:33:25] transfer_otherbank = otherbank(self)
+[2025-05-01 14:33:25] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 31, in otherbank
+[2025-05-01 14:33:25] result = handle_transfer(self, self.amount, is_negative=False)
+[2025-05-01 14:33:25] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 108, in handle_transfer
+[2025-05-01 14:33:25] account_option, detected_account = self.extract_staff_or_saving_option(txn_text)
+[2025-05-01 14:33:25] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 14:33:25] AttributeError: 'TestAppium' object has no attribute 'extract_staff_or_saving_option'
+[2025-05-01 14:33:25] 
+[2025-05-01 14:33:25] During handling of the above exception, another exception occurred:
+[2025-05-01 14:33:25] 
+[2025-05-01 14:33:25] Traceback (most recent call last):
+[2025-05-01 14:33:25] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 571, in test_app
+[2025-05-01 14:33:25] self.fail("USSD process failed.")
+[2025-05-01 14:33:25] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-01 14:33:25] AssertionError: USSD process failed.
+[2025-05-01 14:33:25] 
+[2025-05-01 14:33:25] ----------------------------------------------------------------------
+[2025-05-01 14:33:25] Ran 1 test in 144.366s
+[2025-05-01 14:33:25] 
+[2025-05-01 14:33:25] FAILED (failures=1)
+[2025-05-01 14:33:25] 
+Test completed.
+
+[2025-05-01 14:44:49] 
+================  New Test Started at 2025-05-01 14:44:49  ================
+
+[2025-05-01 14:45:04] Using Device ID: R9ZR601C18H
+[2025-05-01 14:45:04] Using Android Version: 12
+[2025-05-01 14:45:04] Using package: com.samsung.android.dialer
+[2025-05-01 14:45:04] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 14:45:04] Dialing USSD code (Attempt 1)...
+[2025-05-01 14:45:11] USSD session cancelled successfully.
+[2025-05-01 14:45:11] Expected USSD response not found. Retrying...
+[2025-05-01 14:45:13] Dialing USSD code (Attempt 2)...
+[2025-05-01 14:45:17] Expected USSD page matched.
+[2025-05-01 14:45:22] Input field detected
+[2025-05-01 14:45:27] Pin Enter Notification Detected
+[2025-05-01 14:45:32] Login successful.
+[2025-05-01 14:45:32] Found option: 1: My Accounts
+[2025-05-01 14:45:32] Found option: 2: Transfer
+[2025-05-01 14:45:32] Found option: 3: Transfer to Other Bank
+[2025-05-01 14:45:32] Found option: 4: Transfer to Own
+[2025-05-01 14:45:32] Found option: 5: Airtime
+[2025-05-01 14:45:32] Found option: 6: Utilities
+[2025-05-01 14:45:32] Found option: 7: Exchange Rates
+[2025-05-01 14:45:32] Found option: 8: More options
+[2025-05-01 14:45:32] Excel in the path is used
+[2025-05-01 14:45:33] Writing 'Pass' to row 2, col 5
+[2025-05-01 14:45:33] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-01 14:45:33] Test for Transfer..
+[2025-05-01 14:45:43] Test for Atm With drawal ..
+[2025-05-01 14:45:48] 2 account(s) found: ['1: 174615624 - ETB - Apollo', '2: 182975435 - ETB - STAFF']
+[2025-05-01 14:45:48] 
+[2025-05-01 14:45:48] Checking account: 1: 174615624 - ETB - Apollo
+[2025-05-01 14:46:01] Transaction confirmation pass for 1: 174615624 - ETB - Apollo
+[2025-05-01 14:46:03] Writing 'Pass' to row 12, col 5
+[2025-05-01 14:46:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:46:04] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-05-01 14:46:10] ATM withdrawal
+[2025-05-01 14:46:10] 1: 174615624 - ETB - Apollo
+[2025-05-01 14:46:10] 2: 182975435 - ETB - STAFF
+[2025-05-01 14:46:10] 
+[2025-05-01 14:46:10] Checking account: 2: 182975435 - ETB - STAFF
+[2025-05-01 14:46:23] Transaction confirmation pass for 2: 182975435 - ETB - STAFF
+[2025-05-01 14:46:24] Writing 'Pass' to row 12, col 5
+[2025-05-01 14:46:25] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:46:25] Updated 'Transfer' sheet - rows [12] set to 'Pass'.
+[2025-05-01 14:46:30] ATM negative scenario test started...
+[2025-05-01 14:46:30] 
+[2025-05-01 14:46:30] Checking account: 1: 174615624 - ETB - Apollo
+[2025-05-01 14:46:34] Negative test with 9000 birr
+[2025-05-01 14:46:43] Negative test message: ORA-12899: value too large for column "MCOMMERCE_ADMIN"."PRODUCTTRANSACTION"."VENDOR_ID" (actual: 51, maximum: 50)
+[2025-05-01 14:46:43] Transaction already exists or error occured, retrying same account...
+[2025-05-01 14:46:48] Un usual error
+[2025-05-01 14:46:48] Expected text not found: 'C'
+[2025-05-01 14:46:48] Mismatch in expected output.
+[2025-05-01 14:46:48] Failed to confirm
+[2025-05-01 14:46:48] 
+[2025-05-01 14:46:48] Checking account: 2: 182975435 - ETB - STAFF
+[2025-05-01 14:46:48] Expected text not found: 'w'
+[2025-05-01 14:46:48] Mismatch in expected output.
+[2025-05-01 14:46:48] Failed to select account at index 2
+[2025-05-01 14:46:48] ATM Transfer Ends
+[2025-05-01 14:46:48] USSD session cancelled successfully.
+[2025-05-01 14:46:48] Dialing USSD code (Attempt 1)...
+[2025-05-01 14:46:52] Expected USSD page matched.
+[2025-05-01 14:46:52] Input field detected
+[2025-05-01 14:46:57] Pin Enter Notification Detected
+[2025-05-01 14:47:02] Login successful.
+[2025-05-01 14:47:02] Found option: 1: My Accounts
+[2025-05-01 14:47:02] Found option: 2: Transfer
+[2025-05-01 14:47:02] Found option: 3: Transfer to Other Bank
+[2025-05-01 14:47:02] Found option: 4: Transfer to Own
+[2025-05-01 14:47:02] Found option: 5: Airtime
+[2025-05-01 14:47:02] Found option: 6: Utilities
+[2025-05-01 14:47:02] Found option: 7: Exchange Rates
+[2025-05-01 14:47:02] Found option: 8: More options
+[2025-05-01 14:47:03] Writing 'Pass' to row 2, col 5
+[2025-05-01 14:47:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:47:04] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 14:47:08] Home page matched
+[2025-05-01 14:47:08] Test for Positive Scenario for Other Bank Transfer Started
+[2025-05-01 14:47:16] Attempt 1 to enter account number...
+[2025-05-01 14:47:20] Account accepted successfully
+[2025-05-01 14:47:36] Final response:
+[2025-05-01 14:47:36] Complete
+[2025-05-01 14:47:36] ETB 1.00 debited from 182975435 for 1000298224171 (Instant Transfer) on 01/05/2025 with transaction ID: FT25122R9Y9Y.
+[2025-05-01 14:47:38] Transfer Successfuly
+[2025-05-01 14:47:38] Writing 'Pass' to row 52, col 5
+[2025-05-01 14:47:39] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:47:39] Updated 'Transfer' sheet - rows [52] set to 'Pass'.
+[2025-05-01 14:47:39] Test for Positive Scenario Finished Test for Negative Scenario Begines...
+[2025-05-01 14:47:57] Attempt 1 to enter account number...
+[2025-05-01 14:48:01] Account accepted successfully
+[2025-05-01 14:48:16] Final response:
+[2025-05-01 14:48:16] repository.productTransactionAlreadyExists
+[2025-05-01 14:48:16] Recoverable error detected. Retrying from amount entry...
+[2025-05-01 14:48:20] Trying transfer attempt 2 for amount 50000...
+[2025-05-01 14:48:30] Final response:
+[2025-05-01 14:48:30] You have exceeded the daily transaction limit for Instant Transfer
+[2025-05-01 14:48:31] Writing 'Pass' to row 57, col 5
+[2025-05-01 14:48:33] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:48:33] Updated 'Transfer' sheet - rows [57] set to 'Pass'.
+[2025-05-01 14:48:47] Final response:
+[2025-05-01 14:48:47] You have exceeded the single transaction limit for Instant Transfer
+[2025-05-01 14:48:48] Writing 'Pass' to row 55, col 5
+[2025-05-01 14:48:49] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:48:49] Updated 'Transfer' sheet - rows [55] set to 'Pass'.
+[2025-05-01 14:48:51] Writing 'Pass' to row 56, col 5
+[2025-05-01 14:48:52] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 14:48:52] Updated 'Transfer' sheet - rows [56] set to 'Pass'.
+[2025-05-01 14:48:57] USSD session cancelled successfully.
+[2025-05-01 14:48:58] .
+[2025-05-01 14:48:58] ----------------------------------------------------------------------
+[2025-05-01 14:48:58] Ran 1 test in 247.058s
+[2025-05-01 14:48:58] 
+[2025-05-01 14:48:58] OK
+[2025-05-01 14:48:58] 
+Test completed.
+
+[2025-05-01 16:09:47] 
+================  New Test Started at 2025-05-01 16:09:47  ================
+
+[2025-05-01 16:10:06] Using Device ID: R9ZR601C18H
+[2025-05-01 16:10:06] Using Android Version: 12
+[2025-05-01 16:10:06] Using package: com.samsung.android.dialer
+[2025-05-01 16:10:06] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 16:10:06] Dialing USSD code (Attempt 1)...
+[2025-05-01 16:10:13] Expected USSD page matched.
+[2025-05-01 16:10:18] Input field detected
+[2025-05-01 16:10:22] Pin Enter Notification Detected
+[2025-05-01 16:10:27] Login successful.
+[2025-05-01 16:10:27] Found option: 1: My Accounts
+[2025-05-01 16:10:27] Found option: 2: Transfer
+[2025-05-01 16:10:27] Found option: 3: Transfer to Other Bank
+[2025-05-01 16:10:27] Found option: 4: Transfer to Own
+[2025-05-01 16:10:27] Found option: 5: Airtime
+[2025-05-01 16:10:27] Found option: 6: Utilities
+[2025-05-01 16:10:27] Found option: 7: Exchange Rates
+[2025-05-01 16:10:27] Found option: 8: More options
+[2025-05-01 16:10:27] Excel in the path is used
+[2025-05-01 16:10:28] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:10:30] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:10:30] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:10:30] Test for Ethio telecom topup
+[2025-05-01 16:10:30] 2073
+[2025-05-01 16:10:30] 0970951608
+[2025-05-01 16:10:30] Test for Airtime..
+[2025-05-01 16:10:34] Test for Airtime ..
+[2025-05-01 16:10:39] Writing 'Pass' to row 2, col 7
+[2025-05-01 16:10:40] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:10:40] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:10:40] Processing account: 182975435
+[2025-05-01 16:10:45] Entering invalid phone number: 0712911008
+[2025-05-01 16:11:01] Detecting Invalid phone number is pass for 182975435
+[2025-05-01 16:11:03] Writing 'Pass' to row 16, col 7
+[2025-05-01 16:11:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:11:04] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 16:11:04] Entering valid phone number 0970951608
+[2025-05-01 16:11:16] airtime confirmation pass for 182975435
+[2025-05-01 16:11:17] Writing 'Pass' to row 5, col 7
+[2025-05-01 16:11:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:11:18] Updated 'Airtime topup' sheet - rows [5] set to 'Pass'.
+[2025-05-01 16:11:19] Airtime transaction completed
+[2025-05-01 16:11:19] USSD session cancelled successfully.
+[2025-05-01 16:11:19] Test for safaricom topup
+[2025-05-01 16:11:19] 2073
+[2025-05-01 16:11:19] 0712911008
+[2025-05-01 16:11:19] Dialing USSD code (Attempt 1)...
+[2025-05-01 16:11:26] Expected USSD page matched.
+[2025-05-01 16:11:26] Input field detected
+[2025-05-01 16:11:31] Pin Enter Notification Detected
+[2025-05-01 16:11:35] Login successful.
+[2025-05-01 16:11:35] Found option: 1: My Accounts
+[2025-05-01 16:11:35] Found option: 2: Transfer
+[2025-05-01 16:11:35] Found option: 3: Transfer to Other Bank
+[2025-05-01 16:11:35] Found option: 4: Transfer to Own
+[2025-05-01 16:11:35] Found option: 5: Airtime
+[2025-05-01 16:11:35] Found option: 6: Utilities
+[2025-05-01 16:11:35] Found option: 7: Exchange Rates
+[2025-05-01 16:11:35] Found option: 8: More options
+[2025-05-01 16:11:37] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:11:38] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:11:38] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:11:38] Test for Airtime..
+[2025-05-01 16:11:46] Test for Airtime ..
+[2025-05-01 16:11:51] Writing 'Pass' to row 2, col 7
+[2025-05-01 16:11:53] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:11:53] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:11:53] Processing account: 182975435
+[2025-05-01 16:11:57] Entering invalid safaricom phone number 0970951608
+[2025-05-01 16:12:13] Detecting Invalid phone number safaricom is pass for 182975435
+[2025-05-01 16:12:14] Writing 'Pass' to row 16, col 7
+[2025-05-01 16:12:15] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:12:15] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 16:12:15] Entering phone number 0712911008
+[2025-05-01 16:12:27] airtime confirmation pass for 182975435
+[2025-05-01 16:12:28] Writing 'Pass' to row 12, col 7
+[2025-05-01 16:12:29] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:12:29] Updated 'Airtime topup' sheet - rows [12] set to 'Pass'.
+[2025-05-01 16:12:30] Airtime transaction completed
+[2025-05-01 16:12:30] USSD session cancelled successfully.
+[2025-05-01 16:12:31] .
+[2025-05-01 16:12:31] ----------------------------------------------------------------------
+[2025-05-01 16:12:31] Ran 1 test in 159.195s
+[2025-05-01 16:12:31] 
+[2025-05-01 16:12:31] OK
+[2025-05-01 16:12:31] 
+Test completed.
+
+[2025-05-01 16:24:15] 
+================  New Test Started at 2025-05-01 16:24:15  ================
+
+[2025-05-01 16:24:34] Using Device ID: R9ZR601C18H
+[2025-05-01 16:24:34] Using Android Version: 12
+[2025-05-01 16:24:34] Using package: com.samsung.android.dialer
+[2025-05-01 16:24:34] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 16:24:34] Dialing USSD code (Attempt 1)...
+[2025-05-01 16:24:38] Expected USSD page matched.
+[2025-05-01 16:24:43] Input field detected
+[2025-05-01 16:24:48] Pin Enter Notification Detected
+[2025-05-01 16:24:53] Login successful.
+[2025-05-01 16:24:53] Found option: 1: My Accounts
+[2025-05-01 16:24:53] Found option: 2: Transfer
+[2025-05-01 16:24:53] Found option: 3: Transfer to Other Bank
+[2025-05-01 16:24:53] Found option: 4: Transfer to Own
+[2025-05-01 16:24:53] Found option: 5: Airtime
+[2025-05-01 16:24:53] Found option: 6: Utilities
+[2025-05-01 16:24:53] Found option: 7: Exchange Rates
+[2025-05-01 16:24:53] Found option: 8: More options
+[2025-05-01 16:24:53] Excel in the path is used
+[2025-05-01 16:24:54] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:24:55] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:24:55] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:24:59] Test for Ethio telecom topup
+[2025-05-01 16:24:59] 2073
+[2025-05-01 16:24:59] 0970951608
+[2025-05-01 16:24:59] Test for Airtime EthioTelecom..
+[2025-05-01 16:25:04] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:25:05] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:25:05] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:25:06] Processing account: 182975435
+[2025-05-01 16:25:10] Entering invalid phone number: 0712911008
+[2025-05-01 16:25:28] Detecting Invalid phone number is pass for 182975435
+[2025-05-01 16:25:29] Writing 'Pass' to row 16, col 5
+[2025-05-01 16:25:30] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:25:30] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 16:25:30] Entering valid phone number 0970951608
+[2025-05-01 16:25:42] airtime confirmation pass for 182975435
+[2025-05-01 16:25:44] Writing 'Pass' to row 5, col 5
+[2025-05-01 16:25:45] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:25:45] Updated 'Airtime topup' sheet - rows [5] set to 'Pass'.
+[2025-05-01 16:25:45] Ethio Telecom Airtime Top up Test completed
+[2025-05-01 16:25:46] USSD session cancelled successfully.
+[2025-05-01 16:25:46] Test for safaricom topup
+[2025-05-01 16:25:46] 2073
+[2025-05-01 16:25:46] 0712911008
+[2025-05-01 16:25:46] Dialing USSD code (Attempt 1)...
+[2025-05-01 16:25:50] Expected USSD page matched.
+[2025-05-01 16:25:50] Input field detected
+[2025-05-01 16:25:54] Pin Enter Notification Detected
+[2025-05-01 16:25:59] Login successful.
+[2025-05-01 16:25:59] Found option: 1: My Accounts
+[2025-05-01 16:25:59] Found option: 2: Transfer
+[2025-05-01 16:25:59] Found option: 3: Transfer to Other Bank
+[2025-05-01 16:25:59] Found option: 4: Transfer to Own
+[2025-05-01 16:25:59] Found option: 5: Airtime
+[2025-05-01 16:25:59] Found option: 6: Utilities
+[2025-05-01 16:25:59] Found option: 7: Exchange Rates
+[2025-05-01 16:25:59] Found option: 8: More options
+[2025-05-01 16:26:00] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:26:01] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:26:01] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:26:10] Test for Airtime Safaricom ..
+[2025-05-01 16:26:15] Writing 'Pass' to row 2, col 5
+[2025-05-01 16:26:16] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:26:16] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 16:26:17] Processing account: 182975435
+[2025-05-01 16:26:21] Entering invalid safaricom phone number 0970951608
+[2025-05-01 16:26:37] Detecting Invalid phone number safaricom is pass for 182975435
+[2025-05-01 16:26:38] Writing 'Pass' to row 16, col 5
+[2025-05-01 16:26:39] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:26:39] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 16:26:39] Entering phone number 0712911008
+[2025-05-01 16:26:51] airtime confirmation pass for 182975435
+[2025-05-01 16:26:52] Writing 'Pass' to row 12, col 5
+[2025-05-01 16:26:53] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 16:26:53] Updated 'Airtime topup' sheet - rows [12] set to 'Pass'.
+[2025-05-01 16:26:54] Safaricom Airtime Top Up Test transaction completed
+[2025-05-01 16:26:55] USSD session cancelled successfully.
+[2025-05-01 16:26:56] .
+[2025-05-01 16:26:56] ----------------------------------------------------------------------
+[2025-05-01 16:26:56] Ran 1 test in 157.932s
+[2025-05-01 16:26:56] 
+[2025-05-01 16:26:56] OK
+[2025-05-01 16:26:56] 
+Test completed.
+
+[2025-05-01 17:16:43] 
+================  New Test Started at 2025-05-01 17:16:43  ================
+
+[2025-05-01 17:17:01] Using Device ID: R9ZR601C18H
+[2025-05-01 17:17:01] Using Android Version: 12
+[2025-05-01 17:17:01] Using package: com.samsung.android.dialer
+[2025-05-01 17:17:01] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 17:17:01] Dialing USSD code (Attempt 1)...
+[2025-05-01 17:17:05] Expected USSD page matched.
+[2025-05-01 17:17:10] Input field detected
+[2025-05-01 17:17:15] Pin Enter Notification Detected
+[2025-05-01 17:17:21] Login successful.
+[2025-05-01 17:17:21] Found option: 1: My Accounts
+[2025-05-01 17:17:21] Found option: 2: Transfer
+[2025-05-01 17:17:21] Found option: 3: Transfer to Other Bank
+[2025-05-01 17:17:21] Found option: 4: Transfer to Own
+[2025-05-01 17:17:21] Found option: 5: Airtime
+[2025-05-01 17:17:21] Found option: 6: Utilities
+[2025-05-01 17:17:21] Found option: 7: Exchange Rates
+[2025-05-01 17:17:21] Found option: 8: More options
+[2025-05-01 17:17:21] Excel in the path is used
+[2025-05-01 17:17:22] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:17:22] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-01 17:17:29] USSD Response: My Accounts
+[2025-05-01 17:17:29] 1: 174615624 - ETB - Apol.
+[2025-05-01 17:17:29] 2: 182975435 - ETB - STAF.
+[2025-05-01 17:17:29] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 17:17:29] list of accounts associated with the customer ID is displayed
+[2025-05-01 17:17:31] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:17:32] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:17:32] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 17:17:32] Excel status Updated
+[2025-05-01 17:17:32] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 17:17:32] 
+[2025-05-01 17:17:32] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 17:17:32] 1: 174615624
+[2025-05-01 17:17:32] 174615624
+[2025-05-01 17:17:41] The list of recent transactions is displayed
+[2025-05-01 17:17:42] Writing 'Pass' to row 4, col 5
+[2025-05-01 17:17:43] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:17:43] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 17:17:48] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-01 17:17:49] Writing 'Pass' to row 6, col 5
+[2025-05-01 17:17:50] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:17:50] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 17:17:54] 
+[2025-05-01 17:17:54] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-01 17:17:54] 2: 182975435
+[2025-05-01 17:17:54] 182975435
+[2025-05-01 17:18:03] The list of recent transactions is displayed
+[2025-05-01 17:18:04] Writing 'Pass' to row 4, col 5
+[2025-05-01 17:18:05] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:18:05] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 17:18:10] Transaction detail verified for account: 2: 182975435 - ETB - STAF.
+[2025-05-01 17:18:11] Writing 'Pass' to row 6, col 5
+[2025-05-01 17:18:12] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:18:12] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 17:18:16] All account checks completed successfully
+[2025-05-01 17:18:16] My Account test compleated!
+[2025-05-01 17:18:17] 
+[2025-05-01 17:18:17] [Slow Popups in My Accounts]
+[2025-05-01 17:18:17] My Accounts List Page: 2.53s
+[2025-05-01 17:18:17] USSD session cancelled successfully.
+[2025-05-01 17:18:18] Test for Ethio telecom topup
+[2025-05-01 17:18:18] 2073
+[2025-05-01 17:18:18] 0970951608
+[2025-05-01 17:18:18] Dialing USSD code (Attempt 1)...
+[2025-05-01 17:18:22] Expected USSD page matched.
+[2025-05-01 17:18:22] Input field detected
+[2025-05-01 17:18:26] Pin Enter Notification Detected
+[2025-05-01 17:18:31] Login successful.
+[2025-05-01 17:18:31] Found option: 1: My Accounts
+[2025-05-01 17:18:31] Found option: 2: Transfer
+[2025-05-01 17:18:31] Found option: 3: Transfer to Other Bank
+[2025-05-01 17:18:31] Found option: 4: Transfer to Own
+[2025-05-01 17:18:31] Found option: 5: Airtime
+[2025-05-01 17:18:31] Found option: 6: Utilities
+[2025-05-01 17:18:31] Found option: 7: Exchange Rates
+[2025-05-01 17:18:31] Found option: 8: More options
+[2025-05-01 17:18:33] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:18:34] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:18:34] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 17:18:38] Test for Airtime EthioTelecom..
+[2025-05-01 17:18:43] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:18:45] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:18:45] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 17:18:45] Processing account: 182975435
+[2025-05-01 17:18:49] Test for invalid ethio telecom phone number: 0712911008
+[2025-05-01 17:19:05] Detecting invalid ethio telecom phone number is pass for: 182975435
+[2025-05-01 17:19:07] Writing 'Pass' to row 16, col 5
+[2025-05-01 17:19:08] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:19:08] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 17:19:08] Test for valid ethio telecom phone number: 0970951608
+[2025-05-01 17:19:20] airtime confirmation pass for 182975435
+[2025-05-01 17:19:21] Writing 'Pass' to row 5, col 5
+[2025-05-01 17:19:22] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:19:22] Updated 'Airtime topup' sheet - rows [5] set to 'Pass'.
+[2025-05-01 17:19:22] Ethio Telecom Airtime Top up Test completed!
+[2025-05-01 17:19:23] USSD session cancelled successfully.
+[2025-05-01 17:19:23] Test for safaricom topup
+[2025-05-01 17:19:23] 2073
+[2025-05-01 17:19:23] 0712911008
+[2025-05-01 17:19:23] Dialing USSD code (Attempt 1)...
+[2025-05-01 17:19:27] Expected USSD page matched.
+[2025-05-01 17:19:27] Input field detected
+[2025-05-01 17:19:32] Pin Enter Notification Detected
+[2025-05-01 17:19:36] Login successful.
+[2025-05-01 17:19:36] Found option: 1: My Accounts
+[2025-05-01 17:19:36] Found option: 2: Transfer
+[2025-05-01 17:19:36] Found option: 3: Transfer to Other Bank
+[2025-05-01 17:19:36] Found option: 4: Transfer to Own
+[2025-05-01 17:19:36] Found option: 5: Airtime
+[2025-05-01 17:19:36] Found option: 6: Utilities
+[2025-05-01 17:19:36] Found option: 7: Exchange Rates
+[2025-05-01 17:19:36] Found option: 8: More options
+[2025-05-01 17:19:37] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:19:38] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:19:38] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 17:19:47] Test for Airtime Safaricom ..
+[2025-05-01 17:19:53] Writing 'Pass' to row 2, col 5
+[2025-05-01 17:19:54] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:19:54] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-01 17:19:54] Processing account: 182975435
+[2025-05-01 17:19:58] Test for invalid safaricom phone number validation: 0970951608
+[2025-05-01 17:20:14] Detecting Invalid phone number safaricom is pass for 182975435
+[2025-05-01 17:20:15] Writing 'Pass' to row 16, col 5
+[2025-05-01 17:20:16] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:20:16] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-01 17:20:16] Tesf for valid safaricom phone number: 0712911008
+[2025-05-01 17:20:27] airtime confirmation pass for 182975435
+[2025-05-01 17:20:28] Writing 'Pass' to row 12, col 5
+[2025-05-01 17:20:30] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 17:20:30] Updated 'Airtime topup' sheet - rows [12] set to 'Pass'.
+[2025-05-01 17:20:30] Safaricom Airtime Top Up Test transaction completed!
+[2025-05-01 17:20:31] USSD session cancelled successfully.
+[2025-05-01 17:20:32] .
+[2025-05-01 17:20:32] ----------------------------------------------------------------------
+[2025-05-01 17:20:32] Ran 1 test in 226.365s
+[2025-05-01 17:20:32] 
+[2025-05-01 17:20:32] OK
+[2025-05-01 17:20:32] 
+[2025-05-01 17:20:32] ========= Cumulative Slow USSD Pages ( > 2.5s ) =========
+[2025-05-01 17:20:32] My Accounts List Page: 2.53s
+[2025-05-01 17:20:32] 
+Test completed.
+

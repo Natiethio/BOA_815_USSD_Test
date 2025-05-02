@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "test_app2.py", line 935, in <module>
+  File "unittest\main.py", line 103, in __init__
+  File "unittest\main.py", line 142, in parseArgs
+  File "unittest\main.py", line 151, in createTests
+  File "unittest\loader.py", line 107, in loadTestsFromModule
+  File "unittest\loader.py", line 94, in loadTestsFromTestCase
+  File "unittest\suite.py", line 24, in __init__
+  File "unittest\suite.py", line 57, in addTests
+TypeError: TestAppium.__init__() takes 1 positional argument but 2 were given

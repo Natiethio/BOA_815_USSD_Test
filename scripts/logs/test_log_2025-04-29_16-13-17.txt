@@ -1,0 +1,375 @@
+[2025-04-29 16:14:55] 
+================  New Test Started at 2025-04-29 16:14:55  ================
+
+[2025-04-29 16:15:14] Using Device ID: R9ZR601C18H
+[2025-04-29 16:15:14] Using Android Version: 12
+[2025-04-29 16:15:14] Using package: com.samsung.android.dialer
+[2025-04-29 16:15:14] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-29 16:15:14] Dialing USSD code (Attempt 1)...
+[2025-04-29 16:15:20] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-29 16:15:20] 1: Login
+[2025-04-29 16:15:20] 2: Exit
+[2025-04-29 16:15:20] Expected USSD page matched.
+[2025-04-29 16:15:25] BOA USSD Login Notification Detected
+[2025-04-29 16:15:26] Input field detected
+[2025-04-29 16:15:29] Pin Enter Notification Detected
+[2025-04-29 16:15:35] Login successful.
+[2025-04-29 16:15:35] Found option: 1: My Accounts
+[2025-04-29 16:15:35] Found option: 2: Transfer
+[2025-04-29 16:15:35] Found option: 3: Transfer to Other Bank
+[2025-04-29 16:15:35] Found option: 4: Transfer to Own
+[2025-04-29 16:15:35] Found option: 5: Airtime
+[2025-04-29 16:15:35] Found option: 6: Utilities
+[2025-04-29 16:15:35] Found option: 7: Exchange Rates
+[2025-04-29 16:15:35] Found option: 8: More options
+[2025-04-29 16:15:35] from else
+[2025-04-29 16:15:35] Excel in the path is used
+[2025-04-29 16:15:36] Writing 'Pass' to row 2, col 5
+[2025-04-29 16:15:38] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 16:15:38] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-29 16:15:41] Home page matched
+[2025-04-29 16:15:41] Test for Positive Scenario Started
+[2025-04-29 16:15:41] Error: handle_transfer() missing 1 required positional argument: 'scenario_type'
+[2025-04-29 16:15:41] F
+[2025-04-29 16:15:41] ======================================================================
+[2025-04-29 16:15:41] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-29 16:15:41] ----------------------------------------------------------------------
+[2025-04-29 16:15:41] Traceback (most recent call last):
+[2025-04-29 16:15:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 943, in test_app
+[2025-04-29 16:15:41] transfer_otherbank = otherbank(self)
+[2025-04-29 16:15:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 30, in otherbank
+[2025-04-29 16:15:41] result = handle_transfer(self, self.amount, is_negative=False)
+[2025-04-29 16:15:41] TypeError: handle_transfer() missing 1 required positional argument: 'scenario_type'
+[2025-04-29 16:15:41] 
+[2025-04-29 16:15:41] During handling of the above exception, another exception occurred:
+[2025-04-29 16:15:41] 
+[2025-04-29 16:15:41] Traceback (most recent call last):
+[2025-04-29 16:15:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 947, in test_app
+[2025-04-29 16:15:42] self.fail("USSD process failed.")
+[2025-04-29 16:15:42] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-29 16:15:42] AssertionError: USSD process failed.
+[2025-04-29 16:15:42] 
+[2025-04-29 16:15:42] ----------------------------------------------------------------------
+[2025-04-29 16:15:42] Ran 1 test in 40.201s
+[2025-04-29 16:15:42] 
+[2025-04-29 16:15:42] FAILED (failures=1)
+[2025-04-29 16:15:42] 
+Test completed.
+
+[2025-04-29 16:17:54] 
+================  New Test Started at 2025-04-29 16:17:54  ================
+
+[2025-04-29 16:18:05] Using Device ID: R9ZR601C18H
+[2025-04-29 16:18:05] Using Android Version: 12
+[2025-04-29 16:18:05] Using package: com.samsung.android.dialer
+[2025-04-29 16:18:05] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-29 16:18:05] Dialing USSD code (Attempt 1)...
+[2025-04-29 16:18:08] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-29 16:18:08] 1: Login
+[2025-04-29 16:18:08] 2: Exit
+[2025-04-29 16:18:08] Expected USSD page matched.
+[2025-04-29 16:18:13] BOA USSD Login Notification Detected
+[2025-04-29 16:18:14] Input field detected
+[2025-04-29 16:18:17] Pin Enter Notification Detected
+[2025-04-29 16:18:23] Login successful.
+[2025-04-29 16:18:23] Found option: 1: My Accounts
+[2025-04-29 16:18:23] Found option: 2: Transfer
+[2025-04-29 16:18:23] Found option: 3: Transfer to Other Bank
+[2025-04-29 16:18:23] Found option: 4: Transfer to Own
+[2025-04-29 16:18:23] Found option: 5: Airtime
+[2025-04-29 16:18:23] Found option: 6: Utilities
+[2025-04-29 16:18:23] Found option: 7: Exchange Rates
+[2025-04-29 16:18:23] Found option: 8: More options
+[2025-04-29 16:18:23] from else
+[2025-04-29 16:18:23] Excel in the path is used
+[2025-04-29 16:18:24] Writing 'Pass' to row 2, col 5
+[2025-04-29 16:18:26] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 16:18:26] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-29 16:18:28] Home page matched
+[2025-04-29 16:18:28] Test for Positive Scenario Started
+[2025-04-29 16:18:42] Error: Source and destination accounts can not be the same. Retrying...
+[2025-04-29 16:18:43] .
+[2025-04-29 16:18:43] ----------------------------------------------------------------------
+[2025-04-29 16:18:43] Ran 1 test in 48.006s
+[2025-04-29 16:18:43] 
+[2025-04-29 16:18:43] OK
+[2025-04-29 16:18:43] 
+Test completed.
+
+[2025-04-29 17:43:17] 
+================  New Test Started at 2025-04-29 17:43:17  ================
+
+[2025-04-29 17:43:32] Using Device ID: R9ZR601C18H
+[2025-04-29 17:43:32] Using Android Version: 12
+[2025-04-29 17:43:32] Using package: com.samsung.android.dialer
+[2025-04-29 17:43:32] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-29 17:43:32] Dialing USSD code (Attempt 1)...
+[2025-04-29 17:43:37] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-29 17:43:37] 1: Login
+[2025-04-29 17:43:37] 2: Exit
+[2025-04-29 17:43:37] Expected USSD page matched.
+[2025-04-29 17:43:42] BOA USSD Login Notification Detected
+[2025-04-29 17:43:43] Input field detected
+[2025-04-29 17:43:46] Pin Enter Notification Detected
+[2025-04-29 17:43:52] Login successful.
+[2025-04-29 17:43:52] Found option: 1: My Accounts
+[2025-04-29 17:43:52] Found option: 2: Transfer
+[2025-04-29 17:43:52] Found option: 3: Transfer to Other Bank
+[2025-04-29 17:43:52] Found option: 4: Transfer to Own
+[2025-04-29 17:43:52] Found option: 5: Airtime
+[2025-04-29 17:43:52] Found option: 6: Utilities
+[2025-04-29 17:43:52] Found option: 7: Exchange Rates
+[2025-04-29 17:43:52] Found option: 8: More options
+[2025-04-29 17:43:52] from else
+[2025-04-29 17:43:52] Excel in the path is used
+[2025-04-29 17:43:53] Writing 'Pass' to row 2, col 5
+[2025-04-29 17:43:54] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 17:43:54] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-29 17:43:57] Home page matched
+[2025-04-29 17:43:57] Test for Positive Scenario Started
+[2025-04-29 17:44:04] Attempt 1 to enter account number...
+[2025-04-29 17:44:10] Account accepted successfully
+[2025-04-29 17:44:18] Expected text not found: 'Enter Remark'
+[2025-04-29 17:44:18] Mismatch in expected output.
+[2025-04-29 17:44:18] Positive test failed. Continuing with negative scenarios...
+[2025-04-29 17:44:18] Test for Positive Scenario Finished Test for Negative Scenario Begines...
+[2025-04-29 17:44:22] Expected text not found: '1: My Accounts'
+[2025-04-29 17:44:22] Mismatch in expected output.
+[2025-04-29 17:44:22] Expected text not found: 'Transfer to Other Bank'
+[2025-04-29 17:44:22] Mismatch in expected output.
+[2025-04-29 17:44:22] No bank list found transfer options found
+[2025-04-29 17:44:23] Writing 'Fail' to row 57, col 5
+[2025-04-29 17:44:23] C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+[2025-04-29 17:44:23] return self.get_screenshot_as_file(filename)
+[2025-04-29 17:44:26] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_transfer_options_found_20250429-174423.jpg
+[2025-04-29 17:44:27] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 17:44:27] Updated 'Transfer' sheet - rows [57] set to 'Fail'.
+[2025-04-29 17:44:28] Expected text not found: 'Transfer to Other Bank'
+[2025-04-29 17:44:28] Mismatch in expected output.
+[2025-04-29 17:44:28] No bank list found transfer options found
+[2025-04-29 17:44:29] Writing 'Fail' to row 57, col 5
+[2025-04-29 17:44:30] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_transfer_options_found_20250429-174429.jpg
+[2025-04-29 17:44:31] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 17:44:31] Updated 'Transfer' sheet - rows [57] set to 'Fail'.
+[2025-04-29 17:44:32] .
+[2025-04-29 17:44:32] ----------------------------------------------------------------------
+[2025-04-29 17:44:32] Ran 1 test in 73.105s
+[2025-04-29 17:44:32] 
+[2025-04-29 17:44:32] OK
+[2025-04-29 17:44:32] 
+Test completed.
+
+[2025-04-29 18:14:23] 
+================  New Test Started at 2025-04-29 18:14:23  ================
+
+[2025-04-29 18:14:39] Using Device ID: R9ZR601C18H
+[2025-04-29 18:14:39] Using Android Version: 12
+[2025-04-29 18:14:39] Using package: com.samsung.android.dialer
+[2025-04-29 18:14:39] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-29 18:14:39] Dialing USSD code (Attempt 1)...
+[2025-04-29 18:14:44] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-29 18:14:44] 1: Login
+[2025-04-29 18:14:44] 2: Exit
+[2025-04-29 18:14:44] Expected USSD page matched.
+[2025-04-29 18:14:50] BOA USSD Login Notification Detected
+[2025-04-29 18:14:50] Input field detected
+[2025-04-29 18:14:53] Pin Enter Notification Detected
+[2025-04-29 18:14:59] Login successful.
+[2025-04-29 18:14:59] Found option: 1: My Accounts
+[2025-04-29 18:14:59] Found option: 2: Transfer
+[2025-04-29 18:14:59] Found option: 3: Transfer to Other Bank
+[2025-04-29 18:14:59] Found option: 4: Transfer to Own
+[2025-04-29 18:14:59] Found option: 5: Airtime
+[2025-04-29 18:14:59] Found option: 6: Utilities
+[2025-04-29 18:14:59] Found option: 7: Exchange Rates
+[2025-04-29 18:14:59] Found option: 8: More options
+[2025-04-29 18:14:59] from else
+[2025-04-29 18:14:59] Excel in the path is used
+[2025-04-29 18:15:01] Writing 'Pass' to row 2, col 5
+[2025-04-29 18:15:02] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:15:02] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-29 18:15:04] Home page matched
+[2025-04-29 18:15:04] Test for Positive Scenario Started
+[2025-04-29 18:15:12] Attempt 1 to enter account number...
+[2025-04-29 18:15:17] Account accepted successfully
+[2025-04-29 18:15:36] Final response:
+[2025-04-29 18:15:36] Welcome to BOA Mobile Banking
+[2025-04-29 18:15:36] 1: My Accounts
+[2025-04-29 18:15:36] 2: Transfer
+[2025-04-29 18:15:36] 3: Transfer to Other Bank
+[2025-04-29 18:15:36] 4: Transfer to Own
+[2025-04-29 18:15:36] 5: Airtime
+[2025-04-29 18:15:36] 6: Utilities
+[2025-04-29 18:15:36] 7: Exchange Rates
+[2025-04-29 18:15:36] 8: More options
+[2025-04-29 18:15:36] Unexpected final text, retrying...
+[2025-04-29 18:15:39] Retrying transfer attempt 2 for amount 1...
+[2025-04-29 18:15:39] Expected text not found: 'Enter Amount'
+[2025-04-29 18:15:39] Mismatch in expected output.
+[2025-04-29 18:15:39] No account Entery page found exiting ..
+[2025-04-29 18:15:41] Skipping merged cell at row 52, column 5
+[2025-04-29 18:15:42] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:15:42] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:15:42] Positive test failed. Continuing with negative scenarios...
+[2025-04-29 18:15:42] Test for Positive Scenario Finished Test for Negative Scenario Begines...
+[2025-04-29 18:15:57] Attempt 1 to enter account number...
+[2025-04-29 18:16:02] Account accepted successfully
+[2025-04-29 18:16:15] Expected text not found: 'Complete'
+[2025-04-29 18:16:15] Mismatch in expected output.
+[2025-04-29 18:16:15] Exception occurred during transfer attempt 1: Transfer not completed
+[2025-04-29 18:16:19] Retrying transfer attempt 2 for amount 50000...
+[2025-04-29 18:16:27] Expected text not found: 'Complete'
+[2025-04-29 18:16:27] Mismatch in expected output.
+[2025-04-29 18:16:27] Exception occurred during transfer attempt 2: Transfer not completed
+[2025-04-29 18:16:31] Retrying transfer attempt 3 for amount 50000...
+[2025-04-29 18:16:39] Expected text not found: 'Complete'
+[2025-04-29 18:16:39] Mismatch in expected output.
+[2025-04-29 18:16:39] Exception occurred during transfer attempt 3: Transfer not completed
+[2025-04-29 18:16:43] Retries exhausted. Returning to home.
+[2025-04-29 18:16:58] Skipping merged cell at row 52, column 5
+[2025-04-29 18:16:59] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:16:59] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:17:09] Attempt 1 to enter account number...
+[2025-04-29 18:17:14] Account accepted successfully
+[2025-04-29 18:17:26] Expected text not found: 'Complete'
+[2025-04-29 18:17:26] Mismatch in expected output.
+[2025-04-29 18:17:26] Exception occurred during transfer attempt 1: Transfer not completed
+[2025-04-29 18:17:30] Retrying transfer attempt 2 for amount 50100...
+[2025-04-29 18:17:38] Expected text not found: 'Complete'
+[2025-04-29 18:17:38] Mismatch in expected output.
+[2025-04-29 18:17:38] Exception occurred during transfer attempt 2: Transfer not completed
+[2025-04-29 18:17:41] Retrying transfer attempt 3 for amount 50100...
+[2025-04-29 18:17:43] Error waiting for USSD message: Message: The element 'By.id: com.android.phone:id/message' does not exist in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+[2025-04-29 18:17:43] Stacktrace:
+[2025-04-29 18:17:43] io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element 'By.id: com.android.phone:id/message' does not exist in DOM anymore
+[2025-04-29 18:17:43] at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:117)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.handler.GetText.safeHandle(GetText.java:20)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)
+[2025-04-29 18:17:43] at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+[2025-04-29 18:17:43] at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+[2025-04-29 18:17:43] at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+[2025-04-29 18:17:43] at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+[2025-04-29 18:17:43] at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+[2025-04-29 18:17:43] at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+[2025-04-29 18:17:43] at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+[2025-04-29 18:17:43] at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+[2025-04-29 18:17:43] at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+[2025-04-29 18:17:43] at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+[2025-04-29 18:17:43] at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+[2025-04-29 18:17:43] at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+[2025-04-29 18:17:43] at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+[2025-04-29 18:17:43] at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+[2025-04-29 18:17:43] at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+[2025-04-29 18:17:43] at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+[2025-04-29 18:17:43] at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+[2025-04-29 18:17:43] at java.lang.Thread.run(Thread.java:1012)
+[2025-04-29 18:17:43] 
+[2025-04-29 18:17:43] Mismatch in expected output.
+[2025-04-29 18:17:43] No account Entery page found exiting ..
+[2025-04-29 18:17:44] Skipping merged cell at row 52, column 5
+[2025-04-29 18:17:45] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:17:45] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:17:46] .
+[2025-04-29 18:17:46] ----------------------------------------------------------------------
+[2025-04-29 18:17:46] Ran 1 test in 200.764s
+[2025-04-29 18:17:46] 
+[2025-04-29 18:17:46] OK
+[2025-04-29 18:17:46] 
+Test completed.
+
+[2025-04-29 18:29:09] 
+================  New Test Started at 2025-04-29 18:29:09  ================
+
+[2025-04-29 18:29:23] Using Device ID: R9ZR601C18H
+[2025-04-29 18:29:23] Using Android Version: 12
+[2025-04-29 18:29:23] Using package: com.samsung.android.dialer
+[2025-04-29 18:29:23] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-29 18:29:23] Dialing USSD code (Attempt 1)...
+[2025-04-29 18:29:28] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-29 18:29:28] 1: Login
+[2025-04-29 18:29:28] 2: Exit
+[2025-04-29 18:29:28] Expected USSD page matched.
+[2025-04-29 18:29:33] BOA USSD Login Notification Detected
+[2025-04-29 18:29:33] Input field detected
+[2025-04-29 18:29:37] Pin Enter Notification Detected
+[2025-04-29 18:29:43] Login successful.
+[2025-04-29 18:29:43] Found option: 1: My Accounts
+[2025-04-29 18:29:43] Found option: 2: Transfer
+[2025-04-29 18:29:43] Found option: 3: Transfer to Other Bank
+[2025-04-29 18:29:43] Found option: 4: Transfer to Own
+[2025-04-29 18:29:43] Found option: 5: Airtime
+[2025-04-29 18:29:43] Found option: 6: Utilities
+[2025-04-29 18:29:43] Found option: 7: Exchange Rates
+[2025-04-29 18:29:43] Found option: 8: More options
+[2025-04-29 18:29:43] from else
+[2025-04-29 18:29:43] Excel in the path is used
+[2025-04-29 18:29:44] Writing 'Pass' to row 2, col 5
+[2025-04-29 18:29:45] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:29:45] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-29 18:29:48] Home page matched
+[2025-04-29 18:29:48] Test for Positive Scenario Started
+[2025-04-29 18:29:57] Attempt 1 to enter account number...
+[2025-04-29 18:30:01] Account accepted successfully
+[2025-04-29 18:30:18] Exception occurred during transfer attempt 1: 'str' object cannot be interpreted as an integer
+[2025-04-29 18:30:22] Retrying transfer attempt 2 for amount 1...
+[2025-04-29 18:30:22] Expected text not found: 'Enter Amount'
+[2025-04-29 18:30:22] Mismatch in expected output.
+[2025-04-29 18:30:22] No account Entery page found exiting ..
+[2025-04-29 18:30:23] Skipping merged cell at row 52, column 5
+[2025-04-29 18:30:24] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:30:24] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:30:24] Positive test failed. Continuing with negative scenarios...
+[2025-04-29 18:30:24] Test for Positive Scenario Finished Test for Negative Scenario Begines...
+[2025-04-29 18:30:38] Attempt 1 to enter account number...
+[2025-04-29 18:30:46] Account accepted successfully
+[2025-04-29 18:30:58] Exception occurred during transfer attempt 1: 'str' object cannot be interpreted as an integer
+[2025-04-29 18:31:01] Retrying transfer attempt 2 for amount 50000...
+[2025-04-29 18:31:12] Exception occurred during transfer attempt 2: 'str' object cannot be interpreted as an integer
+[2025-04-29 18:31:15] Retrying transfer attempt 3 for amount 50000...
+[2025-04-29 18:31:45] Error during USSD input: Message:
+[2025-04-29 18:31:45] Stacktrace:
+[2025-04-29 18:31:45] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-29 18:31:45] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-29 18:31:45] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-29 18:31:45] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-29 18:31:45] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-29 18:31:45] No account Entery page found exiting ..
+[2025-04-29 18:31:46] Skipping merged cell at row 52, column 5
+[2025-04-29 18:31:47] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:31:47] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:32:16] Error waiting for USSD message: Message:
+[2025-04-29 18:32:16] Stacktrace:
+[2025-04-29 18:32:16] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-29 18:32:16] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-29 18:32:16] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-29 18:32:16] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-29 18:32:16] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-29 18:32:16] Mismatch in expected output.
+[2025-04-29 18:32:16] No bank list found transfer options found
+[2025-04-29 18:32:17] Skipping merged cell at row 52, column 5
+[2025-04-29 18:32:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-04-29 18:32:18] Updated 'Transfer' sheet - rows [52] set to 'Fail'.
+[2025-04-29 18:32:19] .
+[2025-04-29 18:32:19] ----------------------------------------------------------------------
+[2025-04-29 18:32:19] Ran 1 test in 189.118s
+[2025-04-29 18:32:19] 
+[2025-04-29 18:32:19] OK
+[2025-04-29 18:32:19] 
+Test completed.
+

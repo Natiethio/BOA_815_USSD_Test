@@ -1,0 +1,25 @@
+
+========================== New log ========================
+
+Enter Pin Page page appeared in => 1.56 seconds
+Home Page page appeared in => 1.58 seconds
+BOA Accounts list Page(Air Time) page appeared in => 1.62 seconds
+Enter Recharge Phone No Page(Ethio Telecom) page appeared in => 1.51 seconds
+Enter Amount(Air Time) page appeared in => 1.54 seconds
+Confirmation Page(Air Time) page appeared in => 1.83 seconds
+Invalid Ethio Telecom Phone No page page appeared in => 1.72 seconds
+Enter Valid Recharge Phone No Page(Ethio Telecom) page appeared in => 1.46 seconds
+Enter Amount Page(Air Time) page appeared in => 1.55 seconds
+Confirmation Page(Air Time) page appeared in => 1.7 seconds
+Enter Amount(Air Time Back) page appeared in => 1.7 seconds
+Enter Pin Page page appeared in => 1.52 seconds
+Home Page page appeared in => 1.55 seconds
+BoA Accounts List Page(Air Time) page appeared in => 1.58 seconds
+Enter Recharge Phone No(Safaricom) page appeared in => 1.48 seconds
+Enter Amount(Air Time Safaricom) page appeared in => 1.58 seconds
+Confirmation Page(Air Time Safaricom) page appeared in => 1.8 seconds
+Invalid Safaricom Number Page page appeared in => 1.88 seconds
+Enter Recharge Phone No(Safaricom) page appeared in => 1.48 seconds
+Enter Amount(Air Time) page appeared in => 1.46 seconds
+Confirmation Page(Air Time) page appeared in => 1.8 seconds
+Enter Amount(Air Time Back) page appeared in => 1.59 seconds

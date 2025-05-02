@@ -1,0 +1,132 @@
+[2025-04-30 13:36:02] 
+================  New Test Started at 2025-04-30 13:36:02  ================
+
+[2025-04-30 13:36:06] Traceback (most recent call last):
+[2025-04-30 13:36:06] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 21, in <module>
+[2025-04-30 13:36:06] from scripts.AirTime.airtime import airtime
+[2025-04-30 13:36:06] ModuleNotFoundError: No module named 'scripts'
+[2025-04-30 13:36:06] 
+Test failed with exit code 1.
+
+[2025-04-30 13:37:27] 
+================  New Test Started at 2025-04-30 13:37:27  ================
+
+[2025-04-30 13:37:43] Using Device ID: R9ZR601C18H
+[2025-04-30 13:37:43] Using Android Version: 12
+[2025-04-30 13:37:43] Using package: com.samsung.android.dialer
+[2025-04-30 13:37:43] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-04-30 13:37:43] Dialing USSD code (Attempt 1)...
+[2025-04-30 13:37:48] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-30 13:37:48] 1: Login
+[2025-04-30 13:37:48] 2: Exit
+[2025-04-30 13:37:48] Expected USSD page matched.
+[2025-04-30 13:37:53] BOA USSD Login Notification Detected
+[2025-04-30 13:37:54] Input field detected
+[2025-04-30 13:37:57] Pin Enter Notification Detected
+[2025-04-30 13:38:25] Could not find message element: Message:
+[2025-04-30 13:38:25] Stacktrace:
+[2025-04-30 13:38:25] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-30 13:38:25] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-30 13:38:25] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-30 13:38:25] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-30 13:38:25] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-30 13:39:04] Error: Message: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
+[2025-04-30 13:39:04] Stacktrace:
+[2025-04-30 13:39:04] UnknownError: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
+[2025-04-30 13:39:04] at getResponseForW3CError (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+[2025-04-30 13:39:04] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+[2025-04-30 13:39:04] at runNextTicks (node:internal/process/task_queues:65:5)
+[2025-04-30 13:39:04] at processImmediate (node:internal/timers:459:9)
+[2025-04-30 13:39:04] at process.callbackTrampoline (node:internal/async_hooks:130:17)
+[2025-04-30 13:39:04] FE
+[2025-04-30 13:39:04] ======================================================================
+[2025-04-30 13:39:04] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-04-30 13:39:04] ----------------------------------------------------------------------
+[2025-04-30 13:39:04] Traceback (most recent call last):
+[2025-04-30 13:39:05] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 89, in tearDown
+[2025-04-30 13:39:05] self.driver.quit()
+[2025-04-30 13:39:05] ~~~~~~~~~~~~~~~~^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 589, in quit
+[2025-04-30 13:39:05] self.execute(Command.QUIT)
+[2025-04-30 13:39:05] ~~~~~~~~~~~~^^^^^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-04-30 13:39:05] self.error_handler.check_response(response)
+[2025-04-30 13:39:05] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-04-30 13:39:05] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-04-30 13:39:05] selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+[2025-04-30 13:39:05] Stacktrace:
+[2025-04-30 13:39:05] NoSuchDriverError: A session is either terminated or not started
+[2025-04-30 13:39:05] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:311:15)
+[2025-04-30 13:39:05] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:514:15
+[2025-04-30 13:39:05] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-30 13:39:05] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+[2025-04-30 13:39:05] at Route.dispatch (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+[2025-04-30 13:39:05] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-30 13:39:05] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+[2025-04-30 13:39:05] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+[2025-04-30 13:39:05] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+[2025-04-30 13:39:05] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+[2025-04-30 13:39:05] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-04-30 13:39:05] at logger (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+[2025-04-30 13:39:05] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-30 13:39:05] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-04-30 13:39:05] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-04-30 13:39:05] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-04-30 13:39:05] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-04-30 13:39:05] at jsonParser (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+[2025-04-30 13:39:05] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-30 13:39:05] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-04-30 13:39:05] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-04-30 13:39:05] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-04-30 13:39:05] 
+[2025-04-30 13:39:05] ======================================================================
+[2025-04-30 13:39:05] FAIL: test_app (__main__.TestAppium.test_app)
+[2025-04-30 13:39:05] ----------------------------------------------------------------------
+[2025-04-30 13:39:05] Traceback (most recent call last):
+[2025-04-30 13:39:05] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 943, in test_app
+[2025-04-30 13:39:05] transfer_otherbank = otherbank(self)
+[2025-04-30 13:39:05] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 19, in otherbank
+[2025-04-30 13:39:05] status_helper = otherbank_helper(self)
+[2025-04-30 13:39:05] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Helpers\otherbank_helper.py", line 33, in otherbank_helper
+[2025-04-30 13:39:05] WebDriverWait(self.driver, 50).until(
+[2025-04-30 13:39:05] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[2025-04-30 13:39:05] EC.presence_of_element_located((AppiumBy.ID, "com.android.phone:id/message")))
+[2025-04-30 13:39:05] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+[2025-04-30 13:39:05] value = method(self._driver)
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+[2025-04-30 13:39:05] return driver.find_element(*locator)
+[2025-04-30 13:39:05] ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+[2025-04-30 13:39:05] return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+[2025-04-30 13:39:05] ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-04-30 13:39:05] self.error_handler.check_response(response)
+[2025-04-30 13:39:05] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-04-30 13:39:05] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-04-30 13:39:05] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-04-30 13:39:05] selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
+[2025-04-30 13:39:05] Stacktrace:
+[2025-04-30 13:39:05] UnknownError: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
+[2025-04-30 13:39:05] at getResponseForW3CError (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+[2025-04-30 13:39:05] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+[2025-04-30 13:39:05] at runNextTicks (node:internal/process/task_queues:65:5)
+[2025-04-30 13:39:05] at processImmediate (node:internal/timers:459:9)
+[2025-04-30 13:39:05] at process.callbackTrampoline (node:internal/async_hooks:130:17)
+[2025-04-30 13:39:05] 
+[2025-04-30 13:39:05] During handling of the above exception, another exception occurred:
+[2025-04-30 13:39:05] 
+[2025-04-30 13:39:05] Traceback (most recent call last):
+[2025-04-30 13:39:05] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 947, in test_app
+[2025-04-30 13:39:05] self.fail("USSD process failed.")
+[2025-04-30 13:39:05] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-30 13:39:05] AssertionError: USSD process failed.
+[2025-04-30 13:39:05] 
+[2025-04-30 13:39:05] ----------------------------------------------------------------------
+[2025-04-30 13:39:05] Ran 1 test in 96.411s
+[2025-04-30 13:39:05] 
+[2025-04-30 13:39:05] FAILED (failures=1, errors=1)
+[2025-04-30 13:39:05] 
+Test completed.
+

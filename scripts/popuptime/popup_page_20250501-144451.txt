@@ -1,0 +1,8 @@
+
+========================== New log ========================
+
+Enter Pin Page page appeared in => 1.61 seconds
+Home Page page appeared in => 1.61 seconds
+Transfer Page page appeared in => 1.73 seconds
+Enter Pin Page page appeared in => 1.46 seconds
+Home Page page appeared in => 1.56 seconds

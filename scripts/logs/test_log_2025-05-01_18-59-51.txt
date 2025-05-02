@@ -1,0 +1,75 @@
+[2025-05-01 19:01:42] 
+=================  New Test Started at 2025-05-01 19:01:42  =================
+
+[2025-05-01 19:01:58] Using Device ID: R9ZR601C18H
+[2025-05-01 19:01:58] Using Android Version: 12
+[2025-05-01 19:01:58] Using package: com.samsung.android.dialer
+[2025-05-01 19:01:58] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-01 19:01:58] Dialing USSD code (Attempt 1)...
+[2025-05-01 19:02:03] Expected USSD page matched.
+[2025-05-01 19:02:08] Input field detected
+[2025-05-01 19:02:12] Pin Enter Notification Detected
+[2025-05-01 19:02:17] Login successful.
+[2025-05-01 19:02:17] Found option: 1: My Accounts
+[2025-05-01 19:02:17] Found option: 2: Transfer
+[2025-05-01 19:02:17] Found option: 3: Transfer to Other Bank
+[2025-05-01 19:02:17] Found option: 4: Transfer to Own
+[2025-05-01 19:02:17] Found option: 5: Airtime
+[2025-05-01 19:02:17] Found option: 6: Utilities
+[2025-05-01 19:02:17] Found option: 7: Exchange Rates
+[2025-05-01 19:02:17] Found option: 8: More options
+[2025-05-01 19:02:17] Excel in the path is used
+[2025-05-01 19:02:18] Writing 'Pass' to row 2, col 5
+[2025-05-01 19:02:20] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:02:20] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-01 19:02:25] USSD Response: My Accounts
+[2025-05-01 19:02:25] 1: 174615624 - ETB - Apol.
+[2025-05-01 19:02:25] 2: 182975435 - ETB - STAF.
+[2025-05-01 19:02:25] ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 19:02:25] list of accounts associated with the customer ID is displayed
+[2025-05-01 19:02:27] Writing 'Pass' to row 2, col 5
+[2025-05-01 19:02:28] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:02:28] Updated 'Accounts' sheet - rows [2] set to 'Pass'.
+[2025-05-01 19:02:28] Excel status Updated
+[2025-05-01 19:02:28] 2 account(s) found: ['1: 174615624 - ETB - Apol.', '2: 182975435 - ETB - STAF.']
+[2025-05-01 19:02:28] 
+[2025-05-01 19:02:28] Checking Account 1: 1: 174615624 - ETB - Apol.
+[2025-05-01 19:02:28] 1: 174615624
+[2025-05-01 19:02:28] 174615624
+[2025-05-01 19:02:39] The list of recent transactions is displayed
+[2025-05-01 19:02:40] Writing 'Pass' to row 4, col 5
+[2025-05-01 19:02:41] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:02:41] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 19:02:46] Transaction detail verified for account: 1: 174615624 - ETB - Apol.
+[2025-05-01 19:02:48] Writing 'Pass' to row 6, col 5
+[2025-05-01 19:02:49] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:02:49] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 19:02:53] 
+[2025-05-01 19:02:53] Checking Account 2: 2: 182975435 - ETB - STAF.
+[2025-05-01 19:02:53] 2: 182975435
+[2025-05-01 19:02:53] 182975435
+[2025-05-01 19:03:02] The list of recent transactions is displayed
+[2025-05-01 19:03:04] Writing 'Pass' to row 4, col 5
+[2025-05-01 19:03:05] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:03:05] Updated 'Accounts' sheet - rows [4] set to 'Pass'.
+[2025-05-01 19:03:10] Transaction detail verified for account: 2: 182975435 - ETB - STAF.
+[2025-05-01 19:03:11] Writing 'Pass' to row 6, col 5
+[2025-05-01 19:03:13] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-01 19:03:13] Updated 'Accounts' sheet - rows [6] set to 'Pass'.
+[2025-05-01 19:03:17] All account checks completed successfully
+[2025-05-01 19:03:17] My Account test compleated!
+[2025-05-01 19:03:17] 
+[2025-05-01 19:03:17] [Slow Popups in My Accounts]
+[2025-05-01 19:03:17] Transactions List Page: 4.09s
+[2025-05-01 19:03:17] USSD session cancelled successfully.
+[2025-05-01 19:03:19] .
+[2025-05-01 19:03:19] ----------------------------------------------------------------------
+[2025-05-01 19:03:19] Ran 1 test in 95.105s
+[2025-05-01 19:03:19] 
+[2025-05-01 19:03:19] OK
+[2025-05-01 19:03:19] 
+[2025-05-01 19:03:19] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-01 19:03:19] Transactions List Page: 4.09s
+[2025-05-01 19:03:19] 
+Test completed.
+

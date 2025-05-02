@@ -1,0 +1,127 @@
+EEEEEE
+======================================================================
+ERROR: R9ZR601C18H (unittest.loader._FailedTest.R9ZR601C18H)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute 'R9ZR601C18H'
+
+======================================================================
+ERROR: 12 (unittest.loader._FailedTest.12)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '12'
+
+======================================================================
+ERROR: 174615624 (unittest.loader._FailedTest.174615624)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '174615624'
+
+======================================================================
+ERROR: 2073 (unittest.loader._FailedTest.2073)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '2073'
+
+======================================================================
+ERROR: 20 (unittest.loader._FailedTest.20)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '20'
+
+======================================================================
+ERROR: 0970951608 (unittest.loader._FailedTest.0970951608)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '0970951608'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (errors=6)
+
+
+Dialing USSD code (Attempt 1)...
+USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+1: Login
+2: Exit
+Expected USSD page matched.
+BOA USSD Login Notification Detected
+Input field detected
+Pin Enter Notification Detected
+Login successful.
+Found option: 1: My Accounts
+Found option: 2: Transfer
+Found option: 3: Transfer to Other Bank
+Found option: 4: Transfer to Own
+Found option: 5: Airtime
+Found option: 6: Utilities
+Found option: 7: Exchange Rates
+Found option: 8: More options
+Error: [Errno 2] No such file or directory: '../USSD_Test_Script.xlsx'
+
+
+Dialing USSD code (Attempt 1)...
+USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+1: Login
+2: Exit
+Expected USSD page matched.
+BOA USSD Login Notification Detected
+Input field detected
+Pin Enter Notification Detected
+Login successful.
+Found option: 1: My Accounts
+Found option: 2: Transfer
+Found option: 3: Transfer to Other Bank
+Found option: 4: Transfer to Own
+Found option: 5: Airtime
+Found option: 6: Utilities
+Found option: 7: Exchange Rates
+Found option: 8: More options
+Error: [Errno 2] No such file or directory: '../reports/USSD_Test_Script.xlsx'
+
+
+Dialing USSD code (Attempt 1)...
+USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+1: Login
+2: Exit
+Expected USSD page matched.
+BOA USSD Login Notification Detected
+Input field detected
+Pin Enter Notification Detected
+Login successful.
+Found option: 1: My Accounts
+Found option: 2: Transfer
+Found option: 3: Transfer to Other Bank
+Found option: 4: Transfer to Own
+Found option: 5: Airtime
+Found option: 6: Utilities
+Found option: 7: Exchange Rates
+Found option: 8: More options
+Writing 'Pass' to row 2, col 7
+Updated 'login' sheet - rows [2] set to 'Pass'.
+Test for Transfer..
+Test for Transfer withen BoA
+Writing 'Pass' to row 2, col 7
+Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+
+
+Dialing USSD code (Attempt 1)...
+USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+1: Login
+2: Exit
+Expected USSD page matched.
+BOA USSD Login Notification Detected
+Input field detected
+Pin Enter Notification Detected
+Login successful.
+Found option: 1: My Accounts
+Found option: 2: Transfer
+Found option: 3: Transfer to Other Bank
+Found option: 4: Transfer to Own
+Found option: 5: Airtime
+Found option: 6: Utilities
+Found option: 7: Exchange Rates
+Found option: 8: More options
+Writing 'Pass' to row 2, col 7
+Updated 'login' sheet - rows [2] set to 'Pass'.
+Test for Transfer..
+Test for Transfer withen BoA
+Writing 'Pass' to row 2, col 7
+Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+
+

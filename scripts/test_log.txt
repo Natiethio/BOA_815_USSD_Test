@@ -1,0 +1,154 @@
+[2025-04-24 15:02:56] 
+================================  New Test Started at 2025-04-24 15:02:56  ================================
+
+[2025-04-24 15:03:08] Dialing USSD code (Attempt 1)...
+[2025-04-24 15:03:12] USSD Response: An error has occurred.
+[2025-04-24 15:03:13] Expected USSD response not found. Retrying...
+[2025-04-24 15:03:15] Dialing USSD code (Attempt 2)...
+[2025-04-24 15:03:18] USSD Response: An error has occurred.
+[2025-04-24 15:03:19] Expected USSD response not found. Retrying...
+[2025-04-24 15:03:21] Dialing USSD code (Attempt 3)...
+[2025-04-24 15:03:24] USSD Response: An error has occurred.
+[2025-04-24 15:03:25] Expected USSD response not found. Retrying...
+[2025-04-24 15:03:27] Dialing USSD code (Attempt 4)...
+[2025-04-24 15:03:30] USSD Response: An error has occurred.
+[2025-04-24 15:03:32] Expected USSD response not found. Retrying...
+[2025-04-24 15:03:34] Dialing USSD code (Attempt 5)...
+[2025-04-24 15:03:37] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-24 15:03:37] 1: Login
+[2025-04-24 15:03:37] 2: Exit
+[2025-04-24 15:03:37] Expected USSD page matched.
+[2025-04-24 15:03:42] BOA USSD Login Notification Detected
+[2025-04-24 15:03:42] Input field detected
+[2025-04-24 15:03:46] Pin Enter Notification Detected
+[2025-04-24 15:03:51] Login successful.
+[2025-04-24 15:03:52] Found option: 1: My Accounts
+[2025-04-24 15:03:52] Found option: 2: Transfer
+[2025-04-24 15:03:52] Found option: 3: Transfer to Other Bank
+[2025-04-24 15:03:52] Found option: 4: Transfer to Own
+[2025-04-24 15:03:52] Found option: 5: Airtime
+[2025-04-24 15:03:52] Found option: 6: Utilities
+[2025-04-24 15:03:52] Found option: 7: Exchange Rates
+[2025-04-24 15:03:52] Found option: 8: More options
+[2025-04-24 15:03:53] Writing 'Pass' to row 2, col 7
+[2025-04-24 15:03:54] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-04-24 15:04:19] My accounts Test failed with error: Message:
+[2025-04-24 15:04:19] Stacktrace:
+[2025-04-24 15:04:19] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-24 15:04:19] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-24 15:04:19] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-24 15:04:19] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-24 15:04:19] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-24 15:04:19] My Account test compleated!
+[2025-04-24 15:04:41] Failed to cancel': Message:
+[2025-04-24 15:04:41] Stacktrace:
+[2025-04-24 15:04:41] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-24 15:04:41] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-24 15:04:41] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-24 15:04:42] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-24 15:04:42] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-24 15:04:42] EE
+[2025-04-24 15:04:42] ======================================================================
+[2025-04-24 15:04:42] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-04-24 15:04:42] ----------------------------------------------------------------------
+[2025-04-24 15:04:42] Traceback (most recent call last):
+[2025-04-24 15:04:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 662, in cancel_ussd
+[2025-04-24 15:04:42] WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(cancel_button_locator))
+[2025-04-24 15:04:42] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-04-24 15:04:42] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+[2025-04-24 15:04:42] raise TimeoutException(message, screen, stacktrace)
+[2025-04-24 15:04:42] selenium.common.exceptions.TimeoutException: Message:
+[2025-04-24 15:04:42] Stacktrace:
+[2025-04-24 15:04:42] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-04-24 15:04:42] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-04-24 15:04:42] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-24 15:04:42] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-04-24 15:04:42] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-04-24 15:04:42] 
+[2025-04-24 15:04:42] During handling of the above exception, another exception occurred:
+[2025-04-24 15:04:42] 
+[2025-04-24 15:04:42] Traceback (most recent call last):
+[2025-04-24 15:04:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 966, in test_app
+[2025-04-24 15:04:42] my_account = self.my_account()
+[2025-04-24 15:04:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 442, in my_account
+[2025-04-24 15:04:42] self.cancel_ussd()
+[2025-04-24 15:04:42] ~~~~~~~~~~~~~~~~^^
+[2025-04-24 15:04:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 670, in cancel_ussd
+[2025-04-24 15:04:42] exit()
+[2025-04-24 15:04:42] ~~~~^^
+[2025-04-24 15:04:42] File "<frozen _sitebuiltins>", line 26, in __call__
+[2025-04-24 15:04:42] SystemExit: None
+[2025-04-24 15:04:42] 
+[2025-04-24 15:04:42] ======================================================================
+[2025-04-24 15:04:42] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-04-24 15:04:42] ----------------------------------------------------------------------
+[2025-04-24 15:04:42] Traceback (most recent call last):
+[2025-04-24 15:04:42] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app2.py", line 48, in tearDown
+[2025-04-24 15:04:42] self.driver.quit()
+[2025-04-24 15:04:42] ~~~~~~~~~~~~~~~~^^
+[2025-04-24 15:04:42] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 589, in quit
+[2025-04-24 15:04:42] self.execute(Command.QUIT)
+[2025-04-24 15:04:42] ~~~~~~~~~~~~^^^^^^^^^^^^^^
+[2025-04-24 15:04:42] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-04-24 15:04:42] self.error_handler.check_response(response)
+[2025-04-24 15:04:42] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-04-24 15:04:42] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-04-24 15:04:42] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-04-24 15:04:42] selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+[2025-04-24 15:04:42] Stacktrace:
+[2025-04-24 15:04:42] NoSuchDriverError: A session is either terminated or not started
+[2025-04-24 15:04:42] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:311:15)
+[2025-04-24 15:04:42] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:514:15
+[2025-04-24 15:04:42] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-24 15:04:42] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+[2025-04-24 15:04:42] at Route.dispatch (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+[2025-04-24 15:04:42] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-24 15:04:42] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+[2025-04-24 15:04:42] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+[2025-04-24 15:04:42] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+[2025-04-24 15:04:42] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+[2025-04-24 15:04:42] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-04-24 15:04:42] at logger (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+[2025-04-24 15:04:42] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-24 15:04:42] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-04-24 15:04:42] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-04-24 15:04:42] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-04-24 15:04:42] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-04-24 15:04:42] at jsonParser (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+[2025-04-24 15:04:42] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-04-24 15:04:42] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-04-24 15:04:42] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-04-24 15:04:42] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-04-24 15:04:42] 
+[2025-04-24 15:04:42] ----------------------------------------------------------------------
+[2025-04-24 15:04:42] Ran 1 test in 104.315s
+[2025-04-24 15:04:42] 
+[2025-04-24 15:04:42] FAILED (errors=2)
+[2025-04-24 15:04:42] 
+Test completed successfully.
+
+[2025-04-24 15:48:32] 
+================================  New Test Started at 2025-04-24 15:48:32  ================================
+
+[2025-04-24 15:48:38] 
+[2025-04-24 15:48:38] D:\BOA\Test_App\BOA_MobileApp_Test\scripts>taskkill /F /PID 4080
+[2025-04-24 15:48:38] SUCCESS: The process with PID 4080 has been terminated.
+[2025-04-24 15:48:38] 
+[2025-04-24 15:48:38] D:\BOA\Test_App\BOA_MobileApp_Test\scripts>taskkill /F /PID 0
+[2025-04-24 15:48:38] ERROR: The process with PID 0 could not be terminated.
+[2025-04-24 15:48:38] Reason: This is critical system process. Taskkill cannot end this process.
+[2025-04-24 15:48:38] 
+[2025-04-24 15:48:38] D:\BOA\Test_App\BOA_MobileApp_Test\scripts>taskkill /F /PID 0
+[2025-04-24 15:48:39] ERROR: The process with PID 0 could not be terminated.
+[2025-04-24 15:48:39] Reason: This is critical system process. Taskkill cannot end this process.
+[2025-04-24 15:48:39] 
+Test completed successfully.
+
+[2025-04-24 15:49:51] 
+================================  New Test Started at 2025-04-24 15:49:51  ================================
+
+[2025-04-24 15:50:06] Dialing USSD code (Attempt 1)...
+[2025-04-24 15:50:12] USSD Response: Welcome to Bank of Abyssinia Mobile Banking Service. Press * to navigate back any time, select one of the following options below:
+[2025-04-24 15:50:12] 1: Login
+[2025-04-24 15:50:12] 2: Exit
+[2025-04-24 15:50:12] Expected USSD page matched.
