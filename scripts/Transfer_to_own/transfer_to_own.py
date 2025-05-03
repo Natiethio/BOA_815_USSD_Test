@@ -14,7 +14,7 @@ from Helpers.transfer_to_own_helper import transfer_to_own_helper
 
 def transfer_to_own_account(self):
         try:
-            # self.enter_pin_to_login()
+            self.enter_pin_to_login()
 
 
             status_helper = transfer_to_own_helper(self)

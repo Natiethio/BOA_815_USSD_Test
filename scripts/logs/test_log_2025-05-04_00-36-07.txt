@@ -1,0 +1,138 @@
+[2025-05-04 00:42:07] 
+=================  New Test Started at 2025-05-04 00:42:07  =================
+
+[2025-05-04 00:42:11] Error running adb shell cmd package resolve-activity --brief -a android.intent.action.DIAL:
+[2025-05-04 00:42:11] adb.exe: no devices/emulators found
+[2025-05-04 00:42:11] 
+[2025-05-04 00:42:11] Error running adb shell pm resolve-activity -a android.intent.action.DIAL -c android.intent.category.DEFAULT:
+[2025-05-04 00:42:11] adb.exe: no devices/emulators found
+[2025-05-04 00:42:11] 
+[2025-05-04 00:42:11] 
+Test failed with exit code 1.
+
+[2025-05-04 00:43:03] 
+=================  New Test Started at 2025-05-04 00:43:03  =================
+
+[2025-05-04 00:43:21] Using Device ID: R9ZR601C18H
+[2025-05-04 00:43:21] Using Android Version: 12
+[2025-05-04 00:43:21] Using package: com.samsung.android.dialer
+[2025-05-04 00:43:21] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-04 00:43:21] Dialing USSD code (Attempt 1)...
+[2025-05-04 00:43:26] Expected USSD page matched.
+[2025-05-04 00:43:31] Input field detected
+[2025-05-04 00:43:35] Pin Enter Notification Detected
+[2025-05-04 00:43:40] Login successful.
+[2025-05-04 00:43:40] Found option: 1: My Accounts
+[2025-05-04 00:43:40] Found option: 2: Transfer
+[2025-05-04 00:43:40] Found option: 3: Transfer to Other Bank
+[2025-05-04 00:43:40] Found option: 4: Transfer to Own
+[2025-05-04 00:43:40] Found option: 5: Airtime
+[2025-05-04 00:43:40] Found option: 6: Utilities
+[2025-05-04 00:43:40] Found option: 7: Exchange Rates
+[2025-05-04 00:43:40] Found option: 8: More options
+[2025-05-04 00:43:40] Excel in the path is used
+[2025-05-04 00:43:41] Writing 'Pass' to row 2, col 5
+[2025-05-04 00:43:41] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-04 00:43:41] [Transfer Module Error] 'TestAppium' object has no attribute 'transfer_helper'
+[2025-05-04 00:43:42] .
+[2025-05-04 00:43:42] ----------------------------------------------------------------------
+[2025-05-04 00:43:42] Ran 1 test in 37.839s
+[2025-05-04 00:43:42] 
+[2025-05-04 00:43:42] OK
+[2025-05-04 00:43:42] 
+Test completed.
+
+[2025-05-04 00:51:14] 
+=================  New Test Started at 2025-05-04 00:51:14  =================
+
+[2025-05-04 00:51:29] Using Device ID: R9ZR601C18H
+[2025-05-04 00:51:29] Using Android Version: 12
+[2025-05-04 00:51:29] Using package: com.samsung.android.dialer
+[2025-05-04 00:51:29] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-04 00:51:29] Dialing USSD code (Attempt 1)...
+[2025-05-04 00:51:35] USSD session cancelled successfully.
+[2025-05-04 00:51:36] Expected USSD response not found. Retrying...
+[2025-05-04 00:51:38] Dialing USSD code (Attempt 2)...
+[2025-05-04 00:51:41] USSD session cancelled successfully.
+[2025-05-04 00:51:42] Expected USSD response not found. Retrying...
+[2025-05-04 00:51:44] Dialing USSD code (Attempt 3)...
+[2025-05-04 00:51:47] Expected USSD page matched.
+[2025-05-04 00:51:52] Input field detected
+[2025-05-04 00:51:57] Pin Enter Notification Detected
+[2025-05-04 00:52:02] Login successful.
+[2025-05-04 00:52:02] Found option: 1: My Accounts
+[2025-05-04 00:52:02] Found option: 2: Transfer
+[2025-05-04 00:52:02] Found option: 3: Transfer to Other Bank
+[2025-05-04 00:52:02] Found option: 4: Transfer to Own
+[2025-05-04 00:52:02] Found option: 5: Airtime
+[2025-05-04 00:52:02] Found option: 6: Utilities
+[2025-05-04 00:52:02] Found option: 7: Exchange Rates
+[2025-05-04 00:52:02] Found option: 8: More options
+[2025-05-04 00:52:02] Excel in the path is used
+[2025-05-04 00:52:03] Writing 'Pass' to row 2, col 5
+[2025-05-04 00:52:04] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 00:52:04] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-04 00:52:04] Test for Transfer..
+[2025-05-04 00:52:13] Test for load_to_telebirr ..
+[2025-05-04 00:52:19] Writing 'Pass' to row 2, col 5
+[2025-05-04 00:52:20] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 00:52:20] Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+[2025-05-04 00:52:21] [Transfer Module Error] 'TestAppium' object has no attribute 'extract_staff_or_saving_option'
+[2025-05-04 00:52:22] .
+[2025-05-04 00:52:22] ----------------------------------------------------------------------
+[2025-05-04 00:52:22] Ran 1 test in 66.326s
+[2025-05-04 00:52:22] 
+[2025-05-04 00:52:22] OK
+[2025-05-04 00:52:22] 
+Test completed.
+
+[2025-05-04 00:55:14] 
+=================  New Test Started at 2025-05-04 00:55:14  =================
+
+[2025-05-04 00:55:28] Using Device ID: R9ZR601C18H
+[2025-05-04 00:55:28] Using Android Version: 12
+[2025-05-04 00:55:28] Using package: com.samsung.android.dialer
+[2025-05-04 00:55:28] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-04 00:55:28] Dialing USSD code (Attempt 1)...
+[2025-05-04 00:55:32] Expected USSD page matched.
+[2025-05-04 00:55:37] Input field detected
+[2025-05-04 00:55:42] Pin Enter Notification Detected
+[2025-05-04 00:55:47] Login successful.
+[2025-05-04 00:55:47] Found option: 1: My Accounts
+[2025-05-04 00:55:47] Found option: 2: Transfer
+[2025-05-04 00:55:47] Found option: 3: Transfer to Other Bank
+[2025-05-04 00:55:47] Found option: 4: Transfer to Own
+[2025-05-04 00:55:47] Found option: 5: Airtime
+[2025-05-04 00:55:47] Found option: 6: Utilities
+[2025-05-04 00:55:47] Found option: 7: Exchange Rates
+[2025-05-04 00:55:47] Found option: 8: More options
+[2025-05-04 00:55:47] Excel in the path is used
+[2025-05-04 00:55:48] Writing 'Pass' to row 2, col 5
+[2025-05-04 00:55:49] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 00:55:49] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-04 00:55:49] Test for Transfer..
+[2025-05-04 00:55:59] Test for load_to_telebirr ..
+[2025-05-04 00:56:04] Writing 'Pass' to row 2, col 5
+[2025-05-04 00:56:06] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 00:56:06] Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+[2025-05-04 00:56:06] Processing account: 182975435
+[2025-05-04 00:56:24] Load to TeleBirr confirmation should not allow for >30,000
+[2025-05-04 00:56:25] Writing 'Pass' to row 23, col 5
+[2025-05-04 00:56:26] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 00:56:26] Updated 'Transfer' sheet - rows [23] set to 'Pass'.
+[2025-05-04 00:56:36] airtime confirmation pass for 182975435
+[2025-05-04 00:56:37] Error updating Excel file: expected string or bytes-like object, got 'tuple'
+[2025-05-04 00:56:37] Airtime transaction completed
+[2025-05-04 00:56:38] USSD session cancelled successfully.
+[2025-05-04 00:56:38] Load to TeleBirr failed
+[2025-05-04 00:56:39] .
+[2025-05-04 00:56:39] ----------------------------------------------------------------------
+[2025-05-04 00:56:39] Ran 1 test in 84.137s
+[2025-05-04 00:56:39] 
+[2025-05-04 00:56:39] OK
+[2025-05-04 00:56:39] 
+[2025-05-04 00:56:39] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-04 00:56:39] TeleBirr limit exceed page: 2.73s
+[2025-05-04 00:56:39] 
+Test completed.
+

@@ -18,7 +18,6 @@ import os
 
 def transfer_to_own_helper(self):
 
-        # self.enter_pin_to_login()
 
         print("Test for Transfer to Own..", flush=True)
 

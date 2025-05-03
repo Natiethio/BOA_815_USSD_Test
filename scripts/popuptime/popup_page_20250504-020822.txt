@@ -1,0 +1,18 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.56 seconds
+Home Page page appeared in => 1.62 seconds
+Transfer Page page appeared in => 1.62 seconds
+Enter M-PESA Registerd Phone page appeared in => 1.54 seconds
+Not verified M-PESA User Page page appeared in => 2.91 seconds
+Transfer Home Page(Back Navigated) page appeared in => 1.64 seconds
+Enter M-PESA Registerd Phone page appeared in => 1.54 seconds
+BOA Accounts List Page page appeared in => 2.6 seconds
+Enter Amount Page page appeared in => 1.56 seconds
+Enter Remark Page page appeared in => 1.47 seconds
+Confiramtion Page page appeared in => 1.79 seconds
+Single Transaction Exceeded Limit Page page appeared in => 2.5 seconds
+Enter Amount(Back Navigated) page appeared in => 1.58 seconds
+Enter Remark Page page appeared in => 1.61 seconds
+Confiramtion Page page appeared in => 1.87 seconds

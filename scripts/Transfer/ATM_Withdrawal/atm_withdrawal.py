@@ -13,7 +13,7 @@ def atm_withdrawal(self):
         status_atm = False
         # print("Hello this is atm_withdrawal ext")
 
-        self.enter_pin_to_login()
+        # self.enter_pin_to_login()
 
         status_helper = transfer_helper(self)
 
@@ -257,7 +257,7 @@ def atm_withdrawal(self):
             else:
                 print("All ATM tests Compleated",flush=True)
         
-        print("ATM Transfer Ends")
+        # print("ATM Transfer Ends")
         self.cancel_ussd()
         # return False
                 

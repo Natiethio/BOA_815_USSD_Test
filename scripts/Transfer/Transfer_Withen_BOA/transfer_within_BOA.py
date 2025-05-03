@@ -14,7 +14,7 @@ from Helpers.enter_account_and_select_valid_option import enter_account_and_sele
 
 def transfer_within_BOA(self):
         
-        self.enter_pin_to_login()
+        # self.enter_pin_to_login()
 
 
         status_helper = transfer_helper(self)
@@ -125,7 +125,7 @@ def transfer_within_BOA(self):
         
         time.sleep(0.5)
 
-        print("Transfer with BOA complated Successfully",flush=True)
+        # print("Transfer with BOA complated Successfully",flush=True)
 
         time.sleep(0.5)
         print_and_clear_slow_popups(self, "Transfer Within BOA")

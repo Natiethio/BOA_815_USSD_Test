@@ -1,0 +1,5 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.43 seconds
+Home Page page appeared in => 1.71 seconds

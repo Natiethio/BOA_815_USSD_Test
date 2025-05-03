@@ -1,0 +1,12 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.52 seconds
+Home Page page appeared in => 1.69 seconds
+Transfer Page page appeared in => 1.66 seconds
+BoA Accounts List Page(Load to TeleBirr) page appeared in => 1.84 seconds
+Enter Amount Page page appeared in => 1.65 seconds
+Confirmation Page page appeared in => 1.97 seconds
+TeleBirr limit exceed page page appeared in => 2.73 seconds
+Enter Amount Page(Back Navigated) page appeared in => 0.9 seconds
+Confirmation Page page appeared in => 1.93 seconds

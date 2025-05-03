@@ -20,10 +20,9 @@ def airtime(self):
 
 def airtime_topup_for_ethio_telecom(self):
     print("Test for Ethio telecom topup")
-    print(self.pin)
-    print(self.etl_number)
 
-    # self.enter_pin_to_login()
+
+    self.enter_pin_to_login()
 
     if not airtime_helper(self):
         print("No home page found")
@@ -179,8 +178,7 @@ def airtime_topup_for_ethio_telecom(self):
 
 def airtime_topup_for_safaricom(self):
         print("Test for safaricom topup")
-        print(self.pin)
-        print(self.safaricom_number)
+
 
         self.enter_pin_to_login()
 

@@ -1,0 +1,59 @@
+[2025-05-04 02:08:17] 
+=================  New Test Started at 2025-05-04 02:08:17  =================
+
+[2025-05-04 02:08:37] Using Device ID: R9ZR601C18H
+[2025-05-04 02:08:37] Using Android Version: 12
+[2025-05-04 02:08:37] Using package: com.samsung.android.dialer
+[2025-05-04 02:08:37] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-04 02:08:37] Dialing USSD code (Attempt 1)...
+[2025-05-04 02:08:42] Expected USSD page matched.
+[2025-05-04 02:08:47] Input field detected
+[2025-05-04 02:08:51] Pin Enter Notification Detected
+[2025-05-04 02:08:56] Login successful.
+[2025-05-04 02:08:56] Found option: 1: My Accounts
+[2025-05-04 02:08:56] Found option: 2: Transfer
+[2025-05-04 02:08:56] Found option: 3: Transfer to Other Bank
+[2025-05-04 02:08:56] Found option: 4: Transfer to Own
+[2025-05-04 02:08:56] Found option: 5: Airtime
+[2025-05-04 02:08:56] Found option: 6: Utilities
+[2025-05-04 02:08:56] Found option: 7: Exchange Rates
+[2025-05-04 02:08:56] Found option: 8: More options
+[2025-05-04 02:08:56] Excel in the path is used
+[2025-05-04 02:08:58] Writing 'Pass' to row 2, col 5
+[2025-05-04 02:08:59] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 02:08:59] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-04 02:08:59] Test for Transfer..
+[2025-05-04 02:09:08] Test for transfer_to_mpesa ..
+[2025-05-04 02:09:13] Writing 'Pass' to row 2, col 5
+[2025-05-04 02:09:14] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 02:09:14] Updated 'Transfer' sheet - rows [2] set to 'Pass'.
+[2025-05-04 02:09:14] Testing for not verified M-PESA user by using invalid M-PESA user phone number
+[2025-05-04 02:09:24] The entered M-PESA user is valid and the system is throwing an error
+[2025-05-04 02:09:25] Writing 'Pass' to row 31, col 5
+[2025-05-04 02:09:26] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 02:09:26] Updated 'Transfer' sheet - rows [31] set to 'Pass'.
+[2025-05-04 02:09:36] Processing account: 182975435
+[2025-05-04 02:09:40] Testing overlimit M-PESA transfer scenario
+[2025-05-04 02:09:56] Transfer to M-PESA confirmation Should not allow for >30,000
+[2025-05-04 02:09:58] Writing 'Pass' to row 32, col 5
+[2025-05-04 02:09:59] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 02:09:59] Updated 'Transfer' sheet - rows [32] set to 'Pass'.
+[2025-05-04 02:10:11] Transfer to M-PESA confirmation pass for 182975435
+[2025-05-04 02:10:13] Writing 'Pass' to row 19, col 5
+[2025-05-04 02:10:14] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-04 02:10:14] Updated 'Transfer' sheet - rows [19] set to 'Pass'.
+[2025-05-04 02:10:14] Transfer to M-PESA transaction completed
+[2025-05-04 02:10:15] USSD session cancelled successfully.
+[2025-05-04 02:10:15] Transfer to M-PESA failed
+[2025-05-04 02:10:16] .
+[2025-05-04 02:10:16] ----------------------------------------------------------------------
+[2025-05-04 02:10:16] Ran 1 test in 114.069s
+[2025-05-04 02:10:16] 
+[2025-05-04 02:10:16] OK
+[2025-05-04 02:10:16] 
+[2025-05-04 02:10:16] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-04 02:10:16] Not verified M-PESA User Page: 2.91s
+[2025-05-04 02:10:16] BOA Accounts List Page: 2.6s
+[2025-05-04 02:10:16] 
+Test completed.
+

@@ -46,6 +46,7 @@ class TestAppium(unittest.TestCase):
     bank_account = sys.argv[7] if len(sys.argv) > 7 else " "
     bank_name = sys.argv[8] if len(sys.argv) > 8 else "CBE"
     module_name = sys.argv[9] if len(sys.argv) > 9 else "All"
+    transfer_sub_module = sys.argv[10] if len(sys.argv) > 10 else "5"
 
     def get_connected_device(self):
         try:
@@ -144,7 +145,6 @@ class TestAppium(unittest.TestCase):
             time.sleep(2)  
 
         self.fail(" Failed to load the expected USSD screen after retries.")
-
 
     def enter_pin_to_login(self):
 
@@ -496,7 +496,6 @@ class TestAppium(unittest.TestCase):
 
             return self.excel_path
     
-            
     def update_status(self, sheet_name, row_indices, status, status_col_index,screenshot_name=None):
         excel_paths = self.ensure_excel_file_exists()
         
@@ -571,7 +570,7 @@ class TestAppium(unittest.TestCase):
             if self.module_name == "1":
                 my_account_opt = my_account(self)  
             elif self.module_name == "2":  
-                transfer_one = transfer(self)  
+                transfer_one = transfer(self, self.transfer_sub_module)  
             elif self.module_name == "3":  
                 transfer_otherbank = otherbank(self)  
             elif self.module_name == "4":  
@@ -582,11 +581,10 @@ class TestAppium(unittest.TestCase):
             #     utilities = utilities(self)  
             else:
                 print("End to end test")  
-                self.enter_pin_to_login()
-                # my_account_opt = my_account(self)
-                # # transfer_one = transfer(self)
-                # # transfer_otherbank = otherbank(self)
-                # # transfer_toown = transfer_to_own_account(self)
+                my_account_opt = my_account(self)
+                # transfer_one = transfer(self, self.transfer_sub_module)
+                # transfer_otherbank = otherbank(self)
+                # transfer_toown = transfer_to_own_account(self)
                 airtimeres = airtime(self)
 
             if self.all_slow_popups:

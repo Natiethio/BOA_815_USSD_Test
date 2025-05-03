@@ -3,16 +3,17 @@ import time
 import re
 import sys
 import os
-
+from Helpers.transfer_helper import transfer_helper
+from Helpers.extract_staff_or_saving_option import extract_staff_or_saving_option
 
 def transfer_to_mpesa(self):
         # print("Hello this is transfer_to_mpesa")
-        print(self.pin)
-        print(self.phone_number)
+        # print(self.pin)
+        # print(self.phone_number)
 
-        self.enter_pin_to_login()
+        # self.enter_pin_to_login()
 
-        status_helper = self.transfer_helper()
+        status_helper = transfer_helper(self)
 
         time.sleep(5)
         print("Test for transfer_to_mpesa ..", flush=True)
@@ -41,7 +42,7 @@ def transfer_to_mpesa(self):
         # WebDriverWait(self.driver, 20).until(
         # EC.presence_of_element_located((AppiumBy.ID, "com.android.phone:id/message")))
 
-        status = self.send_ussd(expected_ResultB ,"4","transfer_to_mpesa")
+        status = self.send_ussd(expected_ResultB ,"4","transfer_to_mpesa", "Enter M-PESA Registerd Phone")
 
         if not status:
             self.update_status("Transfer", [2], "Fail", 5)
@@ -52,12 +53,10 @@ def transfer_to_mpesa(self):
 
         self.update_status("Transfer", [2], "Pass", 5)
 
-        message_text = self.get_ussd_message()
-
         #Enter invalid M-PESA Registered Number
-
-        phone_et = self.phone_number
-        status = self.send_ussd(expected_ResultC,phone_et,"transfer_to_mpesa")
+        print("Testing for not verified M-PESA user by using invalid M-PESA user phone number", flush=True)
+        phone_test = self.etl_number
+        status = self.send_ussd(expected_ResultC, phone_test,"Transfer_to_M-PESA", "Not verified M-PESA User Page")
 
         if not status:
             # self.driver.quit()
@@ -68,24 +67,25 @@ def transfer_to_mpesa(self):
 
         #The entered M-PESA user should be verified and if it's not the system should throw an error accordingly
 
-        message_text = self.get_ussd_message()
-        status = self.send_ussd("This is not a registered M-PESA user.", "*", "M-PESA")
+        status = self.send_ussd("This is not a registered M-PESA user.", "*", "M-PESA", "Transfer Home Page(Back Navigated)")
 
         if not status:
-            print("The entered M-PESA user is not verified but the system is not throw an error ", flush=True)
+            print("The entered M-PESA user is not valid but the system is not throwing an error ", flush=True)
             self.update_status("Transfer", [31], "Fail", 5)
+            return
         else:
-            print("The entered M-PESA user is verified and the system is throw an error ", flush=True)
+            print("The entered M-PESA user is valid and the system is throwing an error ", flush=True)
             self.update_status("Transfer", [31], "Pass", 5)
+            # self.send_ussd_input("*")
             time.sleep(0.5)
 
         #Selecting Transfer to M-PESA
-        status = self.send_ussd(expected_ResultB ,"4","transfer_to_mpesa")
+        status = self.send_ussd(expected_ResultB ,"4","transfer_to_mpesa", "Enter M-PESA Registerd Phone")
 
         #Enter valid M-PESA Registered Number
 
         phone_sf = self.safaricom_number
-        status = self.send_ussd(expected_ResultC,phone_sf,"transfer_to_mpesa")
+        status = self.send_ussd(expected_ResultC,phone_sf,"transfer_to_mpesa", "BOA Accounts List Page")
 
         if not status:
             # self.driver.quit()
@@ -94,7 +94,7 @@ def transfer_to_mpesa(self):
             return
         message_text = self.get_ussd_message()
         # Extract STAFF or SAVING account options
-        account_option, account_number = self.extract_staff_or_saving_option(message_text)
+        account_option, account_number = extract_staff_or_saving_option(self, message_text)
         
         if not account_option or not account_number:
             print("No valid STAFF or SAVING account found", flush=True)
@@ -104,7 +104,7 @@ def transfer_to_mpesa(self):
         print(f"Processing account: {account_number}", flush=True)
         
         # Select the account
-        status = self.send_ussd("Transfer to M-PESA", account_option, "Transfer to M-PESA")
+        status = self.send_ussd("Transfer to M-PESA", account_option, "Transfer to M-PESA", "Enter Amount Page")
 
         if not status:
             print("Failed to select account", flush=True)
@@ -113,70 +113,65 @@ def transfer_to_mpesa(self):
         #Attempt to transfer exceeding Maximum limit (>30,000) should not be applicable and throw error
 
         # Enter amount
-        status = self.send_ussd("Enter Amount", 500100, "Transfer to M-PESA")
+        print("Testing overlimit M-PESA transfer scenario", flush=True)
+        status = self.send_ussd("Enter Amount", 500100, "Transfer to M-PESA", "Enter Remark Page")
 
         if not status:
             print("Failed to send amount for Transfer to M-PESA", flush=True)
             return
         
         # Enter Remark
-        status = self.send_ussd("Enter Remark", "Test", "Transfer to M-PESA")
+        status = self.send_ussd("Enter Remark", "Test", "Transfer to M-PESA", "Confiramtion Page")
 
         if not status:
             print("Failed to send Remark for Transfer to M-PESA", flush=True)
             return
-        
-        # Confirm transaction
-        message_text = self.get_ussd_message()
+    
 
-        status = self.send_ussd("Please Confirm", "1", "M-PESA")
+        status = self.send_ussd("Please Confirm", "1", "M-PESA", "Single Transaction Exceeded Limit Page")
 
         if not status:
             print("Failed to send confirmatin for Transfer to M-PESA", flush=True)
             return
-        #Attempt to transfer exceeding Maximum limit (>30,000) should not be applicable and throw error
+        
 
-        message_text = self.get_ussd_message()
-        status = self.send_ussd("You have exceeded the single transaction limit.", "*", "M-PESA")
+        status = self.send_ussd("You have exceeded the single transaction limit.", "*", "M-PESA", "Enter Amount(Back Navigated)")
 
         if not status:
-            print("airtime confirmation Should allow for >30,000", flush=True)
+            print("Transfer to M-PESA confirmation Should allow for >30,000", flush=True)
             self.update_status("Transfer", [32], "Fail", 5)
         else:
-            print("airtime confirmation Should not allow for >30,000", flush=True)
+            print("Transfer to M-PESA confirmation Should not allow for >30,000", flush=True)
             self.update_status("Transfer", [32], "Pass", 5)
             time.sleep(0.5)
 
-        # test for positive Transfer to M-PESA
-
-        # Enter amount
+        print("Test for Positive Scenario For M-PESA Transfer", flush=True)
+        
         amount = self.amount
-        status = self.send_ussd("Enter Amount", amount, "Transfer to M-PESA")
+        status = self.send_ussd("Enter Amount", amount, "Transfer to M-PESA", "Enter Remark Page")
 
         if not status:
             print("Failed to send amount for Transfer to M-PESA", flush=True)
             return
         
         # Enter Remark
-        status = self.send_ussd("Enter Remark", "Test", "Transfer to M-PESA")
+        status = self.send_ussd("Enter Remark", "Test", "Transfer to M-PESA", "Confiramtion Page")
 
         if not status:
             print("Failed to send Remark for Transfer to M-PESA", flush=True)
             return
         
-        # Confirm transaction
-        message_text = self.get_ussd_message()
-
+         
         status = self.send_ussd("Please Confirm", "*", "M-PESA")
 
         if not status:
-            print("M-PESA confirmation failed", flush=True)
-            self.update_status("Transfer", [19], "Fail", 5)
+            print("Transfer to M-PESA confirmation failed", flush=True)
+            self.update_status("Transfer", [27], "Fail", 5)
+            self.cancel_ussd()
+            return False
         else:
-            print(f"airtime confirmation pass for {account_number}", flush=True)
-            self.update_status("Transfer", [19], "Pass", 5)
-            time.sleep(0.5)
-
-
-        print("Airtime transaction completed", flush=True)
-        self.cancel_ussd()
+            print(f"Transfer to M-PESA confirmation pass for {account_number}", flush=True)
+            self.update_status("Transfer", [27], "Pass", 5)
+            print("Transfer to M-PESA transaction completed", flush=True)
+            self.cancel_ussd()
+            return True

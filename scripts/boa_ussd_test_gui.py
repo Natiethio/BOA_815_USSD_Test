@@ -33,7 +33,7 @@ def center_window(root, width, height):
     root.geometry(f"{width}x{height}+{x}+{y}")
     root.update()
 
-center_window(root, 1300, 650)
+center_window(root, 1320, 650)
 
 logo_color = "#FFA500" 
 
@@ -167,6 +167,8 @@ test_options = {
     # "Settings" : 7,
 }
 
+
+
 fields = {}
 
 
@@ -202,6 +204,7 @@ modular_var = tk.StringVar(value="Select Module")
 bank_row = ctk.CTkFrame(form_frame, fg_color="transparent")
 bank_row.pack(fill="x", pady=11)
 
+
 ctk.CTkLabel(bank_row, text="Bank Account:", width=120, anchor="w", font=("Arial", 15, "bold")).pack(side="left", padx=(5, 2))
 bank_entry = ctk.CTkEntry(bank_row, font=("Arial", 15), width=200, height=35)
 bank_entry.pack(side="left", padx=(2, 5))
@@ -209,8 +212,7 @@ fields["Bank Account"] = bank_entry
 
 modular_checkbox = ctk.CTkCheckBox(
     bank_row,
-    # master=None,
-    text="Modular Test",
+    text="Modular Test:",
     variable=modular_checkbox_var,
     font=("Arial", 15, "bold"),
     onvalue=True,
@@ -222,12 +224,10 @@ modular_checkbox = ctk.CTkCheckBox(
 modular_checkbox.pack(side="left", padx=(10, 0))
 
 modular_dropdown = ctk.CTkOptionMenu(
-    # form_frame,
     bank_row,
     variable=modular_var,
-    # values=["My Accounts", "Transfer", "Transfer Within BOA", "Transfer To Other Bank", "Air Time", "Utilities"],
     values=list(test_options.keys()),
-    width=200,
+    width=120,
     font=("Arial", 15),
     fg_color=logo_color,
     button_color=logo_color,
@@ -243,13 +243,54 @@ def toggle_modular_dropdown():
         # modular_dropdown.pack(in_=modular_checkbox.master, side="left", padx=(10, 0))
     else:
         modular_dropdown.pack_forget()
+        transfer_sub_dropdown.pack_forget()
+        modular_var.set("Select Module")
 
 modular_checkbox.configure(command=toggle_modular_dropdown)
 # create_row(form_frame, "Bank Account")
 
+transfer_submodules = {
+    "1: Transfer within BOA": "1",
+    "2: ATM Withdrawal": "2",
+    "3: Load to TeleBirr": "3",
+    "4: Transfer to M-PESA": "4",
+    "5: Transfer(All)": "5"
+}
+
+transfer_with_otherbank = {
+    "1: Instant" : "1",
+    "2: Non Instant Transfer" : "2"
+}
 
 
-# create_row(form_frame, "Bank Account", addon_widgets=[modular_checkbox, modular_dropdown])
+
+transfer_sub_var = tk.StringVar(value="Select")
+
+transfer_sub_dropdown = ctk.CTkOptionMenu(
+    bank_row,
+    variable=transfer_sub_var,
+    values=list(transfer_submodules.keys()),
+    width=80,
+    font=("Arial", 13),
+    fg_color=logo_color,
+    button_color=logo_color,
+    button_hover_color=logo_color,
+    text_color="white",
+    command=lambda selected: transfer_sub_var.set(transfer_submodules[selected])
+    # command=lambda selected: transfer_sub_var.set(selected)
+
+)
+transfer_sub_dropdown.pack_forget()
+
+def on_modular_change(*args):
+    if modular_var.get() == "Transfer":
+        transfer_sub_var.set("Select")
+        transfer_sub_dropdown.pack(side="left", pady=3, ipady=4, padx=(10, 0))
+    else:
+        transfer_sub_dropdown.pack_forget()
+        transfer_sub_var.set("Select")
+
+modular_var.trace_add("write", on_modular_change)
 
 
 ctk.CTkLabel(form_frame, text="Select Bank:", font=("Arial", 15, "bold")).pack(anchor="w", pady=(10, 0))
@@ -302,25 +343,36 @@ def run_test_in_thread():
             messagebox.showerror("Input Error", "All required fields must be filled.")
             return
 
-    #    if not all(values.values()):
-    #         messagebox.showerror("Input Error", "All fields are required.")
-    #         return
 
        if not bank_options[bank_var.get()]:
-          messagebox.showerror("All fields are required")
+          messagebox.showerror("Validation Error", "Please select a valid bank")
           return
        
     #    print(test_options[modular_var.get()])
+       selected_module = modular_var.get()
+    #    selected_submodule = transfer_sub_var.get()
 
-       if modular_checkbox_var.get() and not test_options[modular_var.get()]:
-           messagebox.showerror("Input Error", "Module Name is required when Modular Test is selected.")
-           return
-       
        if modular_checkbox_var.get():
-           values["Module Name"] = test_options[modular_var.get()]
+            if selected_module == "Select Module":
+                messagebox.showerror("Validation Error", "Module Name is required when Modular Test is selected.")
+                return
+            
+
+            selected_code = transfer_sub_var.get()
+            selected_description = transfer_submodules.get(selected_code, "")
+
+            if selected_module == "Transfer":
+                    if selected_code == "Select":
+                        messagebox.showerror("Validation Error", "Please select a Transfer submodule")
+                        return
+                    values["Module Name"] = test_options[modular_var.get()]
+                    
+                    values["Transfer Sub Module Name"] = transfer_sub_var.get()
+            else:
+                    values["Module Name"] = test_options[modular_var.get()]
 
 
-       
+
        print(values)
        script_path = resource_path("test_app.py")
     #    script_path = resource_path("test_runner.exe")
@@ -439,9 +491,6 @@ spinner_label.pack_forget()
 
 def run_test():
     global test_process
-    # log_output.delete("1.0", tk.END)
-    # run_button.configure(state="disabled")
-    # spinner_label.pack(side="left", padx=(10, 0)) 
 
     if test_process and test_process.poll() is None:
         messagebox.showinfo("Test Running", "A test is already running.")
@@ -484,17 +533,30 @@ def run_test():
             messagebox.showerror("Validation Error",  "Invalid safaricom number")
             return
         
-    # for label in ["Module Name"]:
-    #     if not validate_Modulename(values[label]):
-    #         messagebox.showerror("Validation Error",  "Invalid Module Name")
-    #         return
-
-    # if modular_checkbox_var.get() and not test_options[modular_var.get()]:
-    #        messagebox.showerror("Input Error", "Module Name is required when Modular Test is selected.")
-    #        return
 
     selected_bank = bank_var.get()
     bank_account = values["Bank Account"]
+
+    selected_module = modular_var.get()
+
+    if modular_checkbox_var.get():
+        if selected_module == "Select Module":
+            messagebox.showerror("Validation Error", "Module Name is required when Modular Test is selected.")
+            return   
+         
+        selected_sub = transfer_sub_var.get()
+
+        if selected_module == "Transfer":
+           
+            if selected_sub == "Select":
+                messagebox.showerror("Validation Error", "Please select a Transfer submodule.")
+                return
+            values["Module Name"] = test_options[modular_var.get()]
+            
+            values["Transfer Sub Module Name"] = transfer_sub_var.get()
+        else:
+            values["Module Name"] = test_options[modular_var.get()]
+
 
     if selected_bank == "Select Bank":
         messagebox.showerror("Validation Error", "Please select a Bank.")
