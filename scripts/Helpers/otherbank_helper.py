@@ -35,4 +35,5 @@ def otherbank_helper(self):
 
         status = self.send_ussd(expected_Result ,"3","Transfer_to_Other_Bank", "Transfer to Other Banks")
 
+
         return status

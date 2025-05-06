@@ -13,7 +13,7 @@ def atm_withdrawal(self):
         status_atm = False
         # print("Hello this is atm_withdrawal ext")
 
-        # self.enter_pin_to_login()
+        self.enter_pin_to_login()
 
         status_helper = transfer_helper(self)
 
@@ -234,9 +234,9 @@ def atm_withdrawal(self):
                     attempt += 1
 
                 else:
-                  print("Exceeded retries for repository.productTransactionAlreadyExists", flush=True)
+                  print("Exceeded retries for repository.productTransactionAlreadyExists or Oracle error", flush=True)
                   self.update_status("Transfer", [15], "Fail", 5, screenshot_name="fail_overlimit_atmtra")
-                  self.update_status("Transfer", [15], "repository already exists error", 6)
+                  self.update_status("Transfer", [15], "repository already exists error or ORA unusual error", 6)
                   self.cancel_ussd()  
                   return False      
             # else:
@@ -257,11 +257,19 @@ def atm_withdrawal(self):
             else:
                 print("All ATM tests Compleated",flush=True)
         
+        
         # print("ATM Transfer Ends")
+        print_and_clear_slow_popups(self, "Atm Withdrawal")
         self.cancel_ussd()
         # return False
                 
-
+def print_and_clear_slow_popups(self, func_name):
+    if self.slow_popups:
+        
+        print(f"\n[Slow Popups in {func_name}]")
+        for page, duration in self.slow_popups:
+            print(f"{page}: {duration}s")
+        self.slow_popups.clear()
 
 
 

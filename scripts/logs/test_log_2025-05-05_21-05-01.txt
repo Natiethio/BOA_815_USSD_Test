@@ -1,0 +1,551 @@
+[2025-05-05 21:07:38] 
+=================  New Test Started at 2025-05-05 21:07:38  =================
+
+[2025-05-05 21:07:48] 2
+[2025-05-05 21:08:12] Using Device ID: R9ZR601C18H
+[2025-05-05 21:08:12] Using Android Version: 12
+[2025-05-05 21:08:12] Using package: com.samsung.android.dialer
+[2025-05-05 21:08:12] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 21:08:12] Dialing USSD code (Attempt 1)...
+[2025-05-05 21:08:19] USSD session cancelled successfully.
+[2025-05-05 21:08:19] Expected USSD response not found. Retrying...
+[2025-05-05 21:08:21] Dialing USSD code (Attempt 2)...
+[2025-05-05 21:08:25] USSD session cancelled successfully.
+[2025-05-05 21:08:25] Expected USSD response not found. Retrying...
+[2025-05-05 21:08:27] Dialing USSD code (Attempt 3)...
+[2025-05-05 21:08:31] Expected USSD page matched.
+[2025-05-05 21:08:36] Input field detected
+[2025-05-05 21:08:41] Pin Enter Notification Detected
+[2025-05-05 21:08:46] Login successful.
+[2025-05-05 21:08:46] Found option: 1: My Accounts
+[2025-05-05 21:08:46] Found option: 2: Transfer
+[2025-05-05 21:08:46] Found option: 3: Transfer to Other Bank
+[2025-05-05 21:08:46] Found option: 4: Transfer to Own
+[2025-05-05 21:08:46] Found option: 5: Airtime
+[2025-05-05 21:08:46] Found option: 6: Utilities
+[2025-05-05 21:08:46] Found option: 7: Exchange Rates
+[2025-05-05 21:08:46] Found option: 8: More options
+[2025-05-05 21:08:46] Excel in the path is used
+[2025-05-05 21:08:47] Writing 'Pass' to row 2, col 5
+[2025-05-05 21:08:48] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:08:48] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 21:08:52] Home page matched
+[2025-05-05 21:08:52] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 21:08:57] List of transfer to other bank option found
+[2025-05-05 21:08:58] Writing 'Pass' to row 48, col 5
+[2025-05-05 21:08:59] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:08:59] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 21:09:03] Selecting Account..
+[2025-05-05 21:09:03] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:09:03] Entering Name..
+[2025-05-05 21:09:08] Selecting Bank
+[2025-05-05 21:09:11] Entering Account Number
+[2025-05-05 21:09:15] Entering Amount
+[2025-05-05 21:09:25] Limit exceeded detected(Single Limit Negaive Scenario Passed)..
+[2025-05-05 21:09:27] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 21:09:29] Expected text not found: 'Transfer to Other Bank'
+[2025-05-05 21:09:29] Mismatch in expected output.
+[2025-05-05 21:09:29] No List of transfer options found exiting fot Non instant Transfer..
+[2025-05-05 21:09:30] Writing 'Fail' to row 48, col 5
+[2025-05-05 21:09:30] C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+[2025-05-05 21:09:30] return self.get_screenshot_as_file(filename)
+[2025-05-05 21:09:32] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_transfer_options_found_20250505-210930.jpg
+[2025-05-05 21:09:32] Writing 'Fail' to row 62, col 5
+[2025-05-05 21:09:33] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_transfer_options_found_20250505-210932.jpg
+[2025-05-05 21:09:34] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:09:34] Updated 'Transfer' sheet - rows [48, 62] set to 'Fail'.
+[2025-05-05 21:09:34] USSD session cancelled successfully.
+[2025-05-05 21:09:34] Positive test failed for non instant transfer
+[2025-05-05 21:09:34] All Test Completed. Cancelling session...
+[2025-05-05 21:09:40] Failed to cancel': Message:
+[2025-05-05 21:09:40] Stacktrace:
+[2025-05-05 21:09:40] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-05 21:09:40] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-05 21:09:40] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-05 21:09:40] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-05 21:09:40] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-05 21:09:41] EE
+[2025-05-05 21:09:41] ======================================================================
+[2025-05-05 21:09:41] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-05-05 21:09:41] ----------------------------------------------------------------------
+[2025-05-05 21:09:41] Traceback (most recent call last):
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 321, in cancel_ussd
+[2025-05-05 21:09:41] WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(cancel_button_locator))
+[2025-05-05 21:09:41] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-05-05 21:09:41] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+[2025-05-05 21:09:41] raise TimeoutException(message, screen, stacktrace)
+[2025-05-05 21:09:41] selenium.common.exceptions.TimeoutException: Message:
+[2025-05-05 21:09:41] Stacktrace:
+[2025-05-05 21:09:41] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-05 21:09:41] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-05 21:09:41] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-05 21:09:41] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-05 21:09:41] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-05 21:09:41] 
+[2025-05-05 21:09:41] During handling of the above exception, another exception occurred:
+[2025-05-05 21:09:41] 
+[2025-05-05 21:09:41] Traceback (most recent call last):
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 579, in test_app
+[2025-05-05 21:09:41] transfer_otherbank = otherbank(self, self.transfer_to_otherbank_sub_module)
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 24, in otherbank
+[2025-05-05 21:09:41] result = non_instant_transfer(self)
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\Non_Instant_Transfer\non_instant_transfer.py", line 49, in non_instant_transfer
+[2025-05-05 21:09:41] self.cancel_ussd()
+[2025-05-05 21:09:41] ~~~~~~~~~~~~~~~~^^
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 330, in cancel_ussd
+[2025-05-05 21:09:41] exit()
+[2025-05-05 21:09:41] ~~~~^^
+[2025-05-05 21:09:41] File "<frozen _sitebuiltins>", line 26, in __call__
+[2025-05-05 21:09:41] SystemExit: None
+[2025-05-05 21:09:41] 
+[2025-05-05 21:09:41] ======================================================================
+[2025-05-05 21:09:41] ERROR: test_app (__main__.TestAppium.test_app)
+[2025-05-05 21:09:41] ----------------------------------------------------------------------
+[2025-05-05 21:09:41] Traceback (most recent call last):
+[2025-05-05 21:09:41] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 103, in tearDown
+[2025-05-05 21:09:41] self.driver.quit()
+[2025-05-05 21:09:41] ~~~~~~~~~~~~~~~~^^
+[2025-05-05 21:09:41] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 589, in quit
+[2025-05-05 21:09:41] self.execute(Command.QUIT)
+[2025-05-05 21:09:41] ~~~~~~~~~~~~^^^^^^^^^^^^^^
+[2025-05-05 21:09:41] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+[2025-05-05 21:09:41] self.error_handler.check_response(response)
+[2025-05-05 21:09:41] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+[2025-05-05 21:09:41] File "C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+[2025-05-05 21:09:41] raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+[2025-05-05 21:09:41] selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+[2025-05-05 21:09:41] Stacktrace:
+[2025-05-05 21:09:41] NoSuchDriverError: A session is either terminated or not started
+[2025-05-05 21:09:41] at asyncHandler (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:311:15)
+[2025-05-05 21:09:41] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:514:15
+[2025-05-05 21:09:41] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-05 21:09:41] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+[2025-05-05 21:09:41] at Route.dispatch (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+[2025-05-05 21:09:41] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-05 21:09:41] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+[2025-05-05 21:09:41] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+[2025-05-05 21:09:41] at param (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+[2025-05-05 21:09:41] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+[2025-05-05 21:09:41] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-05 21:09:41] at logger (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+[2025-05-05 21:09:41] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-05 21:09:41] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-05 21:09:41] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-05 21:09:41] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-05 21:09:41] at next (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+[2025-05-05 21:09:41] at jsonParser (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+[2025-05-05 21:09:41] at Layer.handle [as handle_request] (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+[2025-05-05 21:09:41] at trim_prefix (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+[2025-05-05 21:09:41] at C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+[2025-05-05 21:09:41] at Function.process_params (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+[2025-05-05 21:09:41] 
+[2025-05-05 21:09:41] ----------------------------------------------------------------------
+[2025-05-05 21:09:41] Ran 1 test in 112.869s
+[2025-05-05 21:09:41] 
+[2025-05-05 21:09:41] FAILED (errors=2)
+[2025-05-05 21:09:41] 
+Test completed.
+
+[2025-05-05 21:39:41] 
+=================  New Test Started at 2025-05-05 21:39:41  =================
+
+[2025-05-05 21:39:56] Using Device ID: R9ZR601C18H
+[2025-05-05 21:39:56] Using Android Version: 12
+[2025-05-05 21:39:56] Using package: com.samsung.android.dialer
+[2025-05-05 21:39:56] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 21:39:56] Dialing USSD code (Attempt 1)...
+[2025-05-05 21:40:01] Expected USSD page matched.
+[2025-05-05 21:40:06] Input field detected
+[2025-05-05 21:40:11] Pin Enter Notification Detected
+[2025-05-05 21:40:16] Login successful.
+[2025-05-05 21:40:16] Found option: 1: My Accounts
+[2025-05-05 21:40:16] Found option: 2: Transfer
+[2025-05-05 21:40:16] Found option: 3: Transfer to Other Bank
+[2025-05-05 21:40:16] Found option: 4: Transfer to Own
+[2025-05-05 21:40:16] Found option: 5: Airtime
+[2025-05-05 21:40:16] Found option: 6: Utilities
+[2025-05-05 21:40:16] Found option: 7: Exchange Rates
+[2025-05-05 21:40:16] Found option: 8: More options
+[2025-05-05 21:40:16] Excel in the path is used
+[2025-05-05 21:40:17] Writing 'Pass' to row 2, col 5
+[2025-05-05 21:40:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:40:18] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 21:40:22] Home page matched
+[2025-05-05 21:40:22] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 21:40:26] List of transfer to other bank option found
+[2025-05-05 21:40:27] Writing 'Pass' to row 48, col 5
+[2025-05-05 21:40:29] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:40:29] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 21:40:33] Selecting Account..
+[2025-05-05 21:40:33] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:40:33] Entering Name..
+[2025-05-05 21:40:37] Selecting Bank
+[2025-05-05 21:40:41] Entering Account Number
+[2025-05-05 21:40:45] Entering Amount
+[2025-05-05 21:40:55] Limit exceeded detected(Single Limit Negaive Scenario Passed)..
+[2025-05-05 21:40:56] Writing 'Pass' to row 66, col 5
+[2025-05-05 21:40:57] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:40:57] Updated 'Transfer' sheet - rows [66] set to 'Pass'.
+[2025-05-05 21:40:59] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 21:40:59] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:40:59] Entering Name..
+[2025-05-05 21:41:05] Selecting Bank
+[2025-05-05 21:41:08] Entering Account Number
+[2025-05-05 21:41:12] Entering Amount
+[2025-05-05 21:41:17] Positive scenario: reached confirmation page. Navigating back and ending test (Non Instant Transfer).
+[2025-05-05 21:41:18] Writing 'Pass' to row 62, col 5
+[2025-05-05 21:41:19] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:41:19] Updated 'Transfer' sheet - rows [62] set to 'Pass'.
+[2025-05-05 21:41:48] [Transfer Module Error] Message:
+[2025-05-05 21:41:48] Stacktrace:
+[2025-05-05 21:41:48] NoSuchElementError: An element could not be located on the page using the given search parameters.
+[2025-05-05 21:41:48] at AndroidUiautomator2Driver.findElOrEls (C:\Users\FILSU\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[2025-05-05 21:41:48] at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-05-05 21:41:48] at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[2025-05-05 21:41:48] at AndroidUiautomator2Driver.findElement (C:\Users\FILSU\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[2025-05-05 21:41:49] .
+[2025-05-05 21:41:49] ----------------------------------------------------------------------
+[2025-05-05 21:41:49] Ran 1 test in 126.602s
+[2025-05-05 21:41:49] 
+[2025-05-05 21:41:49] OK
+[2025-05-05 21:41:49] 
+Test completed.
+
+[2025-05-05 21:50:06] 
+=================  New Test Started at 2025-05-05 21:50:06  =================
+
+[2025-05-05 21:50:22] Using Device ID: R9ZR601C18H
+[2025-05-05 21:50:22] Using Android Version: 12
+[2025-05-05 21:50:22] Using package: com.samsung.android.dialer
+[2025-05-05 21:50:22] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 21:50:22] Dialing USSD code (Attempt 1)...
+[2025-05-05 21:50:27] USSD session cancelled successfully.
+[2025-05-05 21:50:28] Expected USSD response not found. Retrying...
+[2025-05-05 21:50:30] Dialing USSD code (Attempt 2)...
+[2025-05-05 21:50:34] USSD session cancelled successfully.
+[2025-05-05 21:50:34] Expected USSD response not found. Retrying...
+[2025-05-05 21:50:36] Dialing USSD code (Attempt 3)...
+[2025-05-05 21:50:40] USSD session cancelled successfully.
+[2025-05-05 21:50:40] Expected USSD response not found. Retrying...
+[2025-05-05 21:50:42] Dialing USSD code (Attempt 4)...
+[2025-05-05 21:50:46] Expected USSD page matched.
+[2025-05-05 21:50:51] Input field detected
+[2025-05-05 21:50:56] Pin Enter Notification Detected
+[2025-05-05 21:51:00] Login successful.
+[2025-05-05 21:51:01] Found option: 1: My Accounts
+[2025-05-05 21:51:01] Found option: 2: Transfer
+[2025-05-05 21:51:01] Found option: 3: Transfer to Other Bank
+[2025-05-05 21:51:01] Found option: 4: Transfer to Own
+[2025-05-05 21:51:01] Found option: 5: Airtime
+[2025-05-05 21:51:01] Found option: 6: Utilities
+[2025-05-05 21:51:01] Found option: 7: Exchange Rates
+[2025-05-05 21:51:01] Found option: 8: More options
+[2025-05-05 21:51:01] Excel in the path is used
+[2025-05-05 21:51:02] Writing 'Pass' to row 2, col 5
+[2025-05-05 21:51:03] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:51:03] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 21:51:03] Test for Non-Instant Transfer..
+[2025-05-05 21:51:07] Home page matched
+[2025-05-05 21:51:07] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 21:51:11] List of transfer to other bank option found
+[2025-05-05 21:51:12] Writing 'Pass' to row 48, col 5
+[2025-05-05 21:51:13] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:51:13] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 21:51:18] Selecting Account..
+[2025-05-05 21:51:18] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:51:18] Entering Name..
+[2025-05-05 21:51:21] Selecting Bank
+[2025-05-05 21:51:26] Entering Account Number
+[2025-05-05 21:51:30] Entering Amount
+[2025-05-05 21:51:35] Confirming..
+[2025-05-05 21:51:39] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:51:39] Entering Name..
+[2025-05-05 21:51:40] Expected text not found: 'Enter Name'
+[2025-05-05 21:51:40] Mismatch in expected output.
+[2025-05-05 21:51:40] Error: No name entery page found
+[2025-05-05 21:51:41] Writing 'Fail' to row 62, col 5
+[2025-05-05 21:51:41] C:\Users\FILSU\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+[2025-05-05 21:51:41] return self.get_screenshot_as_file(filename)
+[2025-05-05 21:51:43] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_name_entery_page_20250505-215141.jpg
+[2025-05-05 21:51:43] Writing 'Fail' to row 48, col 5
+[2025-05-05 21:51:45] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_name_entery_page_20250505-215143.jpg
+[2025-05-05 21:51:47] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:51:47] Updated 'Transfer' sheet - rows [62, 48] set to 'Fail'.
+[2025-05-05 21:51:47] Negative test failed or partially completed, continuing...
+[2025-05-05 21:51:47] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 21:51:47] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:51:47] Entering Name..
+[2025-05-05 21:51:47] Expected text not found: 'Enter Name'
+[2025-05-05 21:51:47] Mismatch in expected output.
+[2025-05-05 21:51:47] Error: No name entery page found
+[2025-05-05 21:51:48] Writing 'Fail' to row 62, col 5
+[2025-05-05 21:51:50] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_name_entery_page_20250505-215148.jpg
+[2025-05-05 21:51:50] Writing 'Fail' to row 48, col 5
+[2025-05-05 21:51:52] Screenshot saved: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Failed\no_name_entery_page_20250505-215150.jpg
+[2025-05-05 21:51:53] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:51:53] Updated 'Transfer' sheet - rows [62, 48] set to 'Fail'.
+[2025-05-05 21:51:53] Positive test failed for non instant transfer
+[2025-05-05 21:51:53] All Test Completed. Cancelling session...
+[2025-05-05 21:51:53] USSD session cancelled successfully.
+[2025-05-05 21:51:53] Non Instant Transfer failed
+[2025-05-05 21:51:54] .
+[2025-05-05 21:51:54] ----------------------------------------------------------------------
+[2025-05-05 21:51:54] Ran 1 test in 106.109s
+[2025-05-05 21:51:54] 
+[2025-05-05 21:51:54] OK
+[2025-05-05 21:51:54] 
+Test completed.
+
+[2025-05-05 21:58:24] 
+=================  New Test Started at 2025-05-05 21:58:24  =================
+
+[2025-05-05 21:58:40] Using Device ID: R9ZR601C18H
+[2025-05-05 21:58:40] Using Android Version: 12
+[2025-05-05 21:58:40] Using package: com.samsung.android.dialer
+[2025-05-05 21:58:40] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 21:58:40] Dialing USSD code (Attempt 1)...
+[2025-05-05 21:58:46] Expected USSD page matched.
+[2025-05-05 21:58:51] Input field detected
+[2025-05-05 21:58:55] Pin Enter Notification Detected
+[2025-05-05 21:59:00] Login successful.
+[2025-05-05 21:59:00] Found option: 1: My Accounts
+[2025-05-05 21:59:00] Found option: 2: Transfer
+[2025-05-05 21:59:00] Found option: 3: Transfer to Other Bank
+[2025-05-05 21:59:00] Found option: 4: Transfer to Own
+[2025-05-05 21:59:00] Found option: 5: Airtime
+[2025-05-05 21:59:00] Found option: 6: Utilities
+[2025-05-05 21:59:00] Found option: 7: Exchange Rates
+[2025-05-05 21:59:00] Found option: 8: More options
+[2025-05-05 21:59:00] Excel in the path is used
+[2025-05-05 21:59:02] Writing 'Pass' to row 2, col 5
+[2025-05-05 21:59:03] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:59:03] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 21:59:03] Test for Non-Instant Transfer..
+[2025-05-05 21:59:07] Transfer to other bank's Home page matched
+[2025-05-05 21:59:07] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 21:59:12] List of transfer to other bank option found
+[2025-05-05 21:59:13] Writing 'Pass' to row 48, col 5
+[2025-05-05 21:59:14] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:59:14] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 21:59:18] Selecting Account..
+[2025-05-05 21:59:18] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:59:18] Entering Name..
+[2025-05-05 21:59:22] Selecting Bank
+[2025-05-05 21:59:26] Entering Account Number
+[2025-05-05 21:59:30] Entering Amount
+[2025-05-05 21:59:35] Confirming..
+[2025-05-05 21:59:40] Limit exceeded detected(Single Limit Negaive Scenario Passed)..
+[2025-05-05 21:59:41] Writing 'Pass' to row 66, col 5
+[2025-05-05 21:59:43] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 21:59:43] Updated 'Transfer' sheet - rows [66] set to 'Pass'.
+[2025-05-05 21:59:45] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 21:59:45] Attempt 1: Starting Transfer Flow
+[2025-05-05 21:59:45] Entering Name..
+[2025-05-05 21:59:50] Selecting Bank
+[2025-05-05 21:59:54] Entering Account Number
+[2025-05-05 21:59:58] Entering Amount
+[2025-05-05 22:00:02] Positive scenario: reached confirmation page. Navigating back and ending test (Non Instant Transfer).
+[2025-05-05 22:00:04] Writing 'Pass' to row 62, col 5
+[2025-05-05 22:00:05] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:00:05] Updated 'Transfer' sheet - rows [62] set to 'Pass'.
+[2025-05-05 22:00:07] All Test Completed. Cancelling session...
+[2025-05-05 22:00:09] USSD session cancelled successfully.
+[2025-05-05 22:00:09] Non Instant Transfer failed
+[2025-05-05 22:00:10] .
+[2025-05-05 22:00:10] ----------------------------------------------------------------------
+[2025-05-05 22:00:10] Ran 1 test in 103.811s
+[2025-05-05 22:00:10] 
+[2025-05-05 22:00:10] OK
+[2025-05-05 22:00:10] 
+Test completed.
+
+[2025-05-05 22:09:51] 
+=================  New Test Started at 2025-05-05 22:09:51  =================
+
+[2025-05-05 22:10:05] Using Device ID: R9ZR601C18H
+[2025-05-05 22:10:05] Using Android Version: 12
+[2025-05-05 22:10:05] Using package: com.samsung.android.dialer
+[2025-05-05 22:10:05] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 22:10:05] Dialing USSD code (Attempt 1)...
+[2025-05-05 22:10:11] Expected USSD page matched.
+[2025-05-05 22:10:16] Input field detected
+[2025-05-05 22:10:21] Pin Enter Notification Detected
+[2025-05-05 22:10:26] Login successful.
+[2025-05-05 22:10:26] Found option: 1: My Accounts
+[2025-05-05 22:10:26] Found option: 2: Transfer
+[2025-05-05 22:10:26] Found option: 3: Transfer to Other Bank
+[2025-05-05 22:10:26] Found option: 4: Transfer to Own
+[2025-05-05 22:10:26] Found option: 5: Airtime
+[2025-05-05 22:10:26] Found option: 6: Utilities
+[2025-05-05 22:10:26] Found option: 7: Exchange Rates
+[2025-05-05 22:10:26] Found option: 8: More options
+[2025-05-05 22:10:26] Excel in the path is used
+[2025-05-05 22:10:27] Writing 'Pass' to row 2, col 5
+[2025-05-05 22:10:27] Error updating Excel file: [Errno 13] Permission denied: 'D:\\BOA\\Test_App\\BOA_MobileApp_Test\\scripts\\USSD_Test_Script2.xlsx'
+[2025-05-05 22:10:27] Test for Non-Instant Transfer..
+[2025-05-05 22:10:31] Transfer to other bank's Home page matched
+[2025-05-05 22:10:31] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 22:10:36] List of transfer to other bank option found
+[2025-05-05 22:10:37] Writing 'Pass' to row 48, col 5
+[2025-05-05 22:10:38] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:10:38] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 22:10:43] Selecting Account..
+[2025-05-05 22:10:43] Attempt 1: Starting Transfer Flow
+[2025-05-05 22:10:43] Entering Name..
+[2025-05-05 22:10:47] Selecting Bank
+[2025-05-05 22:10:51] Entering Account Number
+[2025-05-05 22:10:55] Entering Amount
+[2025-05-05 22:11:00] Confirming..
+[2025-05-05 22:11:04] Limit exceeded detected(Single Limit Negaive Scenario Passed)..
+[2025-05-05 22:11:05] Writing 'Pass' to row 66, col 5
+[2025-05-05 22:11:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:11:07] Updated 'Transfer' sheet - rows [66] set to 'Pass'.
+[2025-05-05 22:11:09] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 22:11:09] Attempt 1: Starting Transfer Flow
+[2025-05-05 22:11:09] Entering Name..
+[2025-05-05 22:11:14] Selecting Bank
+[2025-05-05 22:11:18] Entering Account Number
+[2025-05-05 22:11:22] Entering Amount
+[2025-05-05 22:11:26] Positive scenario: reached confirmation page. Navigating back and ending test (Non Instant Transfer).
+[2025-05-05 22:11:28] Writing 'Pass' to row 62, col 5
+[2025-05-05 22:11:29] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:11:29] Updated 'Transfer' sheet - rows [62] set to 'Pass'.
+[2025-05-05 22:11:31] All Test Completed. Cancelling session...
+[2025-05-05 22:11:35] 
+[2025-05-05 22:11:35] [Slow Popups in Transfer to Other Banks(Non Instant)]
+[2025-05-05 22:11:35] BOA Account Lists Page(Non Instant): 2.57s
+[2025-05-05 22:11:35] USSD session cancelled successfully.
+[2025-05-05 22:11:35] Non Instant Transfer Compleated
+[2025-05-05 22:11:35] .
+[2025-05-05 22:11:35] ----------------------------------------------------------------------
+[2025-05-05 22:11:35] Ran 1 test in 103.060s
+[2025-05-05 22:11:35] 
+[2025-05-05 22:11:35] OK
+[2025-05-05 22:11:35] 
+[2025-05-05 22:11:35] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-05 22:11:35] BOA Account Lists Page(Non Instant): 2.57s
+[2025-05-05 22:11:36] 
+Test completed.
+
+[2025-05-05 22:12:38] 
+=================  New Test Started at 2025-05-05 22:12:38  =================
+
+[2025-05-05 22:12:51] Using Device ID: R9ZR601C18H
+[2025-05-05 22:12:51] Using Android Version: 12
+[2025-05-05 22:12:51] Using package: com.samsung.android.dialer
+[2025-05-05 22:12:51] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-05 22:12:51] Executing all transfer to other bank submodules...
+[2025-05-05 22:12:51] Dialing USSD code (Attempt 1)...
+[2025-05-05 22:12:56] Expected USSD page matched.
+[2025-05-05 22:13:01] Input field detected
+[2025-05-05 22:13:06] Pin Enter Notification Detected
+[2025-05-05 22:13:10] Login successful.
+[2025-05-05 22:13:11] Found option: 1: My Accounts
+[2025-05-05 22:13:11] Found option: 2: Transfer
+[2025-05-05 22:13:11] Found option: 3: Transfer to Other Bank
+[2025-05-05 22:13:11] Found option: 4: Transfer to Own
+[2025-05-05 22:13:11] Found option: 5: Airtime
+[2025-05-05 22:13:11] Found option: 6: Utilities
+[2025-05-05 22:13:11] Found option: 7: Exchange Rates
+[2025-05-05 22:13:11] Found option: 8: More options
+[2025-05-05 22:13:11] Excel in the path is used
+[2025-05-05 22:13:12] Writing 'Pass' to row 2, col 5
+[2025-05-05 22:13:13] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:13:13] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 22:13:13] Test for Instant Transfer..
+[2025-05-05 22:13:17] Home page matched
+[2025-05-05 22:13:17] Test for Positive Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 22:13:21] List of transfer to other bank option found
+[2025-05-05 22:13:22] Writing 'Pass' to row 48, col 5
+[2025-05-05 22:13:23] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:13:23] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 22:13:27] Attempt 1 to enter account number...
+[2025-05-05 22:13:32] Account accepted successfully
+[2025-05-05 22:13:49] Final response:
+[2025-05-05 22:13:49] Complete
+[2025-05-05 22:13:49] ETB 1.00 debited from 182975435 for 1000298224171 (Instant Transfer) on 05/05/2025 with transaction ID: FT25126W8HP6.
+[2025-05-05 22:13:50] Transfer Successfuly
+[2025-05-05 22:13:50] Writing 'Pass' to row 52, col 5
+[2025-05-05 22:13:51] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:13:51] Updated 'Transfer' sheet - rows [52] set to 'Pass'.
+[2025-05-05 22:13:51] Test for Positive Scenario for Instant Transfer Finished Test for Negative Scenario Begines...
+[2025-05-05 22:14:04] List of transfer to other bank option found
+[2025-05-05 22:14:05] Writing 'Pass' to row 48, col 5
+[2025-05-05 22:14:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:14:07] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 22:14:11] Attempt 1 to enter account number...
+[2025-05-05 22:14:15] Account accepted successfully
+[2025-05-05 22:14:30] Final response:
+[2025-05-05 22:14:30] You have exceeded the daily transaction limit for Instant Transfer
+[2025-05-05 22:14:31] Writing 'Pass' to row 57, col 5
+[2025-05-05 22:14:32] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:14:32] Updated 'Transfer' sheet - rows [57] set to 'Pass'.
+[2025-05-05 22:14:46] Final response:
+[2025-05-05 22:14:46] You have exceeded the single transaction limit for Instant Transfer
+[2025-05-05 22:14:47] Writing 'Pass' to row 55, col 5
+[2025-05-05 22:14:49] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:14:49] Updated 'Transfer' sheet - rows [55] set to 'Pass'.
+[2025-05-05 22:14:50] Writing 'Pass' to row 56, col 5
+[2025-05-05 22:14:51] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:14:51] Updated 'Transfer' sheet - rows [56] set to 'Pass'.
+[2025-05-05 22:14:55] 
+[2025-05-05 22:14:55] [Slow Popups in Transfer to Other Banks(Instant)]
+[2025-05-05 22:14:55] Success Screen Page: 2.95s
+[2025-05-05 22:14:55] USSD session cancelled successfully.
+[2025-05-05 22:14:55] Dialing USSD code (Attempt 1)...
+[2025-05-05 22:14:59] Expected USSD page matched.
+[2025-05-05 22:14:59] Input field detected
+[2025-05-05 22:15:04] Pin Enter Notification Detected
+[2025-05-05 22:15:08] Login successful.
+[2025-05-05 22:15:08] Found option: 1: My Accounts
+[2025-05-05 22:15:08] Found option: 2: Transfer
+[2025-05-05 22:15:08] Found option: 3: Transfer to Other Bank
+[2025-05-05 22:15:08] Found option: 4: Transfer to Own
+[2025-05-05 22:15:08] Found option: 5: Airtime
+[2025-05-05 22:15:08] Found option: 6: Utilities
+[2025-05-05 22:15:08] Found option: 7: Exchange Rates
+[2025-05-05 22:15:08] Found option: 8: More options
+[2025-05-05 22:15:10] Writing 'Pass' to row 2, col 5
+[2025-05-05 22:15:11] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:15:11] Updated 'login' sheet - rows [2] set to 'Pass'.
+[2025-05-05 22:15:11] Test for Non-Instant Transfer..
+[2025-05-05 22:15:15] Transfer to other bank's Home page matched
+[2025-05-05 22:15:15] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-05 22:15:19] List of transfer to other bank option found
+[2025-05-05 22:15:20] Writing 'Pass' to row 48, col 5
+[2025-05-05 22:15:21] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:15:21] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-05 22:15:25] Selecting Account..
+[2025-05-05 22:15:25] Attempt 1: Starting Transfer Flow
+[2025-05-05 22:15:25] Entering Name..
+[2025-05-05 22:15:29] Selecting Bank
+[2025-05-05 22:15:33] Entering Account Number
+[2025-05-05 22:15:37] Entering Amount
+[2025-05-05 22:15:41] Confirming..
+[2025-05-05 22:15:45] Limit exceeded detected(Single Limit Negaive Scenario Passed)..
+[2025-05-05 22:15:47] Writing 'Pass' to row 66, col 5
+[2025-05-05 22:15:48] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:15:48] Updated 'Transfer' sheet - rows [66] set to 'Pass'.
+[2025-05-05 22:15:51] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-05 22:15:51] Attempt 1: Starting Transfer Flow
+[2025-05-05 22:15:51] Entering Name..
+[2025-05-05 22:15:55] Selecting Bank
+[2025-05-05 22:15:59] Entering Account Number
+[2025-05-05 22:16:03] Entering Amount
+[2025-05-05 22:16:07] Positive scenario: reached confirmation page. Navigating back and ending test (Non Instant Transfer).
+[2025-05-05 22:16:08] Writing 'Pass' to row 62, col 5
+[2025-05-05 22:16:10] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-05 22:16:10] Updated 'Transfer' sheet - rows [62] set to 'Pass'.
+[2025-05-05 22:16:13] All Test Completed. Cancelling session...
+[2025-05-05 22:16:14] USSD session cancelled successfully.
+[2025-05-05 22:16:15] .
+[2025-05-05 22:16:15] ----------------------------------------------------------------------
+[2025-05-05 22:16:15] Ran 1 test in 215.927s
+[2025-05-05 22:16:15] 
+[2025-05-05 22:16:15] OK
+[2025-05-05 22:16:15] 
+[2025-05-05 22:16:15] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-05 22:16:15] Success Screen Page: 2.95s
+[2025-05-05 22:16:15] 
+Test completed.
+

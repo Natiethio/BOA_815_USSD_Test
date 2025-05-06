@@ -47,6 +47,9 @@ class TestAppium(unittest.TestCase):
     bank_name = sys.argv[8] if len(sys.argv) > 8 else "CBE"
     module_name = sys.argv[9] if len(sys.argv) > 9 else "All"
     transfer_sub_module = sys.argv[10] if len(sys.argv) > 10 else "5"
+    transfer_to_otherbank_sub_module = sys.argv[11] if len(sys.argv) > 11 else "3"
+
+    # print( transfer_sub_module,  transfer_to_otherbank_sub_module, flush=True)
 
     def get_connected_device(self):
         try:
@@ -157,20 +160,7 @@ class TestAppium(unittest.TestCase):
 
             self.dialussdcode(expected_result)
 
-
- 
             try:
-
-                # ussd_screen = WebDriverWait(self.driver, 20).until(
-                # EC.element_to_be_clickable((AppiumBy.XPATH, "//android.widget.LinearLayout[@resource-id='android:id/parentPanel']"))
-                # )
-
-                # if ussd_screen:
-                #    print("BOA USSD Login Notification Detected", flush=True)
-                # else:
-                #     self.fail("No USSD screen detected")
-                #     self.driver.quit()
-
                 input_field = self.driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@resource-id="com.android.phone:id/input_field"]')
                 print("Input field detected", flush=True)
             except:
@@ -254,6 +244,15 @@ class TestAppium(unittest.TestCase):
                             expected_Result = [
                                  "Please enter your PIN to login:"
                                 ]
+                            
+                            ussd_text = self.get_ussd_message()
+
+                            if not "please enter your pin to login:" in ussd_text.lower():
+                                 print("No pin entery page found exiting..", flush=True)
+                                 self.cancel_ussd()
+                                 self.update_status("login", [2], "Fail", 5, screenshot_name="no_pin_entery_page")
+
+
 
                             self.send_ussd(expected_Result ,pin_number,"enter_pin_to_login", "Home Page")
 
@@ -305,7 +304,7 @@ class TestAppium(unittest.TestCase):
                             print(f"Not Found option: {option}", flush=True)
                             self.fail(f"Missing option in USSD menu: {option}")
 
-            self.update_status("login", [2], "Pass", 5) #pass
+            self.update_status("login", [3], "Pass", 5) #pass
 
             if(not_found):
               print(f"Not Found option: {not_found}", flush=True)
@@ -564,15 +563,15 @@ class TestAppium(unittest.TestCase):
             print(f"Error updating Excel file: {e}", flush=True)  
 
         # Any other initialization can go here
+    
     def test_app(self):
         try:
-            # self.enter_pin_to_login()
             if self.module_name == "1":
                 my_account_opt = my_account(self)  
             elif self.module_name == "2":  
                 transfer_one = transfer(self, self.transfer_sub_module)  
             elif self.module_name == "3":  
-                transfer_otherbank = otherbank(self)  
+                transfer_otherbank = otherbank(self, self.transfer_to_otherbank_sub_module)  
             elif self.module_name == "4":  
                 transfer_toown = transfer_to_own_account(self)  
             elif self.module_name == "5":  
@@ -582,9 +581,9 @@ class TestAppium(unittest.TestCase):
             else:
                 print("End to end test")  
                 my_account_opt = my_account(self)
-                # transfer_one = transfer(self, self.transfer_sub_module)
-                # transfer_otherbank = otherbank(self)
-                # transfer_toown = transfer_to_own_account(self)
+                transfer_one = transfer(self, self.transfer_sub_module)
+                transfer_otherbank = otherbank(self)
+                transfer_toown = transfer_to_own_account(self)
                 airtimeres = airtime(self)
 
             if self.all_slow_popups:

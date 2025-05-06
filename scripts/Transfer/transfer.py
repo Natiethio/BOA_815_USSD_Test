@@ -7,8 +7,8 @@ def transfer(self, transfer_sub_module):
         
 
         try:
-            self.enter_pin_to_login()
-            
+            # self.enter_pin_to_login()
+             
             match transfer_sub_module:
                 case "1":
                     result = transfer_within_BOA(self)

@@ -1,0 +1,30 @@
+[2025-05-04 14:56:38] 
+=================  New Test Started at 2025-05-04 14:56:38  =================
+
+[2025-05-04 14:56:38] 
+Error running test: expected str, bytes or os.PathLike object, not NoneType
+
+[2025-05-04 14:57:02] 
+=================  New Test Started at 2025-05-04 14:57:02  =================
+
+[2025-05-04 14:57:09] Traceback (most recent call last):
+[2025-05-04 14:57:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\test_app.py", line 22, in <module>
+[2025-05-04 14:57:09] from Transfer_otherBank.otherbank import otherbank
+[2025-05-04 14:57:09] File "D:\BOA\Test_App\BOA_MobileApp_Test\scripts\Transfer_otherBank\otherbank.py", line 14, in <module>
+[2025-05-04 14:57:09] from Instant_Transfer.instant_transfer import instant_transfer
+[2025-05-04 14:57:09] ModuleNotFoundError: No module named 'Instant_Transfer'
+[2025-05-04 14:57:09] 
+Test failed with exit code 1.
+
+[2025-05-04 14:59:59] 
+=================  New Test Started at 2025-05-04 14:59:59  =================
+
+[2025-05-04 14:59:59] 
+Error running test: expected str, bytes or os.PathLike object, not NoneType
+
+[2025-05-04 15:00:09] 
+=================  New Test Started at 2025-05-04 15:00:09  =================
+
+[2025-05-04 15:00:09] 
+Error running test: expected str, bytes or os.PathLike object, not NoneType
+

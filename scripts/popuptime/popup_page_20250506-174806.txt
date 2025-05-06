@@ -1,0 +1,25 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.6 seconds
+Home Page page appeared in => 1.53 seconds
+BOA Accounts list Page(Ethiotelecom Air Time) page appeared in => 1.61 seconds
+Enter Recharge Phone No Page(Ethio Telecom) page appeared in => 1.47 seconds
+Enter Amount Page(Ethiotelecom Air Time) page appeared in => 1.62 seconds
+Confirmation Page(Air Time) page appeared in => 2.36 seconds
+Daily limit exceeded page(Ethiotelecom Air Time) page appeared in => 3.72 seconds
+Enter Recharge Phone No Page(Ethio Telecom Back Navigated) page appeared in => 1.51 seconds
+Enter Amount(AirTime) page appeared in => 1.52 seconds
+Confirmation Page(AirTime) page appeared in => 2.75 seconds
+Invalid Ethio Telecom Phone No page page appeared in => 1.85 seconds
+Enter Valid Recharge Phone No Page(Ethio Telecom) page appeared in => 1.51 seconds
+Enter Amount Page(Ethiotelcom Air Time) page appeared in => 1.56 seconds
+Confirmation Page(Air Time) page appeared in => 1.7 seconds
+Enter Amount(Air Time Back) page appeared in => 1.48 seconds
+Enter Pin Page page appeared in => 1.42 seconds
+Home Page page appeared in => 1.58 seconds
+BoA Accounts List Page(Safaricom AirTime) page appeared in => 1.75 seconds
+Enter Recharge Phone No(Safaricom) page appeared in => 1.48 seconds
+Enter Amount Page(Safaricom AirTime) page appeared in => 1.44 seconds
+Confirmation Page(Safaricom AirTime) page appeared in => 1.95 seconds
+Daily limit exceeded page(Safaricom AirTime) page appeared in => 1.87 seconds

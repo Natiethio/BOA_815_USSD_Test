@@ -27,13 +27,13 @@ def center_window(root, width, height):
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
 
-    x = int((screen_width // 2) - (width // 2))
-    y = int((screen_height // 2) - (height // 2))
+    x = int((screen_width // 4) - (width // 4))
+    y = int((screen_height // 4) - (height // 4))
 
     root.geometry(f"{width}x{height}+{x}+{y}")
     root.update()
 
-center_window(root, 1320, 650)
+center_window(root, 1350, 670)
 
 logo_color = "#FFA500" 
 
@@ -41,10 +41,10 @@ appium_process = None
 
 
 left_frame = ctk.CTkFrame(root, fg_color="#f5f5f5") 
-left_frame.grid(row=0, column=0, padx=10, pady=20, sticky="nswe")
+left_frame.grid(row=0, column=0, padx=10, pady=27, sticky="nswe")
 
 right_frame = ctk.CTkFrame(root, fg_color="#f5f5f5")  
-right_frame.grid(row=0, column=1, padx=10, pady=20, sticky="nswe")
+right_frame.grid(row=0, column=1, padx=10, pady=27, sticky="nswe")
 
 root.grid_columnconfigure(0, weight=4)  
 root.grid_columnconfigure(1, weight=1) 
@@ -227,8 +227,8 @@ modular_dropdown = ctk.CTkOptionMenu(
     bank_row,
     variable=modular_var,
     values=list(test_options.keys()),
-    width=120,
-    font=("Arial", 15),
+    width=80,
+    font=("Arial", 12),
     fg_color=logo_color,
     button_color=logo_color,
     button_hover_color=logo_color,
@@ -244,6 +244,7 @@ def toggle_modular_dropdown():
     else:
         modular_dropdown.pack_forget()
         transfer_sub_dropdown.pack_forget()
+        transfer_with_otherbank_dropdown.pack_forget()
         modular_var.set("Select Module")
 
 modular_checkbox.configure(command=toggle_modular_dropdown)
@@ -259,9 +260,9 @@ transfer_submodules = {
 
 transfer_with_otherbank = {
     "1: Instant" : "1",
-    "2: Non Instant Transfer" : "2"
+    "2: Non Instant Transfer" : "2",
+    "3  Transfer to Other Bank(All)" : "3"
 }
-
 
 
 transfer_sub_var = tk.StringVar(value="Select")
@@ -278,17 +279,41 @@ transfer_sub_dropdown = ctk.CTkOptionMenu(
     text_color="white",
     command=lambda selected: transfer_sub_var.set(transfer_submodules[selected])
     # command=lambda selected: transfer_sub_var.set(selected)
-
 )
 transfer_sub_dropdown.pack_forget()
+
+transfer_with_otherbank_sub_var = tk.StringVar(value="Select")
+
+transfer_with_otherbank_dropdown = ctk.CTkOptionMenu(
+    bank_row,
+    variable=transfer_with_otherbank_sub_var,
+    values=list(transfer_with_otherbank.keys()),
+    width=60,
+    font=("Arial", 11),
+    fg_color=logo_color,
+    button_color=logo_color,
+    button_hover_color=logo_color,
+    text_color="white",
+    command=lambda selected: transfer_with_otherbank_sub_var.set(transfer_with_otherbank[selected])
+    # command=lambda selected: transfer_sub_var.set(selected)
+)
+transfer_with_otherbank_dropdown.pack_forget()
 
 def on_modular_change(*args):
     if modular_var.get() == "Transfer":
         transfer_sub_var.set("Select")
+        transfer_with_otherbank_dropdown.pack_forget()
         transfer_sub_dropdown.pack(side="left", pady=3, ipady=4, padx=(10, 0))
+    elif modular_var.get() == "Transfer to Other Bank":
+         transfer_with_otherbank_sub_var.set("Select")
+         transfer_sub_dropdown.pack_forget()
+         transfer_with_otherbank_dropdown.pack(side="left", pady=3, ipady=4, padx=(10, 0))
     else:
         transfer_sub_dropdown.pack_forget()
         transfer_sub_var.set("Select")
+        transfer_with_otherbank_dropdown.pack_forget()
+        transfer_with_otherbank_sub_var.set("Select")
+
 
 modular_var.trace_add("write", on_modular_change)
 
@@ -360,20 +385,41 @@ def run_test_in_thread():
 
             selected_code = transfer_sub_var.get()
             selected_description = transfer_submodules.get(selected_code, "")
+            selected_code_transfer_other = transfer_with_otherbank_sub_var.get()
+
 
             if selected_module == "Transfer":
                     if selected_code == "Select":
                         messagebox.showerror("Validation Error", "Please select a Transfer submodule")
                         return
+                    
                     values["Module Name"] = test_options[modular_var.get()]
                     
                     values["Transfer Sub Module Name"] = transfer_sub_var.get()
+
+                    values["Transfer OB Sub Module Name"] = ""
+
+            elif selected_module == "Transfer to Other Bank":
+                    if selected_code_transfer_other == "Select":
+                        messagebox.showerror("Validation Error", "Please select a Transfer to other Bank submodule")
+                        return
+                    
+                    values["Module Name"] = test_options[modular_var.get()]
+
+                    values["Transfer Sub Module Name"] = ""
+
+                    values["Transfer OB Sub Module Name"] = transfer_with_otherbank_sub_var.get()
+
             else:
                     values["Module Name"] = test_options[modular_var.get()]
 
+                    values["Transfer Sub Module Name"] = ""
+
+                    values["Transfer OB Sub Module Name"] = ""
 
 
-       print(values)
+
+    #    print(values)
        script_path = resource_path("test_app.py")
     #    script_path = resource_path("test_runner.exe")
 
@@ -390,6 +436,8 @@ def run_test_in_thread():
        main_dir = os.path.dirname(sys.argv[0])
        
        test_process = subprocess.Popen(
+           
+
            
             [sys.executable, script_path] + list(values.values()),
             # [script_path] + list(values.values()),
@@ -474,15 +522,15 @@ spinner_frames = []
 try:
     while True:
         frame = spinner_image_raw.copy()
-        frame_ctk = CTkImage(light_image=frame, size=(30, 30))
+        frame_ctk = CTkImage(light_image=frame, size=(40, 40))
         spinner_frames.append(frame_ctk)
-        spinner_image_raw.seek(len(spinner_frames))  # go to next frame
+        spinner_image_raw.seek(len(spinner_frames))  
 except EOFError:
     pass 
 
 
 spinner_image_raw = Image.open(spinner_path)
-spinner_ctk = CTkImage(light_image=spinner_image_raw, size=(30, 30))  # adjust size if needed
+spinner_ctk = CTkImage(light_image=spinner_image_raw, size=(40, 40)) 
 
 spinner_label = ctk.CTkLabel(run_row_frame, text="", image=spinner_ctk)
 spinner_label.pack(side="left", padx=(10, 0))
@@ -545,6 +593,7 @@ def run_test():
             return   
          
         selected_sub = transfer_sub_var.get()
+        selected_code_transfer_other = transfer_with_otherbank_sub_var.get()
 
         if selected_module == "Transfer":
            
@@ -556,6 +605,17 @@ def run_test():
             values["Transfer Sub Module Name"] = transfer_sub_var.get()
         else:
             values["Module Name"] = test_options[modular_var.get()]
+
+
+            if selected_module == "Transfer to Other Bank":
+                    if selected_code_transfer_other == "Select":
+                        messagebox.showerror("Validation Error", "Please select a Transfer to other Bank submodule.")
+                        return
+                    values["Module Name"] = test_options[modular_var.get()]
+                    
+                    values["Transfer OB Sub Module Name"] = transfer_with_otherbank_sub_var.get()
+            else:
+                    values["Module Name"] = test_options[modular_var.get()]
 
 
     if selected_bank == "Select Bank":

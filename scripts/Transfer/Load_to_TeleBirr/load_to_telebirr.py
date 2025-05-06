@@ -11,7 +11,7 @@ def load_to_telebirr(self):
         # print(self.pin)
         # print(self.phone_number)
 
-        # self.enter_pin_to_login()
+        self.enter_pin_to_login()
 
         status_helper = transfer_helper(self)
 
@@ -129,10 +129,17 @@ def load_to_telebirr(self):
             print(f"TeleBirr confirmation pass for {account_number}", flush=True)
             self.update_status("Transfer", [19], "Pass", 5)
             print("Load to Telebirr transaction completed", flush=True)
+            print_and_clear_slow_popups(self, "Load to TeleBirr")
             self.cancel_ussd()
             return True
 
-
+def print_and_clear_slow_popups(self, func_name):
+    if self.slow_popups:
+        
+        print(f"\n[Slow Popups in {func_name}]")
+        for page, duration in self.slow_popups:
+            print(f"{page}: {duration}s")
+        self.slow_popups.clear()
 
 
 

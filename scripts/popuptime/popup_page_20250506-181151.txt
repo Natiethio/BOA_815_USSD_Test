@@ -1,0 +1,14 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.54 seconds
+Home Page page appeared in => 1.6 seconds
+BoA Accounts List Page(Safaricom AirTime) page appeared in => 1.65 seconds
+Enter Recharge Phone No(Safaricom) page appeared in => 1.53 seconds
+Enter Amount Page(Safaricom AirTime) page appeared in => 1.56 seconds
+Confirmation Page(Safaricom AirTime) page appeared in => 1.87 seconds
+Daily limit exceeded page(Safaricom AirTime) page appeared in => 2.37 seconds
+Enter Recharge Phone No Page(Safaricom Back Navigated) page appeared in => 1.55 seconds
+Enter Amount(Air Time Safaricom) page appeared in => 1.43 seconds
+Confirmation Page(Air Time Safaricom) page appeared in => 4.3 seconds
+Invalid Safaricom Number Page page appeared in => 2.03 seconds

@@ -259,7 +259,7 @@ def airtime_topup_for_safaricom(self):
             return
         # Enter amount
         amount = self.amount
-        status = self.send_ussd("Enter Amount", 500000, "Safaricom Airtime")
+        status = self.send_ussd("Enter Amount", 10, "Safaricom Airtime")
 
         if not status:
             print("Failed to send amount for Safaricom Airtime", flush=True)

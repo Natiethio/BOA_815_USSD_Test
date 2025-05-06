@@ -11,12 +11,12 @@ def transfer_to_mpesa(self):
         # print(self.pin)
         # print(self.phone_number)
 
-        # self.enter_pin_to_login()
+        self.enter_pin_to_login()
 
         status_helper = transfer_helper(self)
 
         time.sleep(5)
-        print("Test for transfer_to_mpesa ..", flush=True)
+        print("Test for Transfer to M-PESA ..", flush=True)
 
         if not status_helper:
             print("No home page found retrying")
@@ -65,7 +65,6 @@ def transfer_to_mpesa(self):
             return
 
 
-        #The entered M-PESA user should be verified and if it's not the system should throw an error accordingly
 
         status = self.send_ussd("This is not a registered M-PESA user.", "*", "M-PESA", "Transfer Home Page(Back Navigated)")
 
@@ -110,10 +109,8 @@ def transfer_to_mpesa(self):
             print("Failed to select account", flush=True)
             return
 
-        #Attempt to transfer exceeding Maximum limit (>30,000) should not be applicable and throw error
-
-        # Enter amount
         print("Testing overlimit M-PESA transfer scenario", flush=True)
+
         status = self.send_ussd("Enter Amount", 500100, "Transfer to M-PESA", "Enter Remark Page")
 
         if not status:
@@ -146,7 +143,7 @@ def transfer_to_mpesa(self):
             time.sleep(0.5)
 
         print("Test for Positive Scenario For M-PESA Transfer", flush=True)
-        
+
         amount = self.amount
         status = self.send_ussd("Enter Amount", amount, "Transfer to M-PESA", "Enter Remark Page")
 
@@ -173,5 +170,16 @@ def transfer_to_mpesa(self):
             print(f"Transfer to M-PESA confirmation pass for {account_number}", flush=True)
             self.update_status("Transfer", [27], "Pass", 5)
             print("Transfer to M-PESA transaction completed", flush=True)
+            print_and_clear_slow_popups(self, "Transfer to M-PESA")
             self.cancel_ussd()
             return True
+
+
+
+def print_and_clear_slow_popups(self, func_name):
+    if self.slow_popups:
+        
+        print(f"\n[Slow Popups in {func_name}]")
+        for page, duration in self.slow_popups:
+            print(f"{page}: {duration}s")
+        self.slow_popups.clear()
