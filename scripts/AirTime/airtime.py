@@ -6,16 +6,6 @@ import os
 from Helpers.airtime_helper import airtime_helper
 from Helpers.extract_staff_or_saving_option import extract_staff_or_saving_option
 
-def airtime(self):
-
-#   ethiotelecom = airtime_topup_for_ethio_telecom(self)
-    
-  safaricom = airtime_topup_for_safaricom(self)
-
-  print_and_clear_slow_popups(self, "Air Time TopUp")
-
-
-  #testing for airtime topup for safaricom
 
 
 def airtime_topup_for_ethio_telecom(self):
@@ -276,7 +266,6 @@ def airtime_topup_for_ethio_telecom(self):
 
 def airtime_topup_for_safaricom(self):
         print("Test for safaricom topup")
-
 
         self.enter_pin_to_login()
 

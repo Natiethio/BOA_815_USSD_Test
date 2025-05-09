@@ -706,3 +706,5 @@ root.mainloop()
 # pyinstaller --onefile --noconsole --add-data "test_runner.exe;." --add-data "logo.png;."  --add-data "USSD_Test_Script.xlsx;." --icon=logo_icon.ico --name="ussd815_tester" --distpath=dist_gui  --workpath=build_gui  boa_ussd_test_gui.py
 
 # pyinstaller --onefile --noconsole --add-data "Test.xlsx;." --name hello_excel_writer --distpath=dist_test  --workpath=build_test Test.py 
+
+# pyinstaller --onefile --noconsole --add-data "My_Account;My_Account"  --add-data "Transfer;Transfer" --add-data "Transfer_otherBank;Transfer_otherBank"  --add-data "Transfer_to_own;Transfer_to_own" --add-data "AirTime;AirTime" --add-data "Exchange_Rates;Exchange_Rates" --add-data "Helpers;Helpers" --add-data "USSD_Test_Script.xlsx;." test_app.py

@@ -1,0 +1,118 @@
+[2025-05-09 08:50:33] 
+=================  New Test Started at 2025-05-09 08:50:33  =================
+
+[2025-05-09 08:50:49] Using Device ID: R9ZR601C18H
+[2025-05-09 08:50:49] Using Android Version: 12
+[2025-05-09 08:50:49] Using package: com.samsung.android.dialer
+[2025-05-09 08:50:49] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 08:50:49] Dialing USSD code (Attempt 1)...
+[2025-05-09 08:50:53] Expected USSD page matched.
+[2025-05-09 08:50:58] Input field detected
+[2025-05-09 08:51:03] Pin Enter Notification Detected
+[2025-05-09 08:51:08] Login successful.
+[2025-05-09 08:51:08] Found option: 1: My Accounts
+[2025-05-09 08:51:08] Found option: 2: Transfer
+[2025-05-09 08:51:08] Found option: 3: Transfer to Other Bank
+[2025-05-09 08:51:08] Found option: 4: Transfer to Own
+[2025-05-09 08:51:08] Found option: 5: Airtime
+[2025-05-09 08:51:08] Found option: 6: Utilities
+[2025-05-09 08:51:08] Found option: 7: Exchange Rates
+[2025-05-09 08:51:08] Found option: 8: More options
+[2025-05-09 08:51:08] Excel in the path is used
+[2025-05-09 08:51:09] Writing 'Pass' to row 3, col 5
+[2025-05-09 08:51:10] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:51:10] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 08:51:16] USSD Response: Exchange Rates
+[2025-05-09 08:51:16] 1: EUR
+[2025-05-09 08:51:16] 2: GBP
+[2025-05-09 08:51:16] 3: USD
+[2025-05-09 08:51:16] Here 1
+[2025-05-09 08:51:16] ['1: EUR', '2: GBP', '3: USD']
+[2025-05-09 08:51:16] list of currencies are displayed
+[2025-05-09 08:51:17] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:51:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:51:18] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:51:18] Excel status Updated
+[2025-05-09 08:51:18] 3 currency(ies) found: ['1: EUR', '2: GBP', '3: USD']
+[2025-05-09 08:51:18] 
+[2025-05-09 08:51:18] Checking currencies 1: EUR
+[2025-05-09 08:51:26] The list of exchange rates is displayed
+[2025-05-09 08:51:28] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:51:29] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:51:29] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:51:33] 
+[2025-05-09 08:51:33] Checking currencies 2: GBP
+[2025-05-09 08:51:41] The list of exchange rates is displayed
+[2025-05-09 08:51:43] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:51:44] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:51:44] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:51:48] 
+[2025-05-09 08:51:48] Checking currencies 3: USD
+[2025-05-09 08:51:56] The list of exchange rates is displayed
+[2025-05-09 08:51:57] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:51:58] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:51:58] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:52:03] All currencies checks completed successfully
+[2025-05-09 08:52:03] Exchange Rates test compleated!
+[2025-05-09 08:52:04] USSD session cancelled successfully.
+[2025-05-09 08:52:06] .
+[2025-05-09 08:52:06] ----------------------------------------------------------------------
+[2025-05-09 08:52:06] Ran 1 test in 90.667s
+[2025-05-09 08:52:06] 
+[2025-05-09 08:52:06] OK
+[2025-05-09 08:52:06] 
+Test completed.
+
+[2025-05-09 08:55:37] 
+=================  New Test Started at 2025-05-09 08:55:37  =================
+
+[2025-05-09 08:55:53] Using Device ID: R9ZR601C18H
+[2025-05-09 08:55:53] Using Android Version: 12
+[2025-05-09 08:55:53] Using package: com.samsung.android.dialer
+[2025-05-09 08:55:53] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 08:55:53] Test for Transfer to Own Account
+[2025-05-09 08:55:53] Dialing USSD code (Attempt 1)...
+[2025-05-09 08:55:59] Expected USSD page matched.
+[2025-05-09 08:56:04] Input field detected
+[2025-05-09 08:56:08] Pin Enter Notification Detected
+[2025-05-09 08:56:13] Login successful.
+[2025-05-09 08:56:14] Found option: 1: My Accounts
+[2025-05-09 08:56:14] Found option: 2: Transfer
+[2025-05-09 08:56:14] Found option: 3: Transfer to Other Bank
+[2025-05-09 08:56:14] Found option: 4: Transfer to Own
+[2025-05-09 08:56:14] Found option: 5: Airtime
+[2025-05-09 08:56:14] Found option: 6: Utilities
+[2025-05-09 08:56:14] Found option: 7: Exchange Rates
+[2025-05-09 08:56:14] Found option: 8: More options
+[2025-05-09 08:56:14] Excel in the path is used
+[2025-05-09 08:56:15] Writing 'Pass' to row 3, col 5
+[2025-05-09 08:56:16] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:56:16] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 08:56:16] Test for Transfer to Own Account..
+[2025-05-09 08:56:20] Processing account: 182975435
+[2025-05-09 08:56:25] Processing account: 174615624
+[2025-05-09 08:56:29] Test for Even if the commulative is reached own account transfer should work with any amount negative scenario..
+[2025-05-09 08:57:01] Even if the commulative is reached own account transfer is working with any amount passed successfully: 174615624
+[2025-05-09 08:57:02] Writing 'Pass' to row 75, col 5
+[2025-05-09 08:57:03] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:57:03] Updated 'Transfer' sheet - rows [75] set to 'Pass'.
+[2025-05-09 08:57:03] Test for Transfer to Own Account with Positive Test..
+[2025-05-09 08:57:33] Transfer to Own Account passed successfully: 174615624
+[2025-05-09 08:57:34] Writing 'Pass' to row 72, col 5
+[2025-05-09 08:57:35] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:57:35] Updated 'Transfer' sheet - rows [72] set to 'Pass'.
+[2025-05-09 08:57:36] Transfer to Own Account Test completed!
+[2025-05-09 08:57:36] USSD session cancelled successfully.
+[2025-05-09 08:57:37] .
+[2025-05-09 08:57:37] ----------------------------------------------------------------------
+[2025-05-09 08:57:37] Ran 1 test in 117.535s
+[2025-05-09 08:57:37] 
+[2025-05-09 08:57:37] OK
+[2025-05-09 08:57:37] 
+[2025-05-09 08:57:37] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-09 08:57:37] Press any key for more Page(Transfer to Own): 2.86s
+[2025-05-09 08:57:37] Confirmation Page(Transfer to Own): 2.85s
+[2025-05-09 08:57:37] Confirmation Page(Transfer to Own): 3.44s
+[2025-05-09 08:57:37] 
+Test completed.
+

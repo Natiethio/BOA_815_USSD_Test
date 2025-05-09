@@ -1,0 +1,12 @@
+[2025-05-08 23:29:03] 
+=================  New Test Started at 2025-05-08 23:29:03  =================
+
+[2025-05-08 23:29:05] Error running adb shell cmd package resolve-activity --brief -a android.intent.action.DIAL:
+[2025-05-08 23:29:05] adb.exe: no devices/emulators found
+[2025-05-08 23:29:05] 
+[2025-05-08 23:29:05] Error running adb shell pm resolve-activity -a android.intent.action.DIAL -c android.intent.category.DEFAULT:
+[2025-05-08 23:29:05] adb.exe: no devices/emulators found
+[2025-05-08 23:29:05] 
+[2025-05-08 23:29:05] 
+Test failed with exit code 1.
+

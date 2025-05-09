@@ -134,7 +134,7 @@ def handle_transfer(self, amount, is_negative, skip_initial_steps=False,  retrie
                 
         
         print("Confirming..", flush=True)
-        confirm_result = self.send_ussd(["Please Confirm"], "1", "Transfer_to_Other_Bank", "Single limit exceeded page")
+        confirm_result = self.send_ussd(["Please Confirm"], "1", "Transfer_to_Other_Bank", "Single limit exceeded page(Non Instant Transfer)")
 
         if confirm_result:
             msg = self.get_ussd_message()

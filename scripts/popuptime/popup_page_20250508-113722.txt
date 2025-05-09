@@ -1,0 +1,26 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.78 seconds
+Home Page page appeared in => 1.78 seconds
+Transfer to Other Banks page appeared in => 1.91 seconds
+Other Bank List Page page appeared in => 1.74 seconds
+Enter Account Page(Other Bank Transfer) page appeared in => 1.67 seconds
+BOA Account List Page(Instant Transfer) page appeared in => 1.89 seconds
+Enter Account Page(Other Bank Transfer) page appeared in => 1.73 seconds
+Enter Account Page(Other Bank Transfer) page appeared in => 1.65 seconds
+BOA Account List Page(Instant Transfer) page appeared in => 1.76 seconds
+Enter Account Page(Other Bank Transfer Retry) page appeared in => 1.69 seconds
+BOA Account List Page(Instant Transfer) page appeared in => 1.71 seconds
+Enter Account Page(Other Bank Transfer Retry) page appeared in => 1.98 seconds
+BOA Account List Page(Instant Transfer) page appeared in => 0.9 seconds
+Enter Account Page(Other Bank Transfer Retry) page appeared in => 1.69 seconds
+Transfer to Other Banks page appeared in => 2.23 seconds
+Other Bank List Page page appeared in => 2.01 seconds
+Enter Account Page(Other Bank Transfer) page appeared in => 1.74 seconds
+BOA Account List Page(Instant Transfer) page appeared in => 2.47 seconds
+Enter Amount Page(Instant) page appeared in => 1.82 seconds
+Confirmation Page(Instant) page appeared in => 2.2 seconds
+Success Screen Page page appeared in => 2.42 seconds
+Confirmation Page(Instant) page appeared in => 2.17 seconds
+Success Screen Page page appeared in => 3.53 seconds

@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['boa_ussd_test_gui.py'],
+    ['boa_ussd_test_guiupd.py'],
     pathex=[],
     binaries=[],
-    datas=[('test_runner.exe', '.'), ('logo.png', '.'), ('USSD_Test_Script.xlsx', '.')],
+    datas=[('test_runner.exe', '.'), ('logo.png', '.'), ('spinner2.gif', '.'), ('USSD_Test_Script.xlsx', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

@@ -177,7 +177,7 @@ def atm_withdrawal(self):
                   print("Failed go back on account list page", flush=True)
                   continue
 
-            elif "repository.productTransactionAlreadyExists" or "value too large for column" in message_text.lower:
+            elif "productTransactionAlreadyExists" or "value too large for column" in message_text.lower:
 
                 print("Transaction already exists or error occured, retrying same account...", flush=True)
                 
@@ -199,7 +199,7 @@ def atm_withdrawal(self):
                         continue
 
                 else:
-                    self.send_ussd("repository.productTransactionAlreadyExists", "*", "atm_withdrawal")
+                    self.send_ussd("productTransactionAlreadyExists", "*", "atm_withdrawal")
                 
                 while attempt < retries:
                     print(f"Negative error repository exist or unusual error retry test attempt {attempt + 1} with 9000 birr", flush=True)

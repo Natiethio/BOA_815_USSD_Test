@@ -38,7 +38,9 @@ def instant_transfer(self):
         #     return
 
     if result != "success":
-        print("Positive test failed. Continuing with negative scenarios...", flush=True)
+        print("Positive test failed after retries. exiting ...", flush=True)
+        self.cancel_ussd()
+        return
     
     self.send_ussd_input("*")
 
@@ -92,9 +94,32 @@ def handle_transfer(self, amount, is_negative, scenario_type=None, skip_initial_
                     print("No bank list found terminating transfer to other bank operation", flush=True)
                     self.update_status("Transfer", [52], "Fail", 5, screenshot_name="no_bank_list_found")
                     return "fail"
+            
+            if not is_negative:
+            
+                    print("Testing Invalid Account", flush=True)
+                    
+                    if not self.send_ussd("Enter Account", "10101010101100", "Transfer_to_Other_Bank", "BOA Account List Page(Instant Transfer)"):
+                            print("No account entry page found, exiting", flush=True)
+                            self.update_status("Transfer", [52], "Fail", 5, screenshot_name="no_account_entry_page_found")
+                            return "fail"
+                    
+                    if not self.send_ussd("Account doesn't exist.", "*", "Transfer_to_Other_Bank", "Enter Account Page(Other Bank Transfer)"):
+                            print("Account validation failed exiting..", flush=True)
+                            self.update_status("Transfer", [52], "Fail", 5, screenshot_name="no_invalid_account_validation")
+                            self.update_status("Transfer", [52], "Faild to validate invalid account", 6)
+                            return "fail"
+                    
+                    if not self.send_ussd(["Bank"], bank, "Transfer_to_Other_Bank", "Enter Account Page(Other Bank Transfer)"):
+                        print("No bank list found terminating transfer to other bank operation", flush=True)
+                        self.update_status("Transfer", [52], "Fail", 5, screenshot_name="no_bank_list_found")
+                        return "fail"
+                    
+                    print("Testing Invalid Account Passed", flush=True)
+            
 
             for i in range(3):
-                print(f"Attempt {i + 1} to enter account number...", flush=True)
+                print(f"Attempt {i + 1} to enter valid account number...", flush=True)
 
                 if not self.send_ussd("Enter Account", bank_account, "Transfer_to_Other_Bank", "BOA Account List Page(Instant Transfer)"):
                     print("No account entry page found, exiting", flush=True)
@@ -150,7 +175,7 @@ def handle_transfer(self, amount, is_negative, scenario_type=None, skip_initial_
                 return "fail"
 
 
-            if not self.send_ussd(["Please Confirm"], "1", "Transfer_to_Other_Bank", "Success Screen Page"):
+            if not self.send_ussd(["Please Confirm"], "1", "Transfer_to_Other_Bank", "Success Screen Page(Instant Transfer)"):
                 print("No confirmation page found .. ", flush=True)
                 self.update_status("Transfer", [52], "Fail", 5, screenshot_name="no_act_entery_page_found")
                 return "fail"

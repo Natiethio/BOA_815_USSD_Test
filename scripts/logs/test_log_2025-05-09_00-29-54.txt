@@ -1,0 +1,97 @@
+[2025-05-09 00:30:41] 
+=================  New Test Started at 2025-05-09 00:30:41  =================
+
+[2025-05-09 00:30:56] Using Device ID: R9ZR601C18H
+[2025-05-09 00:30:56] Using Android Version: 12
+[2025-05-09 00:30:56] Using package: com.samsung.android.dialer
+[2025-05-09 00:30:56] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 00:30:56] Test for Transfer to Own Account
+[2025-05-09 00:30:56] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:31:01] Expected USSD page matched.
+[2025-05-09 00:31:06] Input field detected
+[2025-05-09 00:31:10] Pin Enter Notification Detected
+[2025-05-09 00:31:16] Login successful.
+[2025-05-09 00:31:16] Found option: 1: My Accounts
+[2025-05-09 00:31:16] Found option: 2: Transfer
+[2025-05-09 00:31:16] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:31:16] Found option: 4: Transfer to Own
+[2025-05-09 00:31:16] Found option: 5: Airtime
+[2025-05-09 00:31:16] Found option: 6: Utilities
+[2025-05-09 00:31:16] Found option: 7: Exchange Rates
+[2025-05-09 00:31:16] Found option: 8: More options
+[2025-05-09 00:31:16] Excel in the path is used
+[2025-05-09 00:31:17] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:31:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:31:18] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:31:18] Test for Transfer to Own Account..
+[2025-05-09 00:31:23] No valid STAFF or SAVING account found
+[2025-05-09 00:31:23] USSD session cancelled successfully.
+[2025-05-09 00:31:24] .
+[2025-05-09 00:31:24] ----------------------------------------------------------------------
+[2025-05-09 00:31:24] Ran 1 test in 40.301s
+[2025-05-09 00:31:24] 
+[2025-05-09 00:31:24] OK
+[2025-05-09 00:31:24] 
+Test completed.
+
+[2025-05-09 00:34:57] 
+=================  New Test Started at 2025-05-09 00:34:57  =================
+
+[2025-05-09 00:35:09] Using Device ID: R9ZR601C18H
+[2025-05-09 00:35:09] Using Android Version: 12
+[2025-05-09 00:35:09] Using package: com.samsung.android.dialer
+[2025-05-09 00:35:09] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 00:35:09] Test for Transfer to Own Account
+[2025-05-09 00:35:09] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:35:13] Expected USSD page matched.
+[2025-05-09 00:35:18] Input field detected
+[2025-05-09 00:35:23] Pin Enter Notification Detected
+[2025-05-09 00:35:28] Login successful.
+[2025-05-09 00:35:28] Found option: 1: My Accounts
+[2025-05-09 00:35:28] Found option: 2: Transfer
+[2025-05-09 00:35:28] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:35:28] Found option: 4: Transfer to Own
+[2025-05-09 00:35:28] Found option: 5: Airtime
+[2025-05-09 00:35:28] Found option: 6: Utilities
+[2025-05-09 00:35:28] Found option: 7: Exchange Rates
+[2025-05-09 00:35:28] Found option: 8: More options
+[2025-05-09 00:35:28] Excel in the path is used
+[2025-05-09 00:35:29] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:35:31] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:35:31] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:35:31] Test for Transfer to Own Account..
+[2025-05-09 00:35:35] Processing account: 182975435
+[2025-05-09 00:35:40] Processing account: 174615624
+[2025-05-09 00:35:44] Test for Even if the commulative is reached own account transfer should work with any amount negative scenario..
+[2025-05-09 00:36:16] Even if the commulative is reached own account transfer is working with any amount passed successfully: 174615624
+[2025-05-09 00:36:17] Writing 'Pass' to row 75, col 5
+[2025-05-09 00:36:19] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:36:19] Updated 'Transfer' sheet - rows [75] set to 'Pass'.
+[2025-05-09 00:36:19] Test for Transfer to Own Account with Positive Test..
+[2025-05-09 00:36:51] Transfer to Own Account passed successfully: 174615624
+[2025-05-09 00:36:53] Writing 'Pass' to row 72, col 5
+[2025-05-09 00:36:54] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:36:54] Updated 'Transfer' sheet - rows [72] set to 'Pass'.
+[2025-05-09 00:36:54] Transfer to Own Account Test completed!
+[2025-05-09 00:36:55] USSD session cancelled successfully.
+[2025-05-09 00:36:56] .
+[2025-05-09 00:36:56] ----------------------------------------------------------------------
+[2025-05-09 00:36:56] Ran 1 test in 117.502s
+[2025-05-09 00:36:56] 
+[2025-05-09 00:36:56] OK
+[2025-05-09 00:36:56] 
+[2025-05-09 00:36:56] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-09 00:36:56] Confirmation Page(Transfer to Own): 4.15s
+[2025-05-09 00:36:56] Confirmation Page(Transfer to Own): 3.4s
+[2025-05-09 00:36:56] Press any key for more Page(Transfer to Own): 4.83s
+[2025-05-09 00:36:56] 
+Test completed.
+
+[2025-05-09 00:39:07] 
+=================  New Test Started at 2025-05-09 00:39:07  =================
+
+[2025-05-09 00:39:10] Stopping test...
+[2025-05-09 00:39:10] Test stopped.
+[2025-05-09 00:39:10] 
+Error running test: 'NoneType' object has no attribute 'stdout'
+

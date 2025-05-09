@@ -55,7 +55,7 @@ def transfer_to_mpesa(self):
 
         #Enter invalid M-PESA Registered Number
         print("Testing for not verified M-PESA user by using invalid M-PESA user phone number", flush=True)
-        phone_test = self.etl_number
+        phone_test = "0970951608"
         status = self.send_ussd(expected_ResultC, phone_test,"Transfer_to_M-PESA", "Not verified M-PESA User Page")
 
         if not status:

@@ -1,0 +1,65 @@
+[2025-05-09 08:42:58] 
+=================  New Test Started at 2025-05-09 08:42:58  =================
+
+[2025-05-09 08:43:22] Using Device ID: R9ZR601C18H
+[2025-05-09 08:43:22] Using Android Version: 12
+[2025-05-09 08:43:22] Using package: com.samsung.android.dialer
+[2025-05-09 08:43:22] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 08:43:22] Dialing USSD code (Attempt 1)...
+[2025-05-09 08:43:26] Expected USSD page matched.
+[2025-05-09 08:43:31] Input field detected
+[2025-05-09 08:43:36] Pin Enter Notification Detected
+[2025-05-09 08:43:41] Login successful.
+[2025-05-09 08:43:42] Found option: 1: My Accounts
+[2025-05-09 08:43:42] Found option: 2: Transfer
+[2025-05-09 08:43:42] Found option: 3: Transfer to Other Bank
+[2025-05-09 08:43:42] Found option: 4: Transfer to Own
+[2025-05-09 08:43:42] Found option: 5: Airtime
+[2025-05-09 08:43:42] Found option: 6: Utilities
+[2025-05-09 08:43:42] Found option: 7: Exchange Rates
+[2025-05-09 08:43:42] Found option: 8: More options
+[2025-05-09 08:43:42] Excel in the path is used
+[2025-05-09 08:43:43] Writing 'Pass' to row 3, col 5
+[2025-05-09 08:43:44] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:43:44] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 08:43:50] USSD Response: Exchange Rates
+[2025-05-09 08:43:50] 1: EUR
+[2025-05-09 08:43:50] 2: GBP
+[2025-05-09 08:43:50] 3: USD
+[2025-05-09 08:43:50] Here 1
+[2025-05-09 08:43:50] ['1: EUR', '2: GBP', '3: USD']
+[2025-05-09 08:43:50] list of currencies are displayed
+[2025-05-09 08:43:51] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:43:52] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:43:52] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:43:52] Excel status Updated
+[2025-05-09 08:43:52] 3 currency(ies) found: ['1: EUR', '2: GBP', '3: USD']
+[2025-05-09 08:43:52] 
+[2025-05-09 08:43:52] Checking currencies 1: 1: EUR
+[2025-05-09 08:44:00] The list of exchange rates is displayed
+[2025-05-09 08:44:01] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:44:02] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:44:02] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:44:07] 
+[2025-05-09 08:44:07] Checking currencies 2: 2: GBP
+[2025-05-09 08:44:15] The list of exchange rates is displayed
+[2025-05-09 08:44:16] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:44:17] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:44:17] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:44:21] 
+[2025-05-09 08:44:21] Checking currencies 3: 3: USD
+[2025-05-09 08:44:29] The list of exchange rates is displayed
+[2025-05-09 08:44:30] Writing 'Pass' to row 2, col 5
+[2025-05-09 08:44:31] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 08:44:31] Updated 'setting' sheet - rows [2] set to 'Pass'.
+[2025-05-09 08:44:36] All currencies checks completed successfully
+[2025-05-09 08:44:36] Exchange Rates test compleated!
+[2025-05-09 08:44:37] USSD session cancelled successfully.
+[2025-05-09 08:44:38] .
+[2025-05-09 08:44:38] ----------------------------------------------------------------------
+[2025-05-09 08:44:38] Ran 1 test in 92.063s
+[2025-05-09 08:44:38] 
+[2025-05-09 08:44:38] OK
+[2025-05-09 08:44:39] 
+Test completed.
+

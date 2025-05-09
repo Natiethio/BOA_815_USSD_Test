@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['test_app2.py'],
+    ['test_app.py'],
     pathex=[],
     binaries=[],
-    datas=[('ATM_Withdrawal', 'ATM_Withdrawal'), ('Helpers', 'Helpers'), ('USSD_Test_Script.xlsx', '.')],
+    datas=[('My_Account', 'My_Account'), ('Transfer', 'Transfer'), ('Transfer_otherBank', 'Transfer_otherBank'), ('Transfer_to_own', 'Transfer_to_own'), ('AirTime', 'AirTime'), ('Exchange_Rates', 'Exchange_Rates'), ('Helpers', 'Helpers'), ('USSD_Test_Script.xlsx', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

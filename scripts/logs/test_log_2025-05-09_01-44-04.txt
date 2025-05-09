@@ -1,0 +1,39 @@
+[2025-05-09 01:44:24] 
+=================  New Test Started at 2025-05-09 01:44:24  =================
+
+[2025-05-09 01:44:42] Using Device ID: R9ZR601C18H
+[2025-05-09 01:44:42] Using Android Version: 12
+[2025-05-09 01:44:42] Using package: com.samsung.android.dialer
+[2025-05-09 01:44:42] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 01:44:42] Dialing USSD code (Attempt 1)...
+[2025-05-09 01:44:45] Expected USSD page matched.
+[2025-05-09 01:44:50] Input field detected
+[2025-05-09 01:44:54] Pin Enter Notification Detected
+[2025-05-09 01:44:59] Login successful.
+[2025-05-09 01:45:00] Found option: 1: My Accounts
+[2025-05-09 01:45:00] Found option: 2: Transfer
+[2025-05-09 01:45:00] Found option: 3: Transfer to Other Bank
+[2025-05-09 01:45:00] Found option: 4: Transfer to Own
+[2025-05-09 01:45:00] Found option: 5: Airtime
+[2025-05-09 01:45:00] Found option: 6: Utilities
+[2025-05-09 01:45:00] Found option: 7: Exchange Rates
+[2025-05-09 01:45:00] Found option: 8: More options
+[2025-05-09 01:45:00] Excel file copied to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\reports\USSD_Test_Script_2025-05-09_01-45-00.xlsx
+[2025-05-09 01:45:01] Writing 'Pass' to row 3, col 5
+[2025-05-09 01:45:02] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\reports\USSD_Test_Script_2025-05-09_01-45-00.xlsx
+[2025-05-09 01:45:02] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 01:45:08] USSD Response: Exchange Rates
+[2025-05-09 01:45:08] 1: EUR
+[2025-05-09 01:45:08] 2: GBP
+[2025-05-09 01:45:08] 3: USD
+[2025-05-09 01:45:08] Exchange Rates Test failed with error: 'list' object has no attribute 'split'
+[2025-05-09 01:45:08] Exchange Rates test compleated!
+[2025-05-09 01:45:08] USSD session cancelled successfully.
+[2025-05-09 01:45:10] .
+[2025-05-09 01:45:10] ----------------------------------------------------------------------
+[2025-05-09 01:45:10] Ran 1 test in 40.136s
+[2025-05-09 01:45:10] 
+[2025-05-09 01:45:10] OK
+[2025-05-09 01:45:11] 
+Test completed.
+

@@ -13,16 +13,16 @@ from openpyxl.cell import MergedCell
 import re
 import sys
 import os
-from Transfer.transfer import transfer
 import shutil
-import Helpers.android_helper as android_helper
-from datetime import datetime
-from AirTime.airtime import airtime
 import subprocess
+from datetime import datetime
+import Helpers.android_helper as android_helper
+from AirTime.all_airtime import airtime
 from Transfer_otherBank.otherbank import otherbank
+from Transfer.transfer import transfer
 from My_Account.my_account import my_account
 from Transfer_to_own.transfer_to_own import transfer_to_own_account
-
+from Exchange_Rates.exchange_rates import exchange_rates
 
 
 class TestAppium(unittest.TestCase):
@@ -48,7 +48,7 @@ class TestAppium(unittest.TestCase):
     module_name = sys.argv[9] if len(sys.argv) > 9 else "All"
     transfer_sub_module = sys.argv[10] if len(sys.argv) > 10 else "5"
     transfer_to_otherbank_sub_module = sys.argv[11] if len(sys.argv) > 11 else "3"
-
+    airtime_sub_module = sys.argv[12] if len(sys.argv) > 12 else "5"
     # print( transfer_sub_module,  transfer_to_otherbank_sub_module, flush=True)
 
     def get_connected_device(self):
@@ -476,7 +476,7 @@ class TestAppium(unittest.TestCase):
                 try:
                     if hasattr(sys, '_MEIPASS'):
                 # Running from a bundled executable
-                        bundled_excel = os.path.join(sys._MEIPASS, "USSD_Test_Script2.xlsx")
+                        bundled_excel = os.path.join(sys._MEIPASS, "USSD_Test_Script.xlsx")
                         shutil.copy(bundled_excel, self.excel_path)
                         print(f"Excel file copied to: {self.excel_path}", flush=True)
                     else:
@@ -575,16 +575,20 @@ class TestAppium(unittest.TestCase):
             elif self.module_name == "4":  
                 transfer_toown = transfer_to_own_account(self)  
             elif self.module_name == "5":  
-                airtimeres = airtime(self)  
+                airtimeres = airtime(self, self.airtime_sub_module)  
             # elif self.module_name == "6":  
             #     utilities = utilities(self)  
+            elif self.module_name == "7":  
+                exchangerate = exchange_rates(self)  
+
             else:
                 print("End to end test")  
                 my_account_opt = my_account(self)
                 transfer_one = transfer(self, self.transfer_sub_module)
-                transfer_otherbank = otherbank(self)
+                transfer_otherbank = otherbank(self, self.transfer_to_otherbank_sub_module)
                 transfer_toown = transfer_to_own_account(self)
-                airtimeres = airtime(self)
+                airtimeres = airtime(self, self.airtime_sub_module)
+                exchangerate = exchange_rates(self)                
 
             if self.all_slow_popups:
                 print("\n========= Cumulative Delayed USSD Pages ( > 2.5s ) =========")

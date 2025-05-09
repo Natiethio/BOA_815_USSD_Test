@@ -1,0 +1,267 @@
+[2025-05-09 00:46:40] 
+=================  New Test Started at 2025-05-09 00:46:40  =================
+
+[2025-05-09 00:46:56] Using Device ID: R9ZR601C18H
+[2025-05-09 00:46:56] Using Android Version: 12
+[2025-05-09 00:46:56] Using package: com.samsung.android.dialer
+[2025-05-09 00:46:56] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 00:46:56] Executing all transfer to other bank submodules...
+[2025-05-09 00:46:56] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:47:00] Expected USSD page matched.
+[2025-05-09 00:47:05] Input field detected
+[2025-05-09 00:47:10] Pin Enter Notification Detected
+[2025-05-09 00:47:15] Login successful.
+[2025-05-09 00:47:15] Found option: 1: My Accounts
+[2025-05-09 00:47:15] Found option: 2: Transfer
+[2025-05-09 00:47:15] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:47:15] Found option: 4: Transfer to Own
+[2025-05-09 00:47:15] Found option: 5: Airtime
+[2025-05-09 00:47:15] Found option: 6: Utilities
+[2025-05-09 00:47:15] Found option: 7: Exchange Rates
+[2025-05-09 00:47:15] Found option: 8: More options
+[2025-05-09 00:47:15] Excel in the path is used
+[2025-05-09 00:47:16] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:47:18] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:47:18] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:47:18] Test for Instant Transfer..
+[2025-05-09 00:47:22] Home page matched
+[2025-05-09 00:47:22] Test for Positive Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-09 00:47:26] List of transfer to other bank option found
+[2025-05-09 00:47:27] Writing 'Pass' to row 48, col 5
+[2025-05-09 00:47:28] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:47:28] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-09 00:47:32] Testing Invalid Account
+[2025-05-09 00:47:45] Testing Invalid Account Passed
+[2025-05-09 00:47:45] Attempt 1 to enter valid account number...
+[2025-05-09 00:47:50] Account accepted successfully
+[2025-05-09 00:48:07] USSD response:
+[2025-05-09 00:48:07] Complete
+[2025-05-09 00:48:07] ETB 1.00 debited from 182975435 for 1000298224171 (Instant Transfer) on 09/05/2025 with transaction ID: FT25129L7C67.
+[2025-05-09 00:48:08] Transfer Successfuly
+[2025-05-09 00:48:08] Writing 'Pass' to row 52, col 5
+[2025-05-09 00:48:09] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:48:09] Updated 'Transfer' sheet - rows [52] set to 'Pass'.
+[2025-05-09 00:48:12] Test for Positive Scenario for Instant Transfer Finished Test for Negative Scenario Begines...
+[2025-05-09 00:48:22] List of transfer to other bank option found
+[2025-05-09 00:48:24] Writing 'Pass' to row 48, col 5
+[2025-05-09 00:48:25] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:48:25] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-09 00:48:29] Attempt 1 to enter valid account number...
+[2025-05-09 00:48:34] Account accepted successfully
+[2025-05-09 00:48:49] USSD response:
+[2025-05-09 00:48:49] You have exceeded the daily transaction limit for Instant Transfer
+[2025-05-09 00:48:49] Daily Limit Negaive Scenario Passed
+[2025-05-09 00:48:51] Writing 'Pass' to row 57, col 5
+[2025-05-09 00:48:52] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:48:52] Updated 'Transfer' sheet - rows [57] set to 'Pass'.
+[2025-05-09 00:49:06] USSD response:
+[2025-05-09 00:49:06] You have exceeded the single transaction limit for Instant Transfer
+[2025-05-09 00:49:07] Writing 'Pass' to row 55, col 5
+[2025-05-09 00:49:07] Writing 'Pass' to row 56, col 5
+[2025-05-09 00:49:09] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:49:09] Updated 'Transfer' sheet - rows [55, 56] set to 'Pass'.
+[2025-05-09 00:49:09] Single Limit Negaive Scenario Passed
+[2025-05-09 00:49:11] Test for Transfer to Other Banks(Instant Transfer) Compleated
+[2025-05-09 00:49:13] 
+[2025-05-09 00:49:13] [Slow Popups in Transfer to Other Banks(Instant)]
+[2025-05-09 00:49:13] BOA Account List Page(Instant Transfer): 2.84s
+[2025-05-09 00:49:13] Success Screen Page: 3.29s
+[2025-05-09 00:49:13] BOA Account List Page(Instant Transfer): 2.78s
+[2025-05-09 00:49:13] USSD session cancelled successfully.
+[2025-05-09 00:49:13] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:49:20] Expected USSD page matched.
+[2025-05-09 00:49:20] Input field detected
+[2025-05-09 00:49:25] Pin Enter Notification Detected
+[2025-05-09 00:49:30] Login successful.
+[2025-05-09 00:49:30] Found option: 1: My Accounts
+[2025-05-09 00:49:30] Found option: 2: Transfer
+[2025-05-09 00:49:30] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:49:30] Found option: 4: Transfer to Own
+[2025-05-09 00:49:30] Found option: 5: Airtime
+[2025-05-09 00:49:30] Found option: 6: Utilities
+[2025-05-09 00:49:30] Found option: 7: Exchange Rates
+[2025-05-09 00:49:30] Found option: 8: More options
+[2025-05-09 00:49:31] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:49:32] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:49:32] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:49:32] Test for Non-Instant Transfer..
+[2025-05-09 00:49:36] Transfer to other bank's Home page matched
+[2025-05-09 00:49:36] Test for Negative Non Instant Transfer Scenario for Other Bank Transfer Started
+[2025-05-09 00:49:40] List of transfer to other bank option found
+[2025-05-09 00:49:42] Writing 'Pass' to row 48, col 5
+[2025-05-09 00:49:43] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:49:43] Updated 'Transfer' sheet - rows [48] set to 'Pass'.
+[2025-05-09 00:49:47] Selecting Account..
+[2025-05-09 00:49:47] Attempt 1: Starting Transfer Flow
+[2025-05-09 00:49:47] Entering Name..
+[2025-05-09 00:49:51] Selecting Bank
+[2025-05-09 00:49:55] Entering Account Number
+[2025-05-09 00:49:59] Entering Amount
+[2025-05-09 00:50:03] Confirming..
+[2025-05-09 00:50:08] Recoverable error occurred: retrying current flow...
+[2025-05-09 00:50:12] Attempt 2: Starting Transfer Flow
+[2025-05-09 00:50:12] Entering Name..
+[2025-05-09 00:50:16] Selecting Bank
+[2025-05-09 00:50:19] Entering Account Number
+[2025-05-09 00:50:23] Entering Amount
+[2025-05-09 00:50:27] Confirming..
+[2025-05-09 00:50:32] Recoverable error occurred: retrying current flow...
+[2025-05-09 00:50:34] Attempt 3: Starting Transfer Flow
+[2025-05-09 00:50:34] Entering Name..
+[2025-05-09 00:50:39] Selecting Bank
+[2025-05-09 00:50:43] Entering Account Number
+[2025-05-09 00:50:46] Entering Amount
+[2025-05-09 00:50:51] Confirming..
+[2025-05-09 00:50:56] Single Limit Negaive Scenario Passed
+[2025-05-09 00:50:58] Writing 'Pass' to row 66, col 5
+[2025-05-09 00:50:59] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:50:59] Updated 'Transfer' sheet - rows [66] set to 'Pass'.
+[2025-05-09 00:51:01] Negative Test Completed. Starting Positive Test for Non-Instant Transfer...
+[2025-05-09 00:51:01] Attempt 1: Starting Transfer Flow
+[2025-05-09 00:51:01] Entering Name..
+[2025-05-09 00:51:06] Selecting Bank
+[2025-05-09 00:51:10] Entering Account Number
+[2025-05-09 00:51:14] Entering Amount
+[2025-05-09 00:51:18] Positive scenario: reached confirmation page. Navigating back and ending test (Non Instant Transfer).
+[2025-05-09 00:51:20] Writing 'Pass' to row 62, col 5
+[2025-05-09 00:51:21] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:51:21] Updated 'Transfer' sheet - rows [62] set to 'Pass'.
+[2025-05-09 00:51:23] Test for Transfer to Other Banks(Non-Instant Transfer) Compleated
+[2025-05-09 00:51:25] 
+[2025-05-09 00:51:25] [Slow Popups in Transfer to Other Banks(Non Instant)]
+[2025-05-09 00:51:25] Single limit exceeded page: 2.91s
+[2025-05-09 00:51:25] USSD session cancelled successfully.
+[2025-05-09 00:51:25] .
+[2025-05-09 00:51:25] ----------------------------------------------------------------------
+[2025-05-09 00:51:25] Ran 1 test in 283.462s
+[2025-05-09 00:51:25] 
+[2025-05-09 00:51:25] OK
+[2025-05-09 00:51:25] 
+[2025-05-09 00:51:25] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-09 00:51:25] BOA Account List Page(Instant Transfer): 2.84s
+[2025-05-09 00:51:25] Success Screen Page: 3.29s
+[2025-05-09 00:51:25] BOA Account List Page(Instant Transfer): 2.78s
+[2025-05-09 00:51:25] Single limit exceeded page: 2.91s
+[2025-05-09 00:51:26] 
+Test completed.
+
+[2025-05-09 00:54:32] 
+=================  New Test Started at 2025-05-09 00:54:32  =================
+
+[2025-05-09 00:54:44] Using Device ID: R9ZR601C18H
+[2025-05-09 00:54:44] Using Android Version: 12
+[2025-05-09 00:54:44] Using package: com.samsung.android.dialer
+[2025-05-09 00:54:44] Using Main_Activity: com.samsung.android.dialer.DialtactsActivity
+[2025-05-09 00:54:44] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:54:48] Expected USSD page matched.
+[2025-05-09 00:54:53] Input field detected
+[2025-05-09 00:54:58] Pin Enter Notification Detected
+[2025-05-09 00:55:03] Login successful.
+[2025-05-09 00:55:04] Found option: 1: My Accounts
+[2025-05-09 00:55:04] Found option: 2: Transfer
+[2025-05-09 00:55:04] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:55:04] Found option: 4: Transfer to Own
+[2025-05-09 00:55:04] Found option: 5: Airtime
+[2025-05-09 00:55:04] Found option: 6: Utilities
+[2025-05-09 00:55:04] Found option: 7: Exchange Rates
+[2025-05-09 00:55:04] Found option: 8: More options
+[2025-05-09 00:55:04] Excel in the path is used
+[2025-05-09 00:55:05] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:55:06] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:55:06] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:55:06] Executing all Airtime submodules...
+[2025-05-09 00:55:06] Test for Ethio telecom topup
+[2025-05-09 00:55:06] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:55:08] USSD session cancelled successfully.
+[2025-05-09 00:55:09] Expected USSD response not found. Retrying...
+[2025-05-09 00:55:11] Dialing USSD code (Attempt 2)...
+[2025-05-09 00:55:14] Expected USSD page matched.
+[2025-05-09 00:55:14] Input field detected
+[2025-05-09 00:55:19] Pin Enter Notification Detected
+[2025-05-09 00:55:24] Login successful.
+[2025-05-09 00:55:24] Found option: 1: My Accounts
+[2025-05-09 00:55:24] Found option: 2: Transfer
+[2025-05-09 00:55:24] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:55:24] Found option: 4: Transfer to Own
+[2025-05-09 00:55:24] Found option: 5: Airtime
+[2025-05-09 00:55:24] Found option: 6: Utilities
+[2025-05-09 00:55:24] Found option: 7: Exchange Rates
+[2025-05-09 00:55:25] Found option: 8: More options
+[2025-05-09 00:55:26] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:55:27] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:55:27] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:55:31] Test for Airtime EthioTelecom..
+[2025-05-09 00:55:36] Writing 'Pass' to row 2, col 5
+[2025-05-09 00:55:37] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:55:37] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-09 00:55:38] Processing account: 182975435
+[2025-05-09 00:55:42] Test for daily limit test negative scenario for Ethio Telecom Top up..
+[2025-05-09 00:55:42] Entering phone number 0970951608
+[2025-05-09 00:55:58] Daily limit validation passed successfully: 182975435
+[2025-05-09 00:56:00] Writing 'Pass' to row 8, col 5
+[2025-05-09 00:56:02] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:56:02] Updated 'Airtime topup' sheet - rows [8] set to 'Pass'.
+[2025-05-09 00:56:02] Test for invalid ethio telecom phone number: 0712911008
+[2025-05-09 00:56:19] Detecting invalid ethio telecom phone number is pass for: 182975435
+[2025-05-09 00:56:20] Writing 'Pass' to row 16, col 5
+[2025-05-09 00:56:22] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:56:22] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-09 00:56:22] Test for valid ethio telecom phone number: 0970951608
+[2025-05-09 00:56:34] airtime confirmation pass for 182975435
+[2025-05-09 00:56:35] Writing 'Pass' to row 5, col 5
+[2025-05-09 00:56:37] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:56:37] Updated 'Airtime topup' sheet - rows [5] set to 'Pass'.
+[2025-05-09 00:56:37] Ethio Telecom Airtime Top up Test completed!
+[2025-05-09 00:56:38] USSD session cancelled successfully.
+[2025-05-09 00:56:38] Test for safaricom topup
+[2025-05-09 00:56:38] Dialing USSD code (Attempt 1)...
+[2025-05-09 00:56:42] Expected USSD page matched.
+[2025-05-09 00:56:42] Input field detected
+[2025-05-09 00:56:47] Pin Enter Notification Detected
+[2025-05-09 00:56:51] Login successful.
+[2025-05-09 00:56:51] Found option: 1: My Accounts
+[2025-05-09 00:56:51] Found option: 2: Transfer
+[2025-05-09 00:56:51] Found option: 3: Transfer to Other Bank
+[2025-05-09 00:56:51] Found option: 4: Transfer to Own
+[2025-05-09 00:56:51] Found option: 5: Airtime
+[2025-05-09 00:56:51] Found option: 6: Utilities
+[2025-05-09 00:56:51] Found option: 7: Exchange Rates
+[2025-05-09 00:56:51] Found option: 8: More options
+[2025-05-09 00:56:53] Writing 'Pass' to row 3, col 5
+[2025-05-09 00:56:54] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:56:54] Updated 'login' sheet - rows [3] set to 'Pass'.
+[2025-05-09 00:57:03] Test for Airtime Safaricom ..
+[2025-05-09 00:57:08] Writing 'Pass' to row 2, col 5
+[2025-05-09 00:57:10] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:57:10] Updated 'Airtime topup' sheet - rows [2] set to 'Pass'.
+[2025-05-09 00:57:10] Processing account: 182975435
+[2025-05-09 00:57:14] Test for daily limit test negative scenario for Safaricom Top up..
+[2025-05-09 00:57:14] Entering phone number 0712911008
+[2025-05-09 00:57:27] The maximum top up amount is 5000 birr, Please try again.
+[2025-05-09 00:57:31] Daily limit validation for safaricom passed successfully: 182975435
+[2025-05-09 00:57:32] Writing 'Pass' to row 15, col 5
+[2025-05-09 00:57:34] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:57:34] Updated 'Airtime topup' sheet - rows [15] set to 'Pass'.
+[2025-05-09 00:57:34] Test for invalid safaricom phone number validation: 0970951608
+[2025-05-09 00:57:50] Detecting Invalid phone number safaricom is pass for 182975435
+[2025-05-09 00:57:51] Writing 'Pass' to row 16, col 5
+[2025-05-09 00:57:53] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:57:53] Updated 'Airtime topup' sheet - rows [16] set to 'Pass'.
+[2025-05-09 00:57:53] Tesf for valid safaricom phone number: 0712911008
+[2025-05-09 00:58:05] airtime confirmation pass for 182975435
+[2025-05-09 00:58:06] Writing 'Pass' to row 12, col 5
+[2025-05-09 00:58:07] Saving Excel file to: D:\BOA\Test_App\BOA_MobileApp_Test\scripts\USSD_Test_Script2.xlsx
+[2025-05-09 00:58:07] Updated 'Airtime topup' sheet - rows [12] set to 'Pass'.
+[2025-05-09 00:58:08] Safaricom Airtime Top Up Test transaction completed!
+[2025-05-09 00:58:08] USSD session cancelled successfully.
+[2025-05-09 00:58:09] .
+[2025-05-09 00:58:09] ----------------------------------------------------------------------
+[2025-05-09 00:58:09] Ran 1 test in 215.372s
+[2025-05-09 00:58:09] 
+[2025-05-09 00:58:09] OK
+[2025-05-09 00:58:09] 
+[2025-05-09 00:58:09] ========= Cumulative Delayed USSD Pages ( > 2.5s ) =========
+[2025-05-09 00:58:09] Daily limit exceeded page(Safaricom AirTime): 3.01s
+[2025-05-09 00:58:09] 
+Test completed.
+

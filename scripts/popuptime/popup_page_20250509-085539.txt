@@ -1,0 +1,22 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.4 seconds
+Home Page page appeared in => 1.52 seconds
+BOA Accounts list Page(Ethiotelecom Air Time) page appeared in => 1.63 seconds
+Funds Transfer Own Account Page(Transfer to Own) page appeared in => 1.9 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 1.81 seconds
+Enter Amount Page(Transfer to Own) page appeared in => 1.44 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 1.83 seconds
+Enter Reason Page(Transfer to Own) page appeared in => 1.48 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 2.86 seconds
+Review Page(Transfer to Own) page appeared in => 1.41 seconds
+Confirmation Page(Transfer to Own) page appeared in => 2.85 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 1.9 seconds
+Enter Amount Page(Transfer to Own) page appeared in => 1.61 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 1.71 seconds
+Enter Reason Page(Transfer to Own) page appeared in => 1.45 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 2.08 seconds
+Review Page(Transfer to Own) page appeared in => 1.44 seconds
+Confirmation Page(Transfer to Own) page appeared in => 3.44 seconds
+Press any key for more Page(Transfer to Own) page appeared in => 1.49 seconds

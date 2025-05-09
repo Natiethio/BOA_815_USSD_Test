@@ -1,0 +1,15 @@
+
+========================== USSD Pop Up pages time Logs ========================
+
+Enter Pin Page page appeared in => 1.9 seconds
+Home Page page appeared in => 1.89 seconds
+Exchange Rates Lists Page page appeared in => 1.84 seconds
+exchange rates Page page appeared in => 1.79 seconds
+exchange rates Detail Page page appeared in => 1.85 seconds
+Exchange Rates Lists Page page appeared in => 1.88 seconds
+exchange rates Page page appeared in => 2.25 seconds
+exchange rates Detail Page page appeared in => 1.96 seconds
+Exchange Rates Lists Page page appeared in => 1.88 seconds
+exchange rates Page page appeared in => 2.45 seconds
+exchange rates Detail Page page appeared in => 1.77 seconds
+Exchange Rates Lists Page page appeared in => 2.03 seconds
